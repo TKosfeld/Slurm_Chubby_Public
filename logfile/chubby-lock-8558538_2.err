@@ -1,0 +1,25 @@
+2025-05-06T12:32:56.070-0400 [INFO]  raft: initial configuration: index=0 servers=[]
+2025-05-06T12:32:56.072-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.107:9002 [Follower]" leader-address= leader-id=
+[server] 2025/05/06 12:32:56 Attempting to join cluster at argo-01:8000 as node argo-07:8002 with Raft address argo-07:9002
+[server] 2025/05/06 12:32:56 Successfully joined cluster.
+[server] 2025/05/06 12:32:56 Listening for client RPC connections on argo-07:8002
+2025-05-06T12:32:56.076-0400 [WARN]  raft: failed to get previous log: previous-index=3 last-index=0 error="log not found"
+2025-05-06T12:39:35.252-0400 [INFO]  raft: starting snapshot up to: index=36381
+2025-05-06T12:39:35.252-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558538-2/snapshots/2-36381-1746549575252.tmp
+2025-05-06T12:39:35.266-0400 [INFO]  raft: compacting logs: from=1 to=26141
+2025-05-06T12:39:35.282-0400 [INFO]  raft: snapshot complete up to: index=36381
+2025-05-06T13:12:06.746-0400 [INFO]  raft: starting snapshot up to: index=93578
+2025-05-06T13:12:06.746-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558538-2/snapshots/2-93578-1746551526746.tmp
+2025-05-06T13:12:06.762-0400 [INFO]  raft: compacting logs: from=26142 to=83338
+2025-05-06T13:12:06.931-0400 [INFO]  raft: snapshot complete up to: index=93578
+2025-05-06T13:14:31.681-0400 [INFO]  raft: starting snapshot up to: index=155125
+2025-05-06T13:14:31.681-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558538-2/snapshots/2-155125-1746551671681.tmp
+2025-05-06T13:14:31.694-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558538-2/snapshots/2-36381-1746549575252
+2025-05-06T13:14:31.699-0400 [INFO]  raft: compacting logs: from=83339 to=144885
+2025-05-06T13:14:31.738-0400 [INFO]  raft: snapshot complete up to: index=155125
+2025-05-06T13:17:42.574-0400 [INFO]  raft: starting snapshot up to: index=217994
+2025-05-06T13:17:42.574-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558538-2/snapshots/2-217994-1746551862574.tmp
+2025-05-06T13:17:42.588-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558538-2/snapshots/2-93578-1746551526746
+2025-05-06T13:17:42.593-0400 [INFO]  raft: compacting logs: from=144886 to=207754
+2025-05-06T13:17:42.626-0400 [INFO]  raft: snapshot complete up to: index=217994
+slurmstepd: error: *** STEP 8558538.2 ON argo-07 CANCELLED AT 2025-05-06T13:38:59 ***

@@ -1,0 +1,14 @@
+2025/05/06 10:09:08 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/06 10:09:08 Client client3-1746540548420451248: Connected to leader at argo-36:8003
+2025/05/06 10:09:08 Client client0-1746540548420442672: Connected to leader at argo-36:8003
+2025/05/06 10:09:08 Client client2-1746540548420450166: Connected to leader at argo-36:8003
+2025/05/06 10:09:08 Client client1-1746540548420448703: Connected to leader at argo-36:8003
+2025/05/06 10:09:08 Client client4-1746540548420452260: Connected to leader at argo-36:8003
+2025/05/06 10:10:08 Stress test completed.
+
+Operation Summary (per client):
+2025/05/06 10:10:08 client3-1746540548420451248 - Success: 5909, Fail: 0
+2025/05/06 10:10:08 client2-1746540548420450166 - Success: 5906, Fail: 0
+2025/05/06 10:10:08 client4-1746540548420452260 - Success: 4414, Fail: 0
+2025/05/06 10:10:08 client0-1746540548420442672 - Success: 5708, Fail: 0
+2025/05/06 10:10:08 client1-1746540548420448703 - Success: 5905, Fail: 0

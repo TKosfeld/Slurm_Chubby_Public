@@ -1,0 +1,7 @@
+Chubby server started with ID: argo-19:8002, Listen: argo-19:8002, Raft Bind: argo-19:9002, Raft Dir: raft_data/8529268-2, Join: argo-06:8000, In-memory: false, Single-node: false, Lease Duration: 1m0s
+[WARN] Replica 2 crashed. Restarting seconds...
+Chubby server started with ID: argo-19:8002, Listen: argo-19:8002, Raft Bind: argo-19:9002, Raft Dir: raft_data/8529268-2, Join: argo-06:8000, In-memory: false, Single-node: false, Lease Duration: 1m0s
+[WARN] Replica 2 crashed. Restarting seconds...
+Chubby server started with ID: argo-19:8002, Listen: argo-19:8002, Raft Bind: argo-19:9002, Raft Dir: raft_data/8529268-2, Join: argo-06:8000, In-memory: false, Single-node: false, Lease Duration: 1m0s
+Chubby server started with ID: argo-19:8002, Listen: argo-19:8002, Raft Bind: argo-19:9002, Raft Dir: raft_data/8529268-2, Join: argo-06:8000, In-memory: false, Single-node: false, Lease Duration: 1m0s
+Chubby server started with ID: argo-19:8002, Listen: argo-19:8002, Raft Bind: argo-19:9002, Raft Dir: raft_data/8529268-2, Join: argo-06:8000, In-memory: false, Single-node: false, Lease Duration: 1m0s

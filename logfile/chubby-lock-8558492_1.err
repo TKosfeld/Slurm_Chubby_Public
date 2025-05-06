@@ -1,0 +1,7 @@
+2025-05-06T12:05:05.118-0400 [INFO]  raft: initial configuration: index=0 servers=[]
+2025-05-06T12:05:05.119-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.104:9001 [Follower]" leader-address= leader-id=
+[server] 2025/05/06 12:05:05 Attempting to join cluster at argo-01:8000 as node argo-04:8001 with Raft address argo-04:9001
+[server] 2025/05/06 12:05:05 Successfully joined cluster.
+[server] 2025/05/06 12:05:05 Listening for client RPC connections on argo-04:8001
+2025-05-06T12:05:05.123-0400 [WARN]  raft: failed to get previous log: previous-index=5 last-index=0 error="log not found"
+slurmstepd: error: *** STEP 8558492.1 ON argo-04 CANCELLED AT 2025-05-06T12:13:34 ***

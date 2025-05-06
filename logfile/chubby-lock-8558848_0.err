@@ -1,0 +1,36 @@
+2025-05-06T15:14:28.455-0400 [INFO]  raft: initial configuration: index=0 servers=[]
+2025-05-06T15:14:28.455-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.101:9000 [Follower]" leader-address= leader-id=
+[server] 2025/05/06 15:14:28 Bootstrapped as single-node cluster.
+[server] 2025/05/06 15:14:28 Listening for client RPC connections on argo-01:8000
+2025-05-06T15:14:29.528-0400 [WARN]  raft: heartbeat timeout reached, starting election: last-leader-addr= last-leader-id=
+2025-05-06T15:14:29.528-0400 [INFO]  raft: entering candidate state: node="Node at 172.17.7.101:9000 [Candidate]" term=2
+2025-05-06T15:14:29.529-0400 [DEBUG] raft: voting for self: term=2 id=argo-01:8000
+2025-05-06T15:14:29.530-0400 [DEBUG] raft: calculated votes needed: needed=1 term=2
+2025-05-06T15:14:29.530-0400 [DEBUG] raft: vote granted: from=argo-01:8000 term=2 tally=1
+2025-05-06T15:14:29.530-0400 [INFO]  raft: election won: term=2 tally=1
+2025-05-06T15:14:29.530-0400 [INFO]  raft: entering leader state: leader="Node at 172.17.7.101:9000 [Leader]"
+[store] 2025/05/06 15:14:42 received join request for remote node argo-06:8002 at argo-06:9002
+2025-05-06T15:14:42.882-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-06:8002 server-addr=argo-06:9002 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-06:8002 Address:argo-06:9002}]"
+2025-05-06T15:14:42.884-0400 [INFO]  raft: added peer, starting replication: peer=argo-06:8002
+[store] 2025/05/06 15:14:42 node argo-06:8002 at argo-06:9002 joined successfully
+2025-05-06T15:14:42.886-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-06:8002 argo-06:9002}" next=1
+2025-05-06T15:14:42.887-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-06:8002 argo-06:9002}"
+[store] 2025/05/06 15:14:42 received join request for remote node argo-04:8001 at argo-04:9001
+2025-05-06T15:14:42.889-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-04:8001 server-addr=argo-04:9001 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-06:8002 Address:argo-06:9002} {Suffrage:Voter ID:argo-04:8001 Address:argo-04:9001}]"
+2025-05-06T15:14:42.890-0400 [INFO]  raft: added peer, starting replication: peer=argo-04:8001
+[store] 2025/05/06 15:14:42 node argo-04:8001 at argo-04:9001 joined successfully
+2025-05-06T15:14:42.892-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-04:8001 argo-04:9001}" next=1
+2025-05-06T15:14:42.894-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-04:8001 argo-04:9001}"
+[store] 2025/05/06 15:14:42 received join request for remote node argo-11:8004 at argo-11:9004
+2025-05-06T15:14:42.899-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-11:8004 server-addr=argo-11:9004 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-06:8002 Address:argo-06:9002} {Suffrage:Voter ID:argo-04:8001 Address:argo-04:9001} {Suffrage:Voter ID:argo-11:8004 Address:argo-11:9004}]"
+2025-05-06T15:14:42.900-0400 [INFO]  raft: added peer, starting replication: peer=argo-11:8004
+[store] 2025/05/06 15:14:42 node argo-11:8004 at argo-11:9004 joined successfully
+2025-05-06T15:14:42.902-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-11:8004 argo-11:9004}" next=1
+2025-05-06T15:14:42.903-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-11:8004 argo-11:9004}"
+[store] 2025/05/06 15:14:42 received join request for remote node argo-08:8003 at argo-08:9003
+2025-05-06T15:14:42.909-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-08:8003 server-addr=argo-08:9003 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-06:8002 Address:argo-06:9002} {Suffrage:Voter ID:argo-04:8001 Address:argo-04:9001} {Suffrage:Voter ID:argo-11:8004 Address:argo-11:9004} {Suffrage:Voter ID:argo-08:8003 Address:argo-08:9003}]"
+2025-05-06T15:14:42.911-0400 [INFO]  raft: added peer, starting replication: peer=argo-08:8003
+[store] 2025/05/06 15:14:42 node argo-08:8003 at argo-08:9003 joined successfully
+2025-05-06T15:14:42.913-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-08:8003 argo-08:9003}" next=1
+2025-05-06T15:14:42.914-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-08:8003 argo-08:9003}"
+slurmstepd: error: *** STEP 8558848.0 ON argo-01 CANCELLED AT 2025-05-06T16:14:40 ***

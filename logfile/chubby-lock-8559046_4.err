@@ -1,0 +1,14 @@
+2025-05-06T16:28:15.025-0400 [INFO]  raft: initial configuration: index=0 servers=[]
+2025-05-06T16:28:15.026-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.136:9004 [Follower]" leader-address= leader-id=
+[server] 2025/05/06 16:28:15 Attempting to join cluster at argo-01:8000 as node argo-36:8004 with Raft address argo-36:9004
+[server] 2025/05/06 16:28:15 Successfully joined cluster.
+[server] 2025/05/06 16:28:15 Listening for client RPC connections on argo-36:8004
+2025-05-06T16:28:15.029-0400 [WARN]  raft: failed to get previous log: previous-index=6 last-index=0 error="log not found"
+2025-05-06T16:32:09.648-0400 [INFO]  raft: starting snapshot up to: index=8733
+2025-05-06T16:32:09.648-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8559046-4/snapshots/2-8733-1746563529648.tmp
+2025-05-06T16:32:09.697-0400 [INFO]  raft: snapshot complete up to: index=8733
+2025-05-06T16:55:51.179-0400 [INFO]  raft: starting snapshot up to: index=26079
+2025-05-06T16:55:51.179-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8559046-4/snapshots/2-26079-1746564951179.tmp
+2025-05-06T16:55:51.201-0400 [INFO]  raft: compacting logs: from=1 to=15839
+2025-05-06T16:55:51.211-0400 [INFO]  raft: snapshot complete up to: index=26079
+slurmstepd: error: *** STEP 8559046.4 ON argo-36 CANCELLED AT 2025-05-06T17:22:14 ***

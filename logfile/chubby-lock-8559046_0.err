@@ -1,0 +1,272 @@
+2025-05-06T16:28:00.570-0400 [INFO]  raft: initial configuration: index=0 servers=[]
+2025-05-06T16:28:00.571-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.101:9000 [Follower]" leader-address= leader-id=
+[server] 2025/05/06 16:28:00 Bootstrapped as single-node cluster.
+[server] 2025/05/06 16:28:00 Listening for client RPC connections on argo-01:8000
+2025-05-06T16:28:02.494-0400 [WARN]  raft: heartbeat timeout reached, starting election: last-leader-addr= last-leader-id=
+2025-05-06T16:28:02.494-0400 [INFO]  raft: entering candidate state: node="Node at 172.17.7.101:9000 [Candidate]" term=2
+2025-05-06T16:28:02.495-0400 [DEBUG] raft: voting for self: term=2 id=argo-01:8000
+2025-05-06T16:28:02.497-0400 [DEBUG] raft: calculated votes needed: needed=1 term=2
+2025-05-06T16:28:02.497-0400 [DEBUG] raft: vote granted: from=argo-01:8000 term=2 tally=1
+2025-05-06T16:28:02.497-0400 [INFO]  raft: election won: term=2 tally=1
+2025-05-06T16:28:02.497-0400 [INFO]  raft: entering leader state: leader="Node at 172.17.7.101:9000 [Leader]"
+[store] 2025/05/06 16:28:14 received join request for remote node argo-18:8003 at argo-18:9003
+2025-05-06T16:28:14.595-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-18:8003 server-addr=argo-18:9003 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-18:8003 Address:argo-18:9003}]"
+2025-05-06T16:28:14.597-0400 [INFO]  raft: added peer, starting replication: peer=argo-18:8003
+[store] 2025/05/06 16:28:14 node argo-18:8003 at argo-18:9003 joined successfully
+2025-05-06T16:28:14.599-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-18:8003 argo-18:9003}" next=1
+2025-05-06T16:28:14.600-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-18:8003 argo-18:9003}"
+[store] 2025/05/06 16:28:14 received join request for remote node argo-11:8001 at argo-11:9001
+2025-05-06T16:28:14.603-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-11:8001 server-addr=argo-11:9001 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-18:8003 Address:argo-18:9003} {Suffrage:Voter ID:argo-11:8001 Address:argo-11:9001}]"
+2025-05-06T16:28:14.604-0400 [INFO]  raft: added peer, starting replication: peer=argo-11:8001
+[store] 2025/05/06 16:28:14 node argo-11:8001 at argo-11:9001 joined successfully
+2025-05-06T16:28:14.606-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-11:8001 argo-11:9001}" next=1
+2025-05-06T16:28:14.607-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-11:8001 argo-11:9001}"
+[store] 2025/05/06 16:28:14 received join request for remote node argo-14:8002 at argo-14:9002
+2025-05-06T16:28:14.616-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-14:8002 server-addr=argo-14:9002 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-18:8003 Address:argo-18:9003} {Suffrage:Voter ID:argo-11:8001 Address:argo-11:9001} {Suffrage:Voter ID:argo-14:8002 Address:argo-14:9002}]"
+2025-05-06T16:28:14.617-0400 [INFO]  raft: added peer, starting replication: peer=argo-14:8002
+[store] 2025/05/06 16:28:14 node argo-14:8002 at argo-14:9002 joined successfully
+2025-05-06T16:28:14.619-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-14:8002 argo-14:9002}" next=1
+2025-05-06T16:28:14.620-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-14:8002 argo-14:9002}"
+[store] 2025/05/06 16:28:15 received join request for remote node argo-36:8004 at argo-36:9004
+2025-05-06T16:28:15.026-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-36:8004 server-addr=argo-36:9004 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-18:8003 Address:argo-18:9003} {Suffrage:Voter ID:argo-11:8001 Address:argo-11:9001} {Suffrage:Voter ID:argo-14:8002 Address:argo-14:9002} {Suffrage:Voter ID:argo-36:8004 Address:argo-36:9004}]"
+2025-05-06T16:28:15.027-0400 [INFO]  raft: added peer, starting replication: peer=argo-36:8004
+[store] 2025/05/06 16:28:15 node argo-36:8004 at argo-36:9004 joined successfully
+2025-05-06T16:28:15.029-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-36:8004 argo-36:9004}" next=1
+2025-05-06T16:28:15.031-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-36:8004 argo-36:9004}"
+[server] 2025/05/06 16:30:26 Creating session with client client0-1746563426252407837
+[server] 2025/05/06 16:30:26 Monitoring session for client client0-1746563426252407837
+[server] 2025/05/06 16:30:26 Creating session with client client1-1746563426252413808
+[server] 2025/05/06 16:30:26 Monitoring session for client client1-1746563426252413808
+[server] 2025/05/06 16:30:26 Creating session with client client2-1746563426252415381
+[server] 2025/05/06 16:30:26 Monitoring session for client client2-1746563426252415381
+[server] 2025/05/06 16:30:26 Creating session with client client3-1746563426252416683
+[server] 2025/05/06 16:30:26 Monitoring session for client client3-1746563426252416683
+[server] 2025/05/06 16:30:26 Creating session with client client4-1746563426252431040
+[server] 2025/05/06 16:30:26 Monitoring session for client client4-1746563426252431040
+[server] 2025/05/06 16:30:30 Session extended for client client0-1746563426252407837, new lease: 10s
+[server] 2025/05/06 16:30:30 Session extended for client client1-1746563426252413808, new lease: 10s
+[server] 2025/05/06 16:30:30 Session extended for client client2-1746563426252415381, new lease: 10s
+[server] 2025/05/06 16:30:30 Session extended for client client3-1746563426252416683, new lease: 10s
+[server] 2025/05/06 16:30:30 Session extended for client client4-1746563426252431040, new lease: 10s
+[server] 2025/05/06 16:30:36 Lease expired for client client0-1746563426252407837: terminating
+[server] 2025/05/06 16:30:36 Terminated session for client client0-1746563426252407837
+[server] 2025/05/06 16:30:36 Lease expired for client client1-1746563426252413808: terminating
+[server] 2025/05/06 16:30:36 Terminated session for client client1-1746563426252413808
+[server] 2025/05/06 16:30:36 Lease expired for client client2-1746563426252415381: terminating
+[server] 2025/05/06 16:30:36 Terminated session for client client2-1746563426252415381
+[server] 2025/05/06 16:30:36 Lease expired for client client4-1746563426252431040: terminating
+[server] 2025/05/06 16:30:36 Error releasing lock /file81 for client client4-1746563426252431040 on termination: Session client4-1746563426252431040 does not hold lock /file81
+[server] 2025/05/06 16:30:36 Terminated session for client client4-1746563426252431040
+[server] 2025/05/06 16:30:36 Lease expired for client client3-1746563426252416683: terminating
+[server] 2025/05/06 16:30:36 Terminated session for client client3-1746563426252416683
+2025-05-06T16:33:34.103-0400 [INFO]  raft: starting snapshot up to: index=8733
+2025-05-06T16:33:34.103-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8559046-0/snapshots/2-8733-1746563614103.tmp
+2025-05-06T16:33:34.118-0400 [INFO]  raft: snapshot complete up to: index=8733
+[server] 2025/05/06 16:50:13 Creating session with client prewriter
+[server] 2025/05/06 16:50:13 Monitoring session for client prewriter
+[server] 2025/05/06 16:50:14 Creating session with client client4-1746564614144034753
+[server] 2025/05/06 16:50:14 Monitoring session for client client4-1746564614144034753
+[server] 2025/05/06 16:50:14 Creating session with client client1-1746564614144030576
+[server] 2025/05/06 16:50:14 Monitoring session for client client1-1746564614144030576
+[server] 2025/05/06 16:50:14 Creating session with client client0-1746564614144025025
+[server] 2025/05/06 16:50:14 Monitoring session for client client0-1746564614144025025
+[server] 2025/05/06 16:50:14 Creating session with client client2-1746564614144031778
+[server] 2025/05/06 16:50:14 Monitoring session for client client2-1746564614144031778
+[server] 2025/05/06 16:50:14 Creating session with client client3-1746564614144033862
+[server] 2025/05/06 16:50:14 Monitoring session for client client3-1746564614144033862
+[server] 2025/05/06 16:50:18 Session extended for client client4-1746564614144034753, new lease: 10s
+[server] 2025/05/06 16:50:18 Session extended for client client1-1746564614144030576, new lease: 10s
+[server] 2025/05/06 16:50:18 Session extended for client client0-1746564614144025025, new lease: 10s
+[server] 2025/05/06 16:50:18 Session extended for client client2-1746564614144031778, new lease: 10s
+[server] 2025/05/06 16:50:18 Session extended for client client3-1746564614144033862, new lease: 10s
+[server] 2025/05/06 16:50:18 Lease expired for client prewriter: terminating
+[server] 2025/05/06 16:50:18 Error releasing lock /file75 for client prewriter on termination: Session prewriter does not hold lock /file75
+[server] 2025/05/06 16:50:18 Error releasing lock /file25 for client prewriter on termination: Session prewriter does not hold lock /file25
+[server] 2025/05/06 16:50:18 Error releasing lock /file34 for client prewriter on termination: Session prewriter does not hold lock /file34
+[server] 2025/05/06 16:50:18 Error releasing lock /file41 for client prewriter on termination: Session prewriter does not hold lock /file41
+[server] 2025/05/06 16:50:18 Error releasing lock /file53 for client prewriter on termination: Session prewriter does not hold lock /file53
+[server] 2025/05/06 16:50:18 Error releasing lock /file18 for client prewriter on termination: Session prewriter does not hold lock /file18
+[server] 2025/05/06 16:50:18 Error releasing lock /file68 for client prewriter on termination: Session prewriter does not hold lock /file68
+[server] 2025/05/06 16:50:18 Error releasing lock /file93 for client prewriter on termination: Session prewriter does not hold lock /file93
+[server] 2025/05/06 16:50:18 Error releasing lock /file17 for client prewriter on termination: Session prewriter does not hold lock /file17
+[server] 2025/05/06 16:50:18 Error releasing lock /file32 for client prewriter on termination: Session prewriter does not hold lock /file32
+[server] 2025/05/06 16:50:18 Error releasing lock /file58 for client prewriter on termination: Session prewriter does not hold lock /file58
+[server] 2025/05/06 16:50:18 Error releasing lock /file36 for client prewriter on termination: Session prewriter does not hold lock /file36
+[server] 2025/05/06 16:50:18 Error releasing lock /file51 for client prewriter on termination: Session prewriter does not hold lock /file51
+[server] 2025/05/06 16:50:18 Error releasing lock /file60 for client prewriter on termination: Session prewriter does not hold lock /file60
+[server] 2025/05/06 16:50:18 Error releasing lock /file64 for client prewriter on termination: Session prewriter does not hold lock /file64
+[server] 2025/05/06 16:50:18 Error releasing lock /file8 for client prewriter on termination: Session prewriter does not hold lock /file8
+[server] 2025/05/06 16:50:18 Error releasing lock /file13 for client prewriter on termination: Session prewriter does not hold lock /file13
+[server] 2025/05/06 16:50:18 Error releasing lock /file15 for client prewriter on termination: Session prewriter does not hold lock /file15
+[server] 2025/05/06 16:50:18 Error releasing lock /file22 for client prewriter on termination: Session prewriter does not hold lock /file22
+[server] 2025/05/06 16:50:18 Error releasing lock /file96 for client prewriter on termination: Session prewriter does not hold lock /file96
+[server] 2025/05/06 16:50:18 Error releasing lock /file97 for client prewriter on termination: Session prewriter does not hold lock /file97
+[server] 2025/05/06 16:50:18 Error releasing lock /file84 for client prewriter on termination: Session prewriter does not hold lock /file84
+[server] 2025/05/06 16:50:18 Error releasing lock /file86 for client prewriter on termination: Session prewriter does not hold lock /file86
+[server] 2025/05/06 16:50:18 Error releasing lock /file91 for client prewriter on termination: Session prewriter does not hold lock /file91
+[server] 2025/05/06 16:50:18 Error releasing lock /file94 for client prewriter on termination: Session prewriter does not hold lock /file94
+[server] 2025/05/06 16:50:18 Error releasing lock /file37 for client prewriter on termination: Session prewriter does not hold lock /file37
+[server] 2025/05/06 16:50:18 Error releasing lock /file61 for client prewriter on termination: Session prewriter does not hold lock /file61
+[server] 2025/05/06 16:50:18 Error releasing lock /file65 for client prewriter on termination: Session prewriter does not hold lock /file65
+[server] 2025/05/06 16:50:18 Error releasing lock /file66 for client prewriter on termination: Session prewriter does not hold lock /file66
+[server] 2025/05/06 16:50:18 Error releasing lock /file3 for client prewriter on termination: Session prewriter does not hold lock /file3
+[server] 2025/05/06 16:50:18 Error releasing lock /file9 for client prewriter on termination: Session prewriter does not hold lock /file9
+[server] 2025/05/06 16:50:18 Error releasing lock /file11 for client prewriter on termination: Session prewriter does not hold lock /file11
+[server] 2025/05/06 16:50:18 Error releasing lock /file30 for client prewriter on termination: Session prewriter does not hold lock /file30
+[server] 2025/05/06 16:50:18 Error releasing lock /file72 for client prewriter on termination: Session prewriter does not hold lock /file72
+[server] 2025/05/06 16:50:18 Error releasing lock /file73 for client prewriter on termination: Session prewriter does not hold lock /file73
+[server] 2025/05/06 16:50:18 Error releasing lock /file81 for client prewriter on termination: Session prewriter does not hold lock /file81
+[server] 2025/05/06 16:50:18 Error releasing lock /file88 for client prewriter on termination: Session prewriter does not hold lock /file88
+[server] 2025/05/06 16:50:18 Error releasing lock /file47 for client prewriter on termination: Session prewriter does not hold lock /file47
+[server] 2025/05/06 16:50:18 Error releasing lock /file48 for client prewriter on termination: Session prewriter does not hold lock /file48
+[server] 2025/05/06 16:50:18 Error releasing lock /file54 for client prewriter on termination: Session prewriter does not hold lock /file54
+[server] 2025/05/06 16:50:18 Error releasing lock /file57 for client prewriter on termination: Session prewriter does not hold lock /file57
+[server] 2025/05/06 16:50:18 Error releasing lock /file10 for client prewriter on termination: Session prewriter does not hold lock /file10
+[server] 2025/05/06 16:50:18 Error releasing lock /file16 for client prewriter on termination: Session prewriter does not hold lock /file16
+[server] 2025/05/06 16:50:18 Error releasing lock /file19 for client prewriter on termination: Session prewriter does not hold lock /file19
+[server] 2025/05/06 16:50:18 Error releasing lock /file24 for client prewriter on termination: Session prewriter does not hold lock /file24
+[server] 2025/05/06 16:50:18 Error releasing lock /file98 for client prewriter on termination: Session prewriter does not hold lock /file98
+[server] 2025/05/06 16:50:18 Error releasing lock /file99 for client prewriter on termination: Session prewriter does not hold lock /file99
+[server] 2025/05/06 16:50:18 Error releasing lock /file31 for client prewriter on termination: Session prewriter does not hold lock /file31
+[server] 2025/05/06 16:50:18 Error releasing lock /file38 for client prewriter on termination: Session prewriter does not hold lock /file38
+[server] 2025/05/06 16:50:18 Error releasing lock /file76 for client prewriter on termination: Session prewriter does not hold lock /file76
+[server] 2025/05/06 16:50:18 Error releasing lock /file77 for client prewriter on termination: Session prewriter does not hold lock /file77
+[server] 2025/05/06 16:50:18 Error releasing lock /file87 for client prewriter on termination: Session prewriter does not hold lock /file87
+[server] 2025/05/06 16:50:18 Error releasing lock /file35 for client prewriter on termination: Session prewriter does not hold lock /file35
+[server] 2025/05/06 16:50:18 Error releasing lock /file74 for client prewriter on termination: Session prewriter does not hold lock /file74
+[server] 2025/05/06 16:50:18 Error releasing lock /file79 for client prewriter on termination: Session prewriter does not hold lock /file79
+[server] 2025/05/06 16:50:18 Error releasing lock /file83 for client prewriter on termination: Session prewriter does not hold lock /file83
+[server] 2025/05/06 16:50:18 Error releasing lock /file90 for client prewriter on termination: Session prewriter does not hold lock /file90
+[server] 2025/05/06 16:50:18 Error releasing lock /file2 for client prewriter on termination: Session prewriter does not hold lock /file2
+[server] 2025/05/06 16:50:18 Error releasing lock /file44 for client prewriter on termination: Session prewriter does not hold lock /file44
+[server] 2025/05/06 16:50:18 Error releasing lock /file50 for client prewriter on termination: Session prewriter does not hold lock /file50
+[server] 2025/05/06 16:50:18 Error releasing lock /file59 for client prewriter on termination: Session prewriter does not hold lock /file59
+[server] 2025/05/06 16:50:18 Error releasing lock /file21 for client prewriter on termination: Session prewriter does not hold lock /file21
+[server] 2025/05/06 16:50:18 Error releasing lock /file39 for client prewriter on termination: Session prewriter does not hold lock /file39
+[server] 2025/05/06 16:50:18 Error releasing lock /file89 for client prewriter on termination: Session prewriter does not hold lock /file89
+[server] 2025/05/06 16:50:18 Error releasing lock /file95 for client prewriter on termination: Session prewriter does not hold lock /file95
+[server] 2025/05/06 16:50:18 Error releasing lock /file7 for client prewriter on termination: Session prewriter does not hold lock /file7
+[server] 2025/05/06 16:50:18 Error releasing lock /file20 for client prewriter on termination: Session prewriter does not hold lock /file20
+[server] 2025/05/06 16:50:18 Error releasing lock /file40 for client prewriter on termination: Session prewriter does not hold lock /file40
+[server] 2025/05/06 16:50:18 Error releasing lock /file85 for client prewriter on termination: Session prewriter does not hold lock /file85
+[server] 2025/05/06 16:50:18 Error releasing lock /file52 for client prewriter on termination: Session prewriter does not hold lock /file52
+[server] 2025/05/06 16:50:18 Error releasing lock /file63 for client prewriter on termination: Session prewriter does not hold lock /file63
+[server] 2025/05/06 16:50:18 Error releasing lock /file1 for client prewriter on termination: Session prewriter does not hold lock /file1
+[server] 2025/05/06 16:50:18 Error releasing lock /file26 for client prewriter on termination: Session prewriter does not hold lock /file26
+[server] 2025/05/06 16:50:18 Error releasing lock /file27 for client prewriter on termination: Session prewriter does not hold lock /file27
+[server] 2025/05/06 16:50:18 Error releasing lock /file43 for client prewriter on termination: Session prewriter does not hold lock /file43
+[server] 2025/05/06 16:50:18 Error releasing lock /file28 for client prewriter on termination: Session prewriter does not hold lock /file28
+[server] 2025/05/06 16:50:18 Error releasing lock /file33 for client prewriter on termination: Session prewriter does not hold lock /file33
+[server] 2025/05/06 16:50:18 Error releasing lock /file45 for client prewriter on termination: Session prewriter does not hold lock /file45
+[server] 2025/05/06 16:50:18 Error releasing lock /file49 for client prewriter on termination: Session prewriter does not hold lock /file49
+[server] 2025/05/06 16:50:18 Error releasing lock /file0 for client prewriter on termination: Session prewriter does not hold lock /file0
+[server] 2025/05/06 16:50:18 Error releasing lock /file5 for client prewriter on termination: Session prewriter does not hold lock /file5
+[server] 2025/05/06 16:50:18 Error releasing lock /file12 for client prewriter on termination: Session prewriter does not hold lock /file12
+[server] 2025/05/06 16:50:18 Error releasing lock /file23 for client prewriter on termination: Session prewriter does not hold lock /file23
+[server] 2025/05/06 16:50:18 Error releasing lock /file70 for client prewriter on termination: Session prewriter does not hold lock /file70
+[server] 2025/05/06 16:50:18 Error releasing lock /file46 for client prewriter on termination: Session prewriter does not hold lock /file46
+[server] 2025/05/06 16:50:18 Error releasing lock /file55 for client prewriter on termination: Session prewriter does not hold lock /file55
+[server] 2025/05/06 16:50:18 Error releasing lock /file56 for client prewriter on termination: Session prewriter does not hold lock /file56
+[server] 2025/05/06 16:50:18 Error releasing lock /file71 for client prewriter on termination: Session prewriter does not hold lock /file71
+[server] 2025/05/06 16:50:18 Error releasing lock /file4 for client prewriter on termination: Session prewriter does not hold lock /file4
+[server] 2025/05/06 16:50:18 Error releasing lock /file6 for client prewriter on termination: Session prewriter does not hold lock /file6
+[server] 2025/05/06 16:50:18 Error releasing lock /file14 for client prewriter on termination: Session prewriter does not hold lock /file14
+[server] 2025/05/06 16:50:18 Error releasing lock /file42 for client prewriter on termination: Session prewriter does not hold lock /file42
+[server] 2025/05/06 16:50:18 Error releasing lock /file80 for client prewriter on termination: Session prewriter does not hold lock /file80
+[server] 2025/05/06 16:50:18 Error releasing lock /file78 for client prewriter on termination: Session prewriter does not hold lock /file78
+[server] 2025/05/06 16:50:18 Error releasing lock /file82 for client prewriter on termination: Session prewriter does not hold lock /file82
+[server] 2025/05/06 16:50:18 Error releasing lock /file92 for client prewriter on termination: Session prewriter does not hold lock /file92
+[server] 2025/05/06 16:50:18 Error releasing lock /file29 for client prewriter on termination: Session prewriter does not hold lock /file29
+[server] 2025/05/06 16:50:18 Error releasing lock /file62 for client prewriter on termination: Session prewriter does not hold lock /file62
+[server] 2025/05/06 16:50:18 Error releasing lock /file67 for client prewriter on termination: Session prewriter does not hold lock /file67
+[server] 2025/05/06 16:50:18 Error releasing lock /file69 for client prewriter on termination: Session prewriter does not hold lock /file69
+[server] 2025/05/06 16:50:18 Terminated session for client prewriter
+[server] 2025/05/06 16:50:24 Lease expired for client client4-1746564614144034753: terminating
+[server] 2025/05/06 16:50:24 Terminated session for client client4-1746564614144034753
+[server] 2025/05/06 16:50:24 Lease expired for client client1-1746564614144030576: terminating
+[server] 2025/05/06 16:50:24 Error releasing lock /file18 for client client1-1746564614144030576 on termination: Session client1-1746564614144030576 does not hold lock /file18
+[server] 2025/05/06 16:50:24 Terminated session for client client1-1746564614144030576
+[server] 2025/05/06 16:50:24 Lease expired for client client0-1746564614144025025: terminating
+[server] 2025/05/06 16:50:24 Terminated session for client client0-1746564614144025025
+[server] 2025/05/06 16:50:24 Lease expired for client client2-1746564614144031778: terminating
+[server] 2025/05/06 16:50:24 Error releasing lock /file25 for client client2-1746564614144031778 on termination: Session client2-1746564614144031778 does not hold lock /file25
+[server] 2025/05/06 16:50:24 Terminated session for client client2-1746564614144031778
+[server] 2025/05/06 16:50:24 Lease expired for client client3-1746564614144033862: terminating
+[server] 2025/05/06 16:50:24 Terminated session for client client3-1746564614144033862
+[server] 2025/05/06 16:54:46 Creating session with client client3-1746564886042177577
+[server] 2025/05/06 16:54:46 Monitoring session for client client3-1746564886042177577
+[server] 2025/05/06 16:54:46 Creating session with client client1-1746564886042174952
+[server] 2025/05/06 16:54:46 Monitoring session for client client1-1746564886042174952
+[server] 2025/05/06 16:54:46 Creating session with client client2-1746564886042176185
+[server] 2025/05/06 16:54:46 Monitoring session for client client2-1746564886042176185
+[server] 2025/05/06 16:54:46 Creating session with client client0-1746564886042168590
+[server] 2025/05/06 16:54:46 Monitoring session for client client0-1746564886042168590
+[server] 2025/05/06 16:54:46 Creating session with client client4-1746564886042178559
+[server] 2025/05/06 16:54:46 Monitoring session for client client4-1746564886042178559
+[server] 2025/05/06 16:54:50 Session extended for client client1-1746564886042174952, new lease: 10s
+[server] 2025/05/06 16:54:50 Session extended for client client2-1746564886042176185, new lease: 10s
+[server] 2025/05/06 16:54:50 Session extended for client client3-1746564886042177577, new lease: 10s
+[server] 2025/05/06 16:54:50 Session extended for client client0-1746564886042168590, new lease: 10s
+[server] 2025/05/06 16:54:50 Session extended for client client4-1746564886042178559, new lease: 10s
+[server] 2025/05/06 16:54:56 Lease expired for client client3-1746564886042177577: terminating
+[server] 2025/05/06 16:54:56 Terminated session for client client3-1746564886042177577
+[server] 2025/05/06 16:54:56 Lease expired for client client1-1746564886042174952: terminating
+[server] 2025/05/06 16:54:56 Terminated session for client client1-1746564886042174952
+[server] 2025/05/06 16:54:56 Lease expired for client client2-1746564886042176185: terminating
+[server] 2025/05/06 16:54:56 Terminated session for client client2-1746564886042176185
+[server] 2025/05/06 16:54:56 Lease expired for client client0-1746564886042168590: terminating
+[server] 2025/05/06 16:54:56 Terminated session for client client0-1746564886042168590
+[server] 2025/05/06 16:54:56 Lease expired for client client4-1746564886042178559: terminating
+[server] 2025/05/06 16:54:56 Error releasing lock /file81 for client client4-1746564886042178559 on termination: Session client4-1746564886042178559 does not hold lock /file81
+[server] 2025/05/06 16:54:56 Terminated session for client client4-1746564886042178559
+[server] 2025/05/06 16:55:05 Client client1-1746564886042174952 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 16:55:05 Creating session with client client1-1746564886042174952
+[server] 2025/05/06 16:55:05 New session for client client1-1746564886042174952 created
+[server] 2025/05/06 16:55:05 Lock /file87 reacquired successfully.
+[server] 2025/05/06 16:55:05 Finished jeopardy KeepAlive process for client client1-1746564886042174952
+[server] 2025/05/06 16:55:05 Monitoring session for client client1-1746564886042174952
+[server] 2025/05/06 16:55:05 Client client3-1746564886042177577 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 16:55:05 Creating session with client client3-1746564886042177577
+[server] 2025/05/06 16:55:05 New session for client client3-1746564886042177577 created
+[server] 2025/05/06 16:55:05 Lock /file59 reacquired successfully.
+[server] 2025/05/06 16:55:05 Finished jeopardy KeepAlive process for client client3-1746564886042177577
+[server] 2025/05/06 16:55:05 Monitoring session for client client3-1746564886042177577
+[server] 2025/05/06 16:55:05 Client client2-1746564886042176185 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 16:55:05 Creating session with client client2-1746564886042176185
+[server] 2025/05/06 16:55:05 New session for client client2-1746564886042176185 created
+[server] 2025/05/06 16:55:05 Lock /file47 reacquired successfully.
+[server] 2025/05/06 16:55:05 Finished jeopardy KeepAlive process for client client2-1746564886042176185
+[server] 2025/05/06 16:55:05 Monitoring session for client client2-1746564886042176185
+[server] 2025/05/06 16:55:05 Client client4-1746564886042178559 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 16:55:05 Creating session with client client4-1746564886042178559
+[server] 2025/05/06 16:55:05 New session for client client4-1746564886042178559 created
+[server] 2025/05/06 16:55:05 Lock /file81 reacquired successfully.
+[server] 2025/05/06 16:55:05 Finished jeopardy KeepAlive process for client client4-1746564886042178559
+[server] 2025/05/06 16:55:05 Monitoring session for client client4-1746564886042178559
+[server] 2025/05/06 16:55:05 Client client0-1746564886042168590 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 16:55:05 Creating session with client client0-1746564886042168590
+[server] 2025/05/06 16:55:05 New session for client client0-1746564886042168590 created
+[server] 2025/05/06 16:55:05 Lock /file81 reacquired successfully.
+[server] 2025/05/06 16:55:05 Finished jeopardy KeepAlive process for client client0-1746564886042168590
+[server] 2025/05/06 16:55:05 Monitoring session for client client0-1746564886042168590
+[server] 2025/05/06 16:55:09 Session extended for client client1-1746564886042174952, new lease: 10s
+[server] 2025/05/06 16:55:09 Session extended for client client3-1746564886042177577, new lease: 10s
+[server] 2025/05/06 16:55:09 Session extended for client client2-1746564886042176185, new lease: 10s
+[server] 2025/05/06 16:55:09 Session extended for client client4-1746564886042178559, new lease: 10s
+[server] 2025/05/06 16:55:09 Session extended for client client0-1746564886042168590, new lease: 10s
+[server] 2025/05/06 16:55:15 Lease expired for client client3-1746564886042177577: terminating
+[server] 2025/05/06 16:55:15 Terminated session for client client3-1746564886042177577
+[server] 2025/05/06 16:55:15 Lease expired for client client1-1746564886042174952: terminating
+[server] 2025/05/06 16:55:15 Terminated session for client client1-1746564886042174952
+[server] 2025/05/06 16:55:15 Lease expired for client client2-1746564886042176185: terminating
+[server] 2025/05/06 16:55:15 Terminated session for client client2-1746564886042176185
+[server] 2025/05/06 16:55:15 Lease expired for client client0-1746564886042168590: terminating
+[server] 2025/05/06 16:55:15 Terminated session for client client0-1746564886042168590
+[server] 2025/05/06 16:55:15 Lease expired for client client4-1746564886042178559: terminating
+[server] 2025/05/06 16:55:15 Error releasing lock /file81 for client client4-1746564886042178559 on termination: Session client4-1746564886042178559 does not hold lock /file81
+[server] 2025/05/06 16:55:15 Terminated session for client client4-1746564886042178559
+2025-05-06T16:55:47.994-0400 [INFO]  raft: starting snapshot up to: index=26079
+2025-05-06T16:55:47.994-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8559046-0/snapshots/2-26079-1746564947994.tmp
+2025-05-06T16:55:48.009-0400 [INFO]  raft: compacting logs: from=1 to=15839
+2025-05-06T16:55:48.019-0400 [INFO]  raft: snapshot complete up to: index=26079
+slurmstepd: error: *** STEP 8559046.0 ON argo-01 CANCELLED AT 2025-05-06T17:22:14 ***

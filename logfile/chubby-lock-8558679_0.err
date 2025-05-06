@@ -1,0 +1,1269 @@
+2025-05-06T13:52:02.979-0400 [INFO]  raft: initial configuration: index=0 servers=[]
+2025-05-06T13:52:02.980-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.101:9000 [Follower]" leader-address= leader-id=
+[server] 2025/05/06 13:52:02 Bootstrapped as single-node cluster.
+[server] 2025/05/06 13:52:02 Listening for client RPC connections on argo-01:8000
+2025-05-06T13:52:04.290-0400 [WARN]  raft: heartbeat timeout reached, starting election: last-leader-addr= last-leader-id=
+2025-05-06T13:52:04.290-0400 [INFO]  raft: entering candidate state: node="Node at 172.17.7.101:9000 [Candidate]" term=2
+2025-05-06T13:52:04.291-0400 [DEBUG] raft: voting for self: term=2 id=argo-01:8000
+2025-05-06T13:52:04.293-0400 [DEBUG] raft: calculated votes needed: needed=1 term=2
+2025-05-06T13:52:04.293-0400 [DEBUG] raft: vote granted: from=argo-01:8000 term=2 tally=1
+2025-05-06T13:52:04.293-0400 [INFO]  raft: election won: term=2 tally=1
+2025-05-06T13:52:04.293-0400 [INFO]  raft: entering leader state: leader="Node at 172.17.7.101:9000 [Leader]"
+[store] 2025/05/06 13:52:17 received join request for remote node argo-14:8002 at argo-14:9002
+2025-05-06T13:52:17.564-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-14:8002 server-addr=argo-14:9002 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-14:8002 Address:argo-14:9002}]"
+2025-05-06T13:52:17.565-0400 [INFO]  raft: added peer, starting replication: peer=argo-14:8002
+[store] 2025/05/06 13:52:17 node argo-14:8002 at argo-14:9002 joined successfully
+2025-05-06T13:52:17.567-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-14:8002 argo-14:9002}" next=1
+2025-05-06T13:52:17.568-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-14:8002 argo-14:9002}"
+[store] 2025/05/06 13:52:17 received join request for remote node argo-17:8003 at argo-17:9003
+2025-05-06T13:52:17.569-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-17:8003 server-addr=argo-17:9003 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-14:8002 Address:argo-14:9002} {Suffrage:Voter ID:argo-17:8003 Address:argo-17:9003}]"
+2025-05-06T13:52:17.570-0400 [INFO]  raft: added peer, starting replication: peer=argo-17:8003
+[store] 2025/05/06 13:52:17 node argo-17:8003 at argo-17:9003 joined successfully
+[store] 2025/05/06 13:52:17 received join request for remote node argo-24:8004 at argo-24:9004
+2025-05-06T13:52:17.571-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-24:8004 server-addr=argo-24:9004 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-14:8002 Address:argo-14:9002} {Suffrage:Voter ID:argo-17:8003 Address:argo-17:9003} {Suffrage:Voter ID:argo-24:8004 Address:argo-24:9004}]"
+2025-05-06T13:52:17.571-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-17:8003 argo-17:9003}" next=1
+2025-05-06T13:52:17.572-0400 [INFO]  raft: added peer, starting replication: peer=argo-24:8004
+2025-05-06T13:52:17.572-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-17:8003 argo-17:9003}"
+[store] 2025/05/06 13:52:17 node argo-24:8004 at argo-24:9004 joined successfully
+2025-05-06T13:52:17.574-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-24:8004 argo-24:9004}" next=1
+2025-05-06T13:52:17.575-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-24:8004 argo-24:9004}"
+[store] 2025/05/06 13:52:17 received join request for remote node argo-11:8001 at argo-11:9001
+2025-05-06T13:52:17.577-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-11:8001 server-addr=argo-11:9001 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-14:8002 Address:argo-14:9002} {Suffrage:Voter ID:argo-17:8003 Address:argo-17:9003} {Suffrage:Voter ID:argo-24:8004 Address:argo-24:9004} {Suffrage:Voter ID:argo-11:8001 Address:argo-11:9001}]"
+2025-05-06T13:52:17.578-0400 [INFO]  raft: added peer, starting replication: peer=argo-11:8001
+[store] 2025/05/06 13:52:17 node argo-11:8001 at argo-11:9001 joined successfully
+2025-05-06T13:52:17.580-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-11:8001 argo-11:9001}" next=1
+2025-05-06T13:52:17.581-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-11:8001 argo-11:9001}"
+[server] 2025/05/06 13:58:40 Creating session with client client0-1746554320211099953
+[server] 2025/05/06 13:58:40 Monitoring session for client client0-1746554320211099953
+[server] 2025/05/06 13:58:40 Creating session with client client1-1746554320211106125
+[server] 2025/05/06 13:58:40 Monitoring session for client client1-1746554320211106125
+[server] 2025/05/06 13:58:40 Creating session with client client2-1746554320211107968
+[server] 2025/05/06 13:58:40 Monitoring session for client client2-1746554320211107968
+[server] 2025/05/06 13:58:40 Creating session with client client3-1746554320211116414
+[server] 2025/05/06 13:58:40 Monitoring session for client client3-1746554320211116414
+[server] 2025/05/06 13:58:40 Creating session with client client4-1746554320211117717
+[server] 2025/05/06 13:58:40 Monitoring session for client client4-1746554320211117717
+[server] 2025/05/06 13:58:44 Session extended for client client2-1746554320211107968, new lease: 10s
+[server] 2025/05/06 13:58:44 Session extended for client client0-1746554320211099953, new lease: 10s
+[server] 2025/05/06 13:58:44 Session extended for client client1-1746554320211106125, new lease: 10s
+[server] 2025/05/06 13:58:44 Session extended for client client3-1746554320211116414, new lease: 10s
+[server] 2025/05/06 13:58:44 Session extended for client client4-1746554320211117717, new lease: 10s
+[server] 2025/05/06 13:58:50 Lease expired for client client3-1746554320211116414: terminating
+[server] 2025/05/06 13:58:50 Terminated session for client client3-1746554320211116414
+[server] 2025/05/06 13:58:50 Lease expired for client client0-1746554320211099953: terminating
+[server] 2025/05/06 13:58:50 Error releasing lock /file81 for client client0-1746554320211099953 on termination: Session client0-1746554320211099953 does not hold lock /file81
+[server] 2025/05/06 13:58:50 Terminated session for client client0-1746554320211099953
+[server] 2025/05/06 13:58:50 Lease expired for client client1-1746554320211106125: terminating
+[server] 2025/05/06 13:58:50 Error releasing lock /file87 for client client1-1746554320211106125 on termination: Session client1-1746554320211106125 does not hold lock /file87
+[server] 2025/05/06 13:58:50 Terminated session for client client1-1746554320211106125
+[server] 2025/05/06 13:58:50 Lease expired for client client2-1746554320211107968: terminating
+[server] 2025/05/06 13:58:50 Terminated session for client client2-1746554320211107968
+[server] 2025/05/06 13:58:50 Lease expired for client client4-1746554320211117717: terminating
+[server] 2025/05/06 13:58:50 Error releasing lock /file81 for client client4-1746554320211117717 on termination: Session client4-1746554320211117717 does not hold lock /file81
+[server] 2025/05/06 13:58:50 Terminated session for client client4-1746554320211117717
+[server] 2025/05/06 13:59:56 Creating session with client client0-1746554396069166024
+[server] 2025/05/06 13:59:56 Monitoring session for client client0-1746554396069166024
+[server] 2025/05/06 13:59:56 Creating session with client client2-1746554396069174490
+[server] 2025/05/06 13:59:56 Monitoring session for client client2-1746554396069174490
+[server] 2025/05/06 13:59:56 Creating session with client client1-1746554396069172806
+[server] 2025/05/06 13:59:56 Monitoring session for client client1-1746554396069172806
+[server] 2025/05/06 13:59:56 Creating session with client client3-1746554396069175942
+[server] 2025/05/06 13:59:56 Monitoring session for client client3-1746554396069175942
+[server] 2025/05/06 13:59:56 Creating session with client client4-1746554396069176874
+[server] 2025/05/06 13:59:56 Monitoring session for client client4-1746554396069176874
+[server] 2025/05/06 14:00:00 Session extended for client client1-1746554396069172806, new lease: 10s
+[server] 2025/05/06 14:00:00 Session extended for client client0-1746554396069166024, new lease: 10s
+[server] 2025/05/06 14:00:00 Session extended for client client2-1746554396069174490, new lease: 10s
+[server] 2025/05/06 14:00:00 Session extended for client client3-1746554396069175942, new lease: 10s
+[server] 2025/05/06 14:00:00 Session extended for client client4-1746554396069176874, new lease: 10s
+[server] 2025/05/06 14:00:05 Session extended for client client1-1746554396069172806, new lease: 15s
+[server] 2025/05/06 14:00:05 Session extended for client client0-1746554396069166024, new lease: 15s
+[server] 2025/05/06 14:00:05 Session extended for client client2-1746554396069174490, new lease: 15s
+[server] 2025/05/06 14:00:05 Session extended for client client3-1746554396069175942, new lease: 15s
+[server] 2025/05/06 14:00:05 Session extended for client client4-1746554396069176874, new lease: 15s
+[server] 2025/05/06 14:00:10 Session extended for client client3-1746554396069175942, new lease: 20s
+[server] 2025/05/06 14:00:10 Session extended for client client0-1746554396069166024, new lease: 20s
+[server] 2025/05/06 14:00:10 Session extended for client client2-1746554396069174490, new lease: 20s
+[server] 2025/05/06 14:00:10 Session extended for client client1-1746554396069172806, new lease: 20s
+[server] 2025/05/06 14:00:10 Session extended for client client4-1746554396069176874, new lease: 20s
+[server] 2025/05/06 14:00:15 Session extended for client client1-1746554396069172806, new lease: 25s
+[server] 2025/05/06 14:00:15 Session extended for client client0-1746554396069166024, new lease: 25s
+[server] 2025/05/06 14:00:15 Session extended for client client2-1746554396069174490, new lease: 25s
+[server] 2025/05/06 14:00:15 Session extended for client client3-1746554396069175942, new lease: 25s
+[server] 2025/05/06 14:00:15 Session extended for client client4-1746554396069176874, new lease: 25s
+[server] 2025/05/06 14:00:20 Session extended for client client1-1746554396069172806, new lease: 30s
+[server] 2025/05/06 14:00:20 Session extended for client client0-1746554396069166024, new lease: 30s
+[server] 2025/05/06 14:00:20 Session extended for client client2-1746554396069174490, new lease: 30s
+[server] 2025/05/06 14:00:20 Session extended for client client3-1746554396069175942, new lease: 30s
+[server] 2025/05/06 14:00:20 Session extended for client client4-1746554396069176874, new lease: 30s
+[server] 2025/05/06 14:00:25 Session extended for client client1-1746554396069172806, new lease: 35s
+[server] 2025/05/06 14:00:25 Session extended for client client0-1746554396069166024, new lease: 35s
+[server] 2025/05/06 14:00:25 Session extended for client client2-1746554396069174490, new lease: 35s
+[server] 2025/05/06 14:00:25 Session extended for client client3-1746554396069175942, new lease: 35s
+[server] 2025/05/06 14:00:25 Session extended for client client4-1746554396069176874, new lease: 35s
+[server] 2025/05/06 14:00:30 Session extended for client client1-1746554396069172806, new lease: 40s
+[server] 2025/05/06 14:00:30 Session extended for client client0-1746554396069166024, new lease: 40s
+[server] 2025/05/06 14:00:30 Session extended for client client2-1746554396069174490, new lease: 40s
+[server] 2025/05/06 14:00:30 Session extended for client client3-1746554396069175942, new lease: 40s
+[server] 2025/05/06 14:00:30 Session extended for client client4-1746554396069176874, new lease: 40s
+[server] 2025/05/06 14:00:35 Session extended for client client1-1746554396069172806, new lease: 45s
+[server] 2025/05/06 14:00:35 Session extended for client client0-1746554396069166024, new lease: 45s
+[server] 2025/05/06 14:00:35 Session extended for client client2-1746554396069174490, new lease: 45s
+[server] 2025/05/06 14:00:35 Session extended for client client3-1746554396069175942, new lease: 45s
+[server] 2025/05/06 14:00:35 Session extended for client client4-1746554396069176874, new lease: 45s
+[server] 2025/05/06 14:00:40 Session extended for client client3-1746554396069175942, new lease: 50s
+[server] 2025/05/06 14:00:40 Session extended for client client0-1746554396069166024, new lease: 50s
+[server] 2025/05/06 14:00:40 Session extended for client client2-1746554396069174490, new lease: 50s
+[server] 2025/05/06 14:00:40 Session extended for client client1-1746554396069172806, new lease: 50s
+[server] 2025/05/06 14:00:40 Session extended for client client4-1746554396069176874, new lease: 50s
+[server] 2025/05/06 14:00:45 Session extended for client client3-1746554396069175942, new lease: 55s
+[server] 2025/05/06 14:00:45 Session extended for client client4-1746554396069176874, new lease: 55s
+[server] 2025/05/06 14:00:45 Session extended for client client0-1746554396069166024, new lease: 55s
+[server] 2025/05/06 14:00:45 Session extended for client client2-1746554396069174490, new lease: 55s
+[server] 2025/05/06 14:00:45 Session extended for client client1-1746554396069172806, new lease: 55s
+[server] 2025/05/06 14:00:50 Session extended for client client3-1746554396069175942, new lease: 1m0s
+[server] 2025/05/06 14:00:50 Session extended for client client4-1746554396069176874, new lease: 1m0s
+[server] 2025/05/06 14:00:50 Session extended for client client0-1746554396069166024, new lease: 1m0s
+[server] 2025/05/06 14:00:50 Session extended for client client2-1746554396069174490, new lease: 1m0s
+[server] 2025/05/06 14:00:50 Session extended for client client1-1746554396069172806, new lease: 1m0s
+[server] 2025/05/06 14:00:55 Session extended for client client1-1746554396069172806, new lease: 1m5s
+[server] 2025/05/06 14:00:55 Session extended for client client0-1746554396069166024, new lease: 1m5s
+[server] 2025/05/06 14:00:55 Session extended for client client2-1746554396069174490, new lease: 1m5s
+[server] 2025/05/06 14:00:55 Session extended for client client3-1746554396069175942, new lease: 1m5s
+[server] 2025/05/06 14:00:55 Session extended for client client4-1746554396069176874, new lease: 1m5s
+[server] 2025/05/06 14:01:00 Session extended for client client4-1746554396069176874, new lease: 1m10s
+[server] 2025/05/06 14:01:00 Session extended for client client0-1746554396069166024, new lease: 1m10s
+[server] 2025/05/06 14:01:00 Session extended for client client2-1746554396069174490, new lease: 1m10s
+[server] 2025/05/06 14:01:00 Session extended for client client1-1746554396069172806, new lease: 1m10s
+[server] 2025/05/06 14:01:00 Session extended for client client3-1746554396069175942, new lease: 1m10s
+[server] 2025/05/06 14:01:05 Session extended for client client2-1746554396069174490, new lease: 1m15s
+[server] 2025/05/06 14:01:05 Session extended for client client1-1746554396069172806, new lease: 1m15s
+[server] 2025/05/06 14:01:05 Session extended for client client0-1746554396069166024, new lease: 1m15s
+[server] 2025/05/06 14:01:05 Session extended for client client4-1746554396069176874, new lease: 1m15s
+[server] 2025/05/06 14:01:05 Session extended for client client3-1746554396069175942, new lease: 1m15s
+[server] 2025/05/06 14:01:11 Lease expired for client client3-1746554396069175942: terminating
+[server] 2025/05/06 14:01:11 Terminated session for client client3-1746554396069175942
+[server] 2025/05/06 14:01:11 Lease expired for client client4-1746554396069176874: terminating
+[server] 2025/05/06 14:01:11 Error releasing lock /file81 for client client4-1746554396069176874 on termination: Session client4-1746554396069176874 does not hold lock /file81
+[server] 2025/05/06 14:01:11 Terminated session for client client4-1746554396069176874
+[server] 2025/05/06 14:01:11 Lease expired for client client0-1746554396069166024: terminating
+[server] 2025/05/06 14:01:11 Error releasing lock /file81 for client client0-1746554396069166024 on termination: Session client0-1746554396069166024 does not hold lock /file81
+[server] 2025/05/06 14:01:11 Terminated session for client client0-1746554396069166024
+[server] 2025/05/06 14:01:11 Lease expired for client client2-1746554396069174490: terminating
+[server] 2025/05/06 14:01:11 Error releasing lock /file47 for client client2-1746554396069174490 on termination: Session client2-1746554396069174490 does not hold lock /file47
+[server] 2025/05/06 14:01:11 Terminated session for client client2-1746554396069174490
+[server] 2025/05/06 14:01:11 Lease expired for client client1-1746554396069172806: terminating
+[server] 2025/05/06 14:01:11 Error releasing lock /file87 for client client1-1746554396069172806 on termination: Session client1-1746554396069172806 does not hold lock /file87
+[server] 2025/05/06 14:01:11 Terminated session for client client1-1746554396069172806
+[server] 2025/05/06 14:01:20 Creating session with client client0-1746554479996310332
+[server] 2025/05/06 14:01:20 Monitoring session for client client0-1746554479996310332
+[server] 2025/05/06 14:01:20 Creating session with client client1-1746554479996319370
+[server] 2025/05/06 14:01:20 Monitoring session for client client1-1746554479996319370
+[server] 2025/05/06 14:01:20 Creating session with client client2-1746554479996321403
+[server] 2025/05/06 14:01:20 Monitoring session for client client2-1746554479996321403
+[server] 2025/05/06 14:01:20 Creating session with client client3-1746554479996322926
+[server] 2025/05/06 14:01:20 Monitoring session for client client3-1746554479996322926
+[server] 2025/05/06 14:01:20 Creating session with client client4-1746554479996324239
+[server] 2025/05/06 14:01:20 Monitoring session for client client4-1746554479996324239
+[server] 2025/05/06 14:01:24 Session extended for client client1-1746554479996319370, new lease: 10s
+[server] 2025/05/06 14:01:24 Session extended for client client0-1746554479996310332, new lease: 10s
+[server] 2025/05/06 14:01:24 Session extended for client client2-1746554479996321403, new lease: 10s
+[server] 2025/05/06 14:01:24 Session extended for client client3-1746554479996322926, new lease: 10s
+[server] 2025/05/06 14:01:24 Session extended for client client4-1746554479996324239, new lease: 10s
+[server] 2025/05/06 14:01:29 Session extended for client client2-1746554479996321403, new lease: 15s
+[server] 2025/05/06 14:01:29 Session extended for client client0-1746554479996310332, new lease: 15s
+[server] 2025/05/06 14:01:29 Session extended for client client1-1746554479996319370, new lease: 15s
+[server] 2025/05/06 14:01:29 Session extended for client client3-1746554479996322926, new lease: 15s
+[server] 2025/05/06 14:01:29 Session extended for client client4-1746554479996324239, new lease: 15s
+[server] 2025/05/06 14:01:34 Session extended for client client3-1746554479996322926, new lease: 20s
+[server] 2025/05/06 14:01:34 Session extended for client client0-1746554479996310332, new lease: 20s
+[server] 2025/05/06 14:01:34 Session extended for client client1-1746554479996319370, new lease: 20s
+[server] 2025/05/06 14:01:34 Session extended for client client2-1746554479996321403, new lease: 20s
+[server] 2025/05/06 14:01:34 Session extended for client client4-1746554479996324239, new lease: 20s
+[server] 2025/05/06 14:01:40 Lease expired for client client2-1746554479996321403: terminating
+[server] 2025/05/06 14:01:40 Error releasing lock /file47 for client client2-1746554479996321403 on termination: Session client2-1746554479996321403 does not hold lock /file47
+[server] 2025/05/06 14:01:40 Terminated session for client client2-1746554479996321403
+[server] 2025/05/06 14:01:40 Lease expired for client client0-1746554479996310332: terminating
+[server] 2025/05/06 14:01:40 Terminated session for client client0-1746554479996310332
+[server] 2025/05/06 14:01:40 Lease expired for client client1-1746554479996319370: terminating
+[server] 2025/05/06 14:01:40 Error releasing lock /file87 for client client1-1746554479996319370 on termination: Session client1-1746554479996319370 does not hold lock /file87
+[server] 2025/05/06 14:01:40 Terminated session for client client1-1746554479996319370
+[server] 2025/05/06 14:01:40 Lease expired for client client4-1746554479996324239: terminating
+[server] 2025/05/06 14:01:40 Error releasing lock /file81 for client client4-1746554479996324239 on termination: Session client4-1746554479996324239 does not hold lock /file81
+[server] 2025/05/06 14:01:40 Terminated session for client client4-1746554479996324239
+[server] 2025/05/06 14:01:40 Lease expired for client client3-1746554479996322926: terminating
+[server] 2025/05/06 14:01:40 Terminated session for client client3-1746554479996322926
+2025-05-06T14:01:47.244-0400 [INFO]  raft: starting snapshot up to: index=13633
+2025-05-06T14:01:47.244-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-0/snapshots/2-13633-1746554507244.tmp
+2025-05-06T14:01:47.259-0400 [INFO]  raft: compacting logs: from=1 to=3393
+2025-05-06T14:01:47.278-0400 [INFO]  raft: snapshot complete up to: index=13633
+[server] 2025/05/06 14:03:14 Creating session with client client3-1746554594851083728
+[server] 2025/05/06 14:03:14 Monitoring session for client client3-1746554594851083728
+[server] 2025/05/06 14:03:14 Creating session with client client4-1746554594851084489
+[server] 2025/05/06 14:03:14 Monitoring session for client client4-1746554594851084489
+[server] 2025/05/06 14:03:14 Creating session with client client1-1746554594851081644
+[server] 2025/05/06 14:03:14 Monitoring session for client client1-1746554594851081644
+[server] 2025/05/06 14:03:14 Creating session with client client0-1746554594851070904
+[server] 2025/05/06 14:03:14 Monitoring session for client client0-1746554594851070904
+[server] 2025/05/06 14:03:14 Creating session with client client2-1746554594851082776
+[server] 2025/05/06 14:03:14 Monitoring session for client client2-1746554594851082776
+[server] 2025/05/06 14:03:18 Session extended for client client4-1746554594851084489, new lease: 10s
+[server] 2025/05/06 14:03:18 Session extended for client client3-1746554594851083728, new lease: 10s
+[server] 2025/05/06 14:03:18 Session extended for client client2-1746554594851082776, new lease: 10s
+[server] 2025/05/06 14:03:18 Session extended for client client1-1746554594851081644, new lease: 10s
+[server] 2025/05/06 14:03:18 Session extended for client client0-1746554594851070904, new lease: 10s
+[server] 2025/05/06 14:03:23 Session extended for client client4-1746554594851084489, new lease: 15s
+[server] 2025/05/06 14:03:23 Session extended for client client3-1746554594851083728, new lease: 15s
+[server] 2025/05/06 14:03:23 Session extended for client client0-1746554594851070904, new lease: 15s
+[server] 2025/05/06 14:03:23 Session extended for client client1-1746554594851081644, new lease: 15s
+[server] 2025/05/06 14:03:23 Session extended for client client2-1746554594851082776, new lease: 15s
+[server] 2025/05/06 14:03:28 Session extended for client client4-1746554594851084489, new lease: 20s
+[server] 2025/05/06 14:03:28 Session extended for client client3-1746554594851083728, new lease: 20s
+[server] 2025/05/06 14:03:28 Session extended for client client0-1746554594851070904, new lease: 20s
+[server] 2025/05/06 14:03:28 Session extended for client client2-1746554594851082776, new lease: 20s
+[server] 2025/05/06 14:03:28 Session extended for client client1-1746554594851081644, new lease: 20s
+[server] 2025/05/06 14:03:33 Session extended for client client3-1746554594851083728, new lease: 25s
+[server] 2025/05/06 14:03:33 Session extended for client client4-1746554594851084489, new lease: 25s
+[server] 2025/05/06 14:03:33 Session extended for client client2-1746554594851082776, new lease: 25s
+[server] 2025/05/06 14:03:33 Session extended for client client1-1746554594851081644, new lease: 25s
+[server] 2025/05/06 14:03:33 Session extended for client client0-1746554594851070904, new lease: 25s
+[server] 2025/05/06 14:03:38 Session extended for client client4-1746554594851084489, new lease: 30s
+[server] 2025/05/06 14:03:38 Session extended for client client3-1746554594851083728, new lease: 30s
+[server] 2025/05/06 14:03:38 Session extended for client client0-1746554594851070904, new lease: 30s
+[server] 2025/05/06 14:03:38 Session extended for client client2-1746554594851082776, new lease: 30s
+[server] 2025/05/06 14:03:38 Session extended for client client1-1746554594851081644, new lease: 30s
+[server] 2025/05/06 14:03:43 Session extended for client client4-1746554594851084489, new lease: 35s
+[server] 2025/05/06 14:03:43 Session extended for client client3-1746554594851083728, new lease: 35s
+[server] 2025/05/06 14:03:43 Session extended for client client0-1746554594851070904, new lease: 35s
+[server] 2025/05/06 14:03:43 Session extended for client client1-1746554594851081644, new lease: 35s
+[server] 2025/05/06 14:03:43 Session extended for client client2-1746554594851082776, new lease: 35s
+[server] 2025/05/06 14:03:48 Session extended for client client4-1746554594851084489, new lease: 40s
+[server] 2025/05/06 14:03:48 Session extended for client client3-1746554594851083728, new lease: 40s
+[server] 2025/05/06 14:03:48 Session extended for client client2-1746554594851082776, new lease: 40s
+[server] 2025/05/06 14:03:48 Session extended for client client1-1746554594851081644, new lease: 40s
+[server] 2025/05/06 14:03:48 Session extended for client client0-1746554594851070904, new lease: 40s
+[server] 2025/05/06 14:03:53 Session extended for client client4-1746554594851084489, new lease: 45s
+[server] 2025/05/06 14:03:53 Session extended for client client3-1746554594851083728, new lease: 45s
+[server] 2025/05/06 14:03:53 Session extended for client client1-1746554594851081644, new lease: 45s
+[server] 2025/05/06 14:03:53 Session extended for client client0-1746554594851070904, new lease: 45s
+[server] 2025/05/06 14:03:53 Session extended for client client2-1746554594851082776, new lease: 45s
+[server] 2025/05/06 14:03:58 Session extended for client client4-1746554594851084489, new lease: 50s
+[server] 2025/05/06 14:03:58 Session extended for client client3-1746554594851083728, new lease: 50s
+[server] 2025/05/06 14:03:58 Session extended for client client1-1746554594851081644, new lease: 50s
+[server] 2025/05/06 14:03:58 Session extended for client client2-1746554594851082776, new lease: 50s
+[server] 2025/05/06 14:03:58 Session extended for client client0-1746554594851070904, new lease: 50s
+[server] 2025/05/06 14:04:03 Session extended for client client4-1746554594851084489, new lease: 55s
+[server] 2025/05/06 14:04:03 Session extended for client client3-1746554594851083728, new lease: 55s
+[server] 2025/05/06 14:04:03 Session extended for client client2-1746554594851082776, new lease: 55s
+[server] 2025/05/06 14:04:03 Session extended for client client1-1746554594851081644, new lease: 55s
+[server] 2025/05/06 14:04:03 Session extended for client client0-1746554594851070904, new lease: 55s
+[server] 2025/05/06 14:04:08 Session extended for client client4-1746554594851084489, new lease: 1m0s
+[server] 2025/05/06 14:04:08 Session extended for client client3-1746554594851083728, new lease: 1m0s
+[server] 2025/05/06 14:04:08 Session extended for client client2-1746554594851082776, new lease: 1m0s
+[server] 2025/05/06 14:04:08 Session extended for client client1-1746554594851081644, new lease: 1m0s
+[server] 2025/05/06 14:04:08 Session extended for client client0-1746554594851070904, new lease: 1m0s
+[server] 2025/05/06 14:04:13 Session extended for client client4-1746554594851084489, new lease: 1m5s
+[server] 2025/05/06 14:04:13 Session extended for client client3-1746554594851083728, new lease: 1m5s
+[server] 2025/05/06 14:04:13 Session extended for client client2-1746554594851082776, new lease: 1m5s
+[server] 2025/05/06 14:04:13 Session extended for client client1-1746554594851081644, new lease: 1m5s
+[server] 2025/05/06 14:04:13 Session extended for client client0-1746554594851070904, new lease: 1m5s
+[server] 2025/05/06 14:04:18 Session extended for client client4-1746554594851084489, new lease: 1m10s
+[server] 2025/05/06 14:04:18 Session extended for client client3-1746554594851083728, new lease: 1m10s
+[server] 2025/05/06 14:04:18 Session extended for client client0-1746554594851070904, new lease: 1m10s
+[server] 2025/05/06 14:04:18 Session extended for client client1-1746554594851081644, new lease: 1m10s
+[server] 2025/05/06 14:04:18 Session extended for client client2-1746554594851082776, new lease: 1m10s
+[server] 2025/05/06 14:04:23 Session extended for client client4-1746554594851084489, new lease: 1m15s
+[server] 2025/05/06 14:04:23 Session extended for client client3-1746554594851083728, new lease: 1m15s
+[server] 2025/05/06 14:04:23 Session extended for client client1-1746554594851081644, new lease: 1m15s
+[server] 2025/05/06 14:04:23 Session extended for client client0-1746554594851070904, new lease: 1m15s
+[server] 2025/05/06 14:04:23 Session extended for client client2-1746554594851082776, new lease: 1m15s
+[server] 2025/05/06 14:04:29 Lease expired for client client4-1746554594851084489: terminating
+[server] 2025/05/06 14:04:29 Terminated session for client client4-1746554594851084489
+[server] 2025/05/06 14:04:29 Lease expired for client client3-1746554594851083728: terminating
+[server] 2025/05/06 14:04:29 Error releasing lock /file68 for client client3-1746554594851083728 on termination: Session client3-1746554594851083728 does not hold lock /file68
+[server] 2025/05/06 14:04:29 Terminated session for client client3-1746554594851083728
+[server] 2025/05/06 14:04:29 Lease expired for client client2-1746554594851082776: terminating
+[server] 2025/05/06 14:04:29 Terminated session for client client2-1746554594851082776
+[server] 2025/05/06 14:04:29 Lease expired for client client1-1746554594851081644: terminating
+[server] 2025/05/06 14:04:29 Terminated session for client client1-1746554594851081644
+[server] 2025/05/06 14:04:29 Lease expired for client client0-1746554594851070904: terminating
+[server] 2025/05/06 14:04:29 Terminated session for client client0-1746554594851070904
+[server] 2025/05/06 14:05:20 Creating session with client client2-1746554720629351895
+[server] 2025/05/06 14:05:20 Monitoring session for client client2-1746554720629351895
+[server] 2025/05/06 14:05:20 Creating session with client client3-1746554720629352787
+[server] 2025/05/06 14:05:20 Monitoring session for client client3-1746554720629352787
+[server] 2025/05/06 14:05:20 Creating session with client client4-1746554720629353508
+[server] 2025/05/06 14:05:20 Monitoring session for client client4-1746554720629353508
+[server] 2025/05/06 14:05:20 Creating session with client client0-1746554720629334072
+[server] 2025/05/06 14:05:20 Monitoring session for client client0-1746554720629334072
+[server] 2025/05/06 14:05:20 Creating session with client client1-1746554720629350893
+[server] 2025/05/06 14:05:20 Monitoring session for client client1-1746554720629350893
+[server] 2025/05/06 14:05:24 Session extended for client client2-1746554720629351895, new lease: 10s
+[server] 2025/05/06 14:05:24 Session extended for client client4-1746554720629353508, new lease: 10s
+[server] 2025/05/06 14:05:24 Session extended for client client3-1746554720629352787, new lease: 10s
+[server] 2025/05/06 14:05:24 Session extended for client client1-1746554720629350893, new lease: 10s
+[server] 2025/05/06 14:05:24 Session extended for client client0-1746554720629334072, new lease: 10s
+[server] 2025/05/06 14:05:29 Session extended for client client2-1746554720629351895, new lease: 15s
+[server] 2025/05/06 14:05:29 Session extended for client client3-1746554720629352787, new lease: 15s
+[server] 2025/05/06 14:05:29 Session extended for client client1-1746554720629350893, new lease: 15s
+[server] 2025/05/06 14:05:29 Session extended for client client4-1746554720629353508, new lease: 15s
+[server] 2025/05/06 14:05:29 Session extended for client client0-1746554720629334072, new lease: 15s
+[server] 2025/05/06 14:05:34 Session extended for client client2-1746554720629351895, new lease: 20s
+[server] 2025/05/06 14:05:34 Session extended for client client3-1746554720629352787, new lease: 20s
+[server] 2025/05/06 14:05:34 Session extended for client client4-1746554720629353508, new lease: 20s
+[server] 2025/05/06 14:05:34 Session extended for client client1-1746554720629350893, new lease: 20s
+[server] 2025/05/06 14:05:34 Session extended for client client0-1746554720629334072, new lease: 20s
+[server] 2025/05/06 14:05:39 Session extended for client client2-1746554720629351895, new lease: 25s
+[server] 2025/05/06 14:05:39 Session extended for client client4-1746554720629353508, new lease: 25s
+[server] 2025/05/06 14:05:39 Session extended for client client3-1746554720629352787, new lease: 25s
+[server] 2025/05/06 14:05:39 Session extended for client client1-1746554720629350893, new lease: 25s
+[server] 2025/05/06 14:05:39 Session extended for client client0-1746554720629334072, new lease: 25s
+[server] 2025/05/06 14:05:44 Session extended for client client2-1746554720629351895, new lease: 30s
+[server] 2025/05/06 14:05:44 Session extended for client client4-1746554720629353508, new lease: 30s
+[server] 2025/05/06 14:05:44 Session extended for client client3-1746554720629352787, new lease: 30s
+[server] 2025/05/06 14:05:44 Session extended for client client0-1746554720629334072, new lease: 30s
+[server] 2025/05/06 14:05:44 Session extended for client client1-1746554720629350893, new lease: 30s
+[server] 2025/05/06 14:05:49 Session extended for client client2-1746554720629351895, new lease: 35s
+[server] 2025/05/06 14:05:49 Session extended for client client4-1746554720629353508, new lease: 35s
+[server] 2025/05/06 14:05:49 Session extended for client client3-1746554720629352787, new lease: 35s
+[server] 2025/05/06 14:05:49 Session extended for client client1-1746554720629350893, new lease: 35s
+[server] 2025/05/06 14:05:49 Session extended for client client0-1746554720629334072, new lease: 35s
+[server] 2025/05/06 14:05:54 Session extended for client client2-1746554720629351895, new lease: 40s
+[server] 2025/05/06 14:05:54 Session extended for client client3-1746554720629352787, new lease: 40s
+[server] 2025/05/06 14:05:54 Session extended for client client4-1746554720629353508, new lease: 40s
+[server] 2025/05/06 14:05:54 Session extended for client client0-1746554720629334072, new lease: 40s
+[server] 2025/05/06 14:05:54 Session extended for client client1-1746554720629350893, new lease: 40s
+[server] 2025/05/06 14:05:59 Session extended for client client2-1746554720629351895, new lease: 45s
+[server] 2025/05/06 14:05:59 Session extended for client client4-1746554720629353508, new lease: 45s
+[server] 2025/05/06 14:05:59 Session extended for client client3-1746554720629352787, new lease: 45s
+[server] 2025/05/06 14:05:59 Session extended for client client1-1746554720629350893, new lease: 45s
+[server] 2025/05/06 14:05:59 Session extended for client client0-1746554720629334072, new lease: 45s
+[server] 2025/05/06 14:06:04 Session extended for client client2-1746554720629351895, new lease: 50s
+[server] 2025/05/06 14:06:04 Session extended for client client4-1746554720629353508, new lease: 50s
+[server] 2025/05/06 14:06:04 Session extended for client client3-1746554720629352787, new lease: 50s
+[server] 2025/05/06 14:06:04 Session extended for client client1-1746554720629350893, new lease: 50s
+[server] 2025/05/06 14:06:04 Session extended for client client0-1746554720629334072, new lease: 50s
+[server] 2025/05/06 14:06:09 Session extended for client client2-1746554720629351895, new lease: 55s
+[server] 2025/05/06 14:06:09 Session extended for client client4-1746554720629353508, new lease: 55s
+[server] 2025/05/06 14:06:09 Session extended for client client3-1746554720629352787, new lease: 55s
+[server] 2025/05/06 14:06:09 Session extended for client client1-1746554720629350893, new lease: 55s
+[server] 2025/05/06 14:06:09 Session extended for client client0-1746554720629334072, new lease: 55s
+[server] 2025/05/06 14:06:14 Session extended for client client2-1746554720629351895, new lease: 1m0s
+[server] 2025/05/06 14:06:14 Session extended for client client3-1746554720629352787, new lease: 1m0s
+[server] 2025/05/06 14:06:14 Session extended for client client4-1746554720629353508, new lease: 1m0s
+[server] 2025/05/06 14:06:14 Session extended for client client1-1746554720629350893, new lease: 1m0s
+[server] 2025/05/06 14:06:14 Session extended for client client0-1746554720629334072, new lease: 1m0s
+[server] 2025/05/06 14:06:19 Session extended for client client2-1746554720629351895, new lease: 1m5s
+[server] 2025/05/06 14:06:19 Session extended for client client0-1746554720629334072, new lease: 1m5s
+[server] 2025/05/06 14:06:19 Session extended for client client3-1746554720629352787, new lease: 1m5s
+[server] 2025/05/06 14:06:19 Session extended for client client4-1746554720629353508, new lease: 1m5s
+[server] 2025/05/06 14:06:19 Session extended for client client1-1746554720629350893, new lease: 1m5s
+[server] 2025/05/06 14:06:24 Session extended for client client2-1746554720629351895, new lease: 1m10s
+[server] 2025/05/06 14:06:24 Session extended for client client1-1746554720629350893, new lease: 1m10s
+[server] 2025/05/06 14:06:24 Session extended for client client3-1746554720629352787, new lease: 1m10s
+[server] 2025/05/06 14:06:24 Session extended for client client4-1746554720629353508, new lease: 1m10s
+[server] 2025/05/06 14:06:24 Session extended for client client0-1746554720629334072, new lease: 1m10s
+[server] 2025/05/06 14:06:29 Session extended for client client2-1746554720629351895, new lease: 1m15s
+[server] 2025/05/06 14:06:29 Session extended for client client1-1746554720629350893, new lease: 1m15s
+[server] 2025/05/06 14:06:29 Session extended for client client3-1746554720629352787, new lease: 1m15s
+[server] 2025/05/06 14:06:29 Session extended for client client4-1746554720629353508, new lease: 1m15s
+[server] 2025/05/06 14:06:29 Session extended for client client0-1746554720629334072, new lease: 1m15s
+[server] 2025/05/06 14:06:35 Lease expired for client client2-1746554720629351895: terminating
+[server] 2025/05/06 14:06:35 Error releasing lock /file97 for client client2-1746554720629351895 on termination: Session client2-1746554720629351895 does not hold lock /file97
+[server] 2025/05/06 14:06:35 Terminated session for client client2-1746554720629351895
+[server] 2025/05/06 14:06:35 Lease expired for client client4-1746554720629353508: terminating
+[server] 2025/05/06 14:06:35 Terminated session for client client4-1746554720629353508
+[server] 2025/05/06 14:06:35 Lease expired for client client3-1746554720629352787: terminating
+[server] 2025/05/06 14:06:35 Terminated session for client client3-1746554720629352787
+[server] 2025/05/06 14:06:35 Lease expired for client client1-1746554720629350893: terminating
+[server] 2025/05/06 14:06:35 Terminated session for client client1-1746554720629350893
+[server] 2025/05/06 14:06:35 Lease expired for client client0-1746554720629334072: terminating
+[server] 2025/05/06 14:06:35 Error releasing lock /file47 for client client0-1746554720629334072 on termination: Session client0-1746554720629334072 does not hold lock /file47
+[server] 2025/05/06 14:06:35 Terminated session for client client0-1746554720629334072
+2025-05-06T14:08:25.502-0400 [INFO]  raft: starting snapshot up to: index=22547
+2025-05-06T14:08:25.502-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-0/snapshots/2-22547-1746554905502.tmp
+2025-05-06T14:08:25.521-0400 [INFO]  raft: compacting logs: from=3394 to=12307
+2025-05-06T14:08:25.527-0400 [INFO]  raft: snapshot complete up to: index=22547
+[server] 2025/05/06 14:10:16 Creating session with client client2-1746555016529754084
+[server] 2025/05/06 14:10:16 Monitoring session for client client2-1746555016529754084
+[server] 2025/05/06 14:10:16 Creating session with client client0-1746555016529738835
+[server] 2025/05/06 14:10:16 Monitoring session for client client0-1746555016529738835
+[server] 2025/05/06 14:10:16 Creating session with client client1-1746555016529752882
+[server] 2025/05/06 14:10:16 Monitoring session for client client1-1746555016529752882
+[server] 2025/05/06 14:10:16 Creating session with client client4-1746555016529755998
+[server] 2025/05/06 14:10:16 Monitoring session for client client4-1746555016529755998
+[server] 2025/05/06 14:10:16 Creating session with client client3-1746555016529755166
+[server] 2025/05/06 14:10:16 Monitoring session for client client3-1746555016529755166
+[server] 2025/05/06 14:10:20 Session extended for client client2-1746555016529754084, new lease: 10s
+[server] 2025/05/06 14:10:20 Session extended for client client0-1746555016529738835, new lease: 10s
+[server] 2025/05/06 14:10:20 Session extended for client client3-1746555016529755166, new lease: 10s
+[server] 2025/05/06 14:10:20 Session extended for client client1-1746555016529752882, new lease: 10s
+[server] 2025/05/06 14:10:20 Session extended for client client4-1746555016529755998, new lease: 10s
+[server] 2025/05/06 14:10:25 Session extended for client client2-1746555016529754084, new lease: 15s
+[server] 2025/05/06 14:10:25 Session extended for client client0-1746555016529738835, new lease: 15s
+[server] 2025/05/06 14:10:25 Session extended for client client3-1746555016529755166, new lease: 15s
+[server] 2025/05/06 14:10:25 Session extended for client client1-1746555016529752882, new lease: 15s
+[server] 2025/05/06 14:10:25 Session extended for client client4-1746555016529755998, new lease: 15s
+[server] 2025/05/06 14:10:30 Session extended for client client2-1746555016529754084, new lease: 20s
+[server] 2025/05/06 14:10:30 Session extended for client client0-1746555016529738835, new lease: 20s
+[server] 2025/05/06 14:10:30 Session extended for client client3-1746555016529755166, new lease: 20s
+[server] 2025/05/06 14:10:30 Session extended for client client1-1746555016529752882, new lease: 20s
+[server] 2025/05/06 14:10:30 Session extended for client client4-1746555016529755998, new lease: 20s
+[server] 2025/05/06 14:10:35 Session extended for client client2-1746555016529754084, new lease: 25s
+[server] 2025/05/06 14:10:35 Session extended for client client0-1746555016529738835, new lease: 25s
+[server] 2025/05/06 14:10:35 Session extended for client client3-1746555016529755166, new lease: 25s
+[server] 2025/05/06 14:10:35 Session extended for client client1-1746555016529752882, new lease: 25s
+[server] 2025/05/06 14:10:35 Session extended for client client4-1746555016529755998, new lease: 25s
+[server] 2025/05/06 14:10:40 Session extended for client client2-1746555016529754084, new lease: 30s
+[server] 2025/05/06 14:10:40 Session extended for client client4-1746555016529755998, new lease: 30s
+[server] 2025/05/06 14:10:40 Session extended for client client3-1746555016529755166, new lease: 30s
+[server] 2025/05/06 14:10:40 Session extended for client client0-1746555016529738835, new lease: 30s
+[server] 2025/05/06 14:10:40 Session extended for client client1-1746555016529752882, new lease: 30s
+[server] 2025/05/06 14:10:45 Session extended for client client2-1746555016529754084, new lease: 35s
+[server] 2025/05/06 14:10:45 Session extended for client client0-1746555016529738835, new lease: 35s
+[server] 2025/05/06 14:10:45 Session extended for client client3-1746555016529755166, new lease: 35s
+[server] 2025/05/06 14:10:45 Session extended for client client1-1746555016529752882, new lease: 35s
+[server] 2025/05/06 14:10:45 Session extended for client client4-1746555016529755998, new lease: 35s
+[server] 2025/05/06 14:10:50 Session extended for client client2-1746555016529754084, new lease: 40s
+[server] 2025/05/06 14:10:50 Session extended for client client3-1746555016529755166, new lease: 40s
+[server] 2025/05/06 14:10:50 Session extended for client client0-1746555016529738835, new lease: 40s
+[server] 2025/05/06 14:10:50 Session extended for client client1-1746555016529752882, new lease: 40s
+[server] 2025/05/06 14:10:50 Session extended for client client4-1746555016529755998, new lease: 40s
+[server] 2025/05/06 14:10:55 Session extended for client client2-1746555016529754084, new lease: 45s
+[server] 2025/05/06 14:10:55 Session extended for client client1-1746555016529752882, new lease: 45s
+[server] 2025/05/06 14:10:55 Session extended for client client0-1746555016529738835, new lease: 45s
+[server] 2025/05/06 14:10:55 Session extended for client client3-1746555016529755166, new lease: 45s
+[server] 2025/05/06 14:10:55 Session extended for client client4-1746555016529755998, new lease: 45s
+[server] 2025/05/06 14:11:00 Session extended for client client2-1746555016529754084, new lease: 50s
+[server] 2025/05/06 14:11:00 Session extended for client client1-1746555016529752882, new lease: 50s
+[server] 2025/05/06 14:11:00 Session extended for client client0-1746555016529738835, new lease: 50s
+[server] 2025/05/06 14:11:00 Session extended for client client3-1746555016529755166, new lease: 50s
+[server] 2025/05/06 14:11:00 Session extended for client client4-1746555016529755998, new lease: 50s
+[server] 2025/05/06 14:11:05 Session extended for client client2-1746555016529754084, new lease: 55s
+[server] 2025/05/06 14:11:05 Session extended for client client0-1746555016529738835, new lease: 55s
+[server] 2025/05/06 14:11:05 Session extended for client client3-1746555016529755166, new lease: 55s
+[server] 2025/05/06 14:11:05 Session extended for client client1-1746555016529752882, new lease: 55s
+[server] 2025/05/06 14:11:05 Session extended for client client4-1746555016529755998, new lease: 55s
+[server] 2025/05/06 14:11:10 Session extended for client client2-1746555016529754084, new lease: 1m0s
+[server] 2025/05/06 14:11:10 Session extended for client client4-1746555016529755998, new lease: 1m0s
+[server] 2025/05/06 14:11:10 Session extended for client client0-1746555016529738835, new lease: 1m0s
+[server] 2025/05/06 14:11:10 Session extended for client client1-1746555016529752882, new lease: 1m0s
+[server] 2025/05/06 14:11:10 Session extended for client client3-1746555016529755166, new lease: 1m0s
+[server] 2025/05/06 14:11:15 Session extended for client client2-1746555016529754084, new lease: 1m5s
+[server] 2025/05/06 14:11:15 Session extended for client client3-1746555016529755166, new lease: 1m5s
+[server] 2025/05/06 14:11:15 Session extended for client client0-1746555016529738835, new lease: 1m5s
+[server] 2025/05/06 14:11:15 Session extended for client client1-1746555016529752882, new lease: 1m5s
+[server] 2025/05/06 14:11:15 Session extended for client client4-1746555016529755998, new lease: 1m5s
+[server] 2025/05/06 14:11:20 Session extended for client client2-1746555016529754084, new lease: 1m10s
+[server] 2025/05/06 14:11:20 Session extended for client client3-1746555016529755166, new lease: 1m10s
+[server] 2025/05/06 14:11:20 Session extended for client client0-1746555016529738835, new lease: 1m10s
+[server] 2025/05/06 14:11:20 Session extended for client client1-1746555016529752882, new lease: 1m10s
+[server] 2025/05/06 14:11:20 Session extended for client client4-1746555016529755998, new lease: 1m10s
+[server] 2025/05/06 14:11:25 Session extended for client client2-1746555016529754084, new lease: 1m15s
+[server] 2025/05/06 14:11:25 Session extended for client client4-1746555016529755998, new lease: 1m15s
+[server] 2025/05/06 14:11:25 Session extended for client client0-1746555016529738835, new lease: 1m15s
+[server] 2025/05/06 14:11:25 Session extended for client client1-1746555016529752882, new lease: 1m15s
+[server] 2025/05/06 14:11:25 Session extended for client client3-1746555016529755166, new lease: 1m15s
+[server] 2025/05/06 14:11:31 Lease expired for client client2-1746555016529754084: terminating
+[server] 2025/05/06 14:11:31 Terminated session for client client2-1746555016529754084
+[server] 2025/05/06 14:11:31 Lease expired for client client0-1746555016529738835: terminating
+[server] 2025/05/06 14:11:31 Terminated session for client client0-1746555016529738835
+[server] 2025/05/06 14:11:31 Lease expired for client client3-1746555016529755166: terminating
+[server] 2025/05/06 14:11:31 Error releasing lock /file31 for client client3-1746555016529755166 on termination: Session client3-1746555016529755166 does not hold lock /file31
+[server] 2025/05/06 14:11:31 Terminated session for client client3-1746555016529755166
+[server] 2025/05/06 14:11:31 Lease expired for client client1-1746555016529752882: terminating
+[server] 2025/05/06 14:11:31 Terminated session for client client1-1746555016529752882
+[server] 2025/05/06 14:11:31 Lease expired for client client4-1746555016529755998: terminating
+[server] 2025/05/06 14:11:31 Terminated session for client client4-1746555016529755998
+[server] 2025/05/06 14:14:08 Creating session with client client0-1746555248173617332
+[server] 2025/05/06 14:14:08 Monitoring session for client client0-1746555248173617332
+[server] 2025/05/06 14:14:12 Session extended for client client0-1746555248173617332, new lease: 10s
+[server] 2025/05/06 14:14:17 Session extended for client client0-1746555248173617332, new lease: 15s
+[server] 2025/05/06 14:14:22 Session extended for client client0-1746555248173617332, new lease: 20s
+[server] 2025/05/06 14:14:27 Session extended for client client0-1746555248173617332, new lease: 25s
+[server] 2025/05/06 14:14:32 Session extended for client client0-1746555248173617332, new lease: 30s
+[server] 2025/05/06 14:14:37 Session extended for client client0-1746555248173617332, new lease: 35s
+[server] 2025/05/06 14:14:42 Session extended for client client0-1746555248173617332, new lease: 40s
+[server] 2025/05/06 14:14:47 Session extended for client client0-1746555248173617332, new lease: 45s
+[server] 2025/05/06 14:14:52 Session extended for client client0-1746555248173617332, new lease: 50s
+[server] 2025/05/06 14:14:57 Session extended for client client0-1746555248173617332, new lease: 55s
+[server] 2025/05/06 14:15:02 Session extended for client client0-1746555248173617332, new lease: 1m0s
+[server] 2025/05/06 14:15:07 Session extended for client client0-1746555248173617332, new lease: 1m5s
+[server] 2025/05/06 14:15:12 Session extended for client client0-1746555248173617332, new lease: 1m10s
+[server] 2025/05/06 14:15:17 Session extended for client client0-1746555248173617332, new lease: 1m15s
+[server] 2025/05/06 14:15:23 Lease expired for client client0-1746555248173617332: terminating
+[server] 2025/05/06 14:15:23 Terminated session for client client0-1746555248173617332
+[server] 2025/05/06 14:16:46 Creating session with client client0-1746555406512281456
+[server] 2025/05/06 14:16:46 Monitoring session for client client0-1746555406512281456
+[server] 2025/05/06 14:16:50 Session extended for client client0-1746555406512281456, new lease: 10s
+[server] 2025/05/06 14:16:55 Session extended for client client0-1746555406512281456, new lease: 15s
+[server] 2025/05/06 14:17:00 Session extended for client client0-1746555406512281456, new lease: 20s
+[server] 2025/05/06 14:17:05 Session extended for client client0-1746555406512281456, new lease: 25s
+[server] 2025/05/06 14:17:10 Session extended for client client0-1746555406512281456, new lease: 30s
+[server] 2025/05/06 14:17:15 Session extended for client client0-1746555406512281456, new lease: 35s
+[server] 2025/05/06 14:17:20 Session extended for client client0-1746555406512281456, new lease: 40s
+[server] 2025/05/06 14:17:25 Session extended for client client0-1746555406512281456, new lease: 45s
+[server] 2025/05/06 14:17:30 Session extended for client client0-1746555406512281456, new lease: 50s
+[server] 2025/05/06 14:17:35 Session extended for client client0-1746555406512281456, new lease: 55s
+[server] 2025/05/06 14:17:40 Session extended for client client0-1746555406512281456, new lease: 1m0s
+[server] 2025/05/06 14:17:45 Session extended for client client0-1746555406512281456, new lease: 1m5s
+[server] 2025/05/06 14:17:50 Session extended for client client0-1746555406512281456, new lease: 1m10s
+[server] 2025/05/06 14:17:56 Lease expired for client client0-1746555406512281456: terminating
+[server] 2025/05/06 14:17:56 Error releasing lock /file81 for client client0-1746555406512281456 on termination: Session client0-1746555406512281456 does not hold lock /file81
+[server] 2025/05/06 14:17:56 Terminated session for client client0-1746555406512281456
+[server] 2025/05/06 14:18:57 Creating session with client client0-1746555537715558297
+[server] 2025/05/06 14:18:57 Monitoring session for client client0-1746555537715558297
+[server] 2025/05/06 14:19:01 Session extended for client client0-1746555537715558297, new lease: 10s
+[server] 2025/05/06 14:19:06 Session extended for client client0-1746555537715558297, new lease: 15s
+2025-05-06T14:19:09.391-0400 [INFO]  raft: starting snapshot up to: index=31395
+2025-05-06T14:19:09.391-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-0/snapshots/2-31395-1746555549391.tmp
+2025-05-06T14:19:09.406-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-0/snapshots/2-13633-1746554507244
+2025-05-06T14:19:09.436-0400 [INFO]  raft: compacting logs: from=12308 to=21167
+2025-05-06T14:19:09.443-0400 [INFO]  raft: snapshot complete up to: index=31395
+[server] 2025/05/06 14:19:11 Session extended for client client0-1746555537715558297, new lease: 20s
+[server] 2025/05/06 14:19:16 Session extended for client client0-1746555537715558297, new lease: 25s
+[server] 2025/05/06 14:19:21 Session extended for client client0-1746555537715558297, new lease: 30s
+[server] 2025/05/06 14:19:26 Session extended for client client0-1746555537715558297, new lease: 35s
+[server] 2025/05/06 14:19:31 Session extended for client client0-1746555537715558297, new lease: 40s
+[server] 2025/05/06 14:19:36 Session extended for client client0-1746555537715558297, new lease: 45s
+[server] 2025/05/06 14:19:41 Session extended for client client0-1746555537715558297, new lease: 50s
+[server] 2025/05/06 14:19:46 Session extended for client client0-1746555537715558297, new lease: 55s
+[server] 2025/05/06 14:19:51 Session extended for client client0-1746555537715558297, new lease: 1m0s
+[server] 2025/05/06 14:19:56 Session extended for client client0-1746555537715558297, new lease: 1m5s
+[server] 2025/05/06 14:20:01 Session extended for client client0-1746555537715558297, new lease: 1m10s
+[server] 2025/05/06 14:20:07 Lease expired for client client0-1746555537715558297: terminating
+[server] 2025/05/06 14:20:07 Error releasing lock /file81 for client client0-1746555537715558297 on termination: Session client0-1746555537715558297 does not hold lock /file81
+[server] 2025/05/06 14:20:07 Terminated session for client client0-1746555537715558297
+2025-05-06T14:22:48.041-0400 [INFO]  raft: starting snapshot up to: index=43537
+2025-05-06T14:22:48.041-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-0/snapshots/2-43537-1746555768041.tmp
+2025-05-06T14:22:48.055-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-0/snapshots/2-22547-1746554905502
+2025-05-06T14:22:48.060-0400 [INFO]  raft: compacting logs: from=21168 to=33297
+2025-05-06T14:22:48.068-0400 [INFO]  raft: snapshot complete up to: index=43537
+[server] 2025/05/06 14:23:35 Creating session with client client0-1746555815891468211
+[server] 2025/05/06 14:23:35 Monitoring session for client client0-1746555815891468211
+[server] 2025/05/06 14:23:39 Session extended for client client0-1746555815891468211, new lease: 10s
+[server] 2025/05/06 14:23:44 Session extended for client client0-1746555815891468211, new lease: 15s
+[server] 2025/05/06 14:23:49 Session extended for client client0-1746555815891468211, new lease: 20s
+[server] 2025/05/06 14:23:54 Session extended for client client0-1746555815891468211, new lease: 25s
+[server] 2025/05/06 14:23:59 Session extended for client client0-1746555815891468211, new lease: 30s
+[server] 2025/05/06 14:24:04 Session extended for client client0-1746555815891468211, new lease: 35s
+[server] 2025/05/06 14:24:09 Session extended for client client0-1746555815891468211, new lease: 40s
+[server] 2025/05/06 14:24:14 Session extended for client client0-1746555815891468211, new lease: 45s
+[server] 2025/05/06 14:24:19 Session extended for client client0-1746555815891468211, new lease: 50s
+[server] 2025/05/06 14:24:24 Session extended for client client0-1746555815891468211, new lease: 55s
+[server] 2025/05/06 14:24:29 Session extended for client client0-1746555815891468211, new lease: 1m0s
+[server] 2025/05/06 14:24:34 Session extended for client client0-1746555815891468211, new lease: 1m5s
+[server] 2025/05/06 14:24:39 Session extended for client client0-1746555815891468211, new lease: 1m10s
+[server] 2025/05/06 14:24:45 Lease expired for client client0-1746555815891468211: terminating
+[server] 2025/05/06 14:24:45 Error releasing lock /file81 for client client0-1746555815891468211 on termination: Session client0-1746555815891468211 does not hold lock /file81
+[server] 2025/05/06 14:24:45 Terminated session for client client0-1746555815891468211
+2025-05-06T14:24:48.775-0400 [INFO]  raft: starting snapshot up to: index=58395
+2025-05-06T14:24:48.775-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-0/snapshots/2-58395-1746555888775.tmp
+2025-05-06T14:24:48.790-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-0/snapshots/2-31395-1746555549391
+2025-05-06T14:24:48.794-0400 [INFO]  raft: compacting logs: from=33298 to=48155
+2025-05-06T14:24:48.802-0400 [INFO]  raft: snapshot complete up to: index=58395
+[server] 2025/05/06 14:29:48 Creating session with client client0-1746556188084957247
+[server] 2025/05/06 14:29:48 Monitoring session for client client0-1746556188084957247
+[server] 2025/05/06 14:29:52 Session extended for client client0-1746556188084957247, new lease: 10s
+[server] 2025/05/06 14:29:57 Session extended for client client0-1746556188084957247, new lease: 15s
+[server] 2025/05/06 14:30:02 Session extended for client client0-1746556188084957247, new lease: 20s
+[server] 2025/05/06 14:30:07 Session extended for client client0-1746556188084957247, new lease: 25s
+[server] 2025/05/06 14:30:12 Session extended for client client0-1746556188084957247, new lease: 30s
+[server] 2025/05/06 14:30:17 Session extended for client client0-1746556188084957247, new lease: 35s
+[server] 2025/05/06 14:30:22 Session extended for client client0-1746556188084957247, new lease: 40s
+[server] 2025/05/06 14:30:27 Session extended for client client0-1746556188084957247, new lease: 45s
+[server] 2025/05/06 14:30:32 Session extended for client client0-1746556188084957247, new lease: 50s
+[server] 2025/05/06 14:30:37 Session extended for client client0-1746556188084957247, new lease: 55s
+[server] 2025/05/06 14:30:42 Session extended for client client0-1746556188084957247, new lease: 1m0s
+[server] 2025/05/06 14:30:47 Session extended for client client0-1746556188084957247, new lease: 1m5s
+[server] 2025/05/06 14:30:53 Lease expired for client client0-1746556188084957247: terminating
+[server] 2025/05/06 14:30:53 Error releasing lock /file81 for client client0-1746556188084957247 on termination: Session client0-1746556188084957247 does not hold lock /file81
+[server] 2025/05/06 14:30:53 Terminated session for client client0-1746556188084957247
+2025-05-06T14:31:48.762-0400 [INFO]  raft: starting snapshot up to: index=71915
+2025-05-06T14:31:48.762-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-0/snapshots/2-71915-1746556308762.tmp
+2025-05-06T14:31:48.777-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-0/snapshots/2-43537-1746555768041
+2025-05-06T14:31:48.782-0400 [INFO]  raft: compacting logs: from=48156 to=61675
+2025-05-06T14:31:48.790-0400 [INFO]  raft: snapshot complete up to: index=71915
+[server] 2025/05/06 14:31:52 Creating session with client client0-1746556312521400183
+[server] 2025/05/06 14:31:52 Monitoring session for client client0-1746556312521400183
+[server] 2025/05/06 14:31:56 Session extended for client client0-1746556312521400183, new lease: 10s
+[server] 2025/05/06 14:32:01 Session extended for client client0-1746556312521400183, new lease: 15s
+[server] 2025/05/06 14:32:06 Session extended for client client0-1746556312521400183, new lease: 20s
+[server] 2025/05/06 14:32:11 Session extended for client client0-1746556312521400183, new lease: 25s
+[server] 2025/05/06 14:32:16 Session extended for client client0-1746556312521400183, new lease: 30s
+[server] 2025/05/06 14:32:21 Session extended for client client0-1746556312521400183, new lease: 35s
+[server] 2025/05/06 14:32:26 Session extended for client client0-1746556312521400183, new lease: 40s
+[server] 2025/05/06 14:32:31 Session extended for client client0-1746556312521400183, new lease: 45s
+[server] 2025/05/06 14:32:36 Session extended for client client0-1746556312521400183, new lease: 50s
+[server] 2025/05/06 14:32:41 Session extended for client client0-1746556312521400183, new lease: 55s
+[server] 2025/05/06 14:32:46 Session extended for client client0-1746556312521400183, new lease: 1m0s
+[server] 2025/05/06 14:32:51 Session extended for client client0-1746556312521400183, new lease: 1m5s
+[server] 2025/05/06 14:32:56 Session extended for client client0-1746556312521400183, new lease: 1m10s
+[server] 2025/05/06 14:33:02 Lease expired for client client0-1746556312521400183: terminating
+[server] 2025/05/06 14:33:02 Error releasing lock /file81 for client client0-1746556312521400183 on termination: Session client0-1746556312521400183 does not hold lock /file81
+[server] 2025/05/06 14:33:02 Terminated session for client client0-1746556312521400183
+[server] 2025/05/06 14:34:52 Creating session with client client0-1746556492134406910
+[server] 2025/05/06 14:34:52 Monitoring session for client client0-1746556492134406910
+[server] 2025/05/06 14:34:56 Session extended for client client0-1746556492134406910, new lease: 10s
+[server] 2025/05/06 14:35:01 Session extended for client client0-1746556492134406910, new lease: 15s
+[server] 2025/05/06 14:35:06 Session extended for client client0-1746556492134406910, new lease: 20s
+[server] 2025/05/06 14:35:11 Session extended for client client0-1746556492134406910, new lease: 25s
+[server] 2025/05/06 14:35:16 Session extended for client client0-1746556492134406910, new lease: 30s
+[server] 2025/05/06 14:35:21 Session extended for client client0-1746556492134406910, new lease: 35s
+[server] 2025/05/06 14:35:26 Session extended for client client0-1746556492134406910, new lease: 40s
+[server] 2025/05/06 14:35:31 Session extended for client client0-1746556492134406910, new lease: 45s
+[server] 2025/05/06 14:35:36 Session extended for client client0-1746556492134406910, new lease: 50s
+2025-05-06T14:35:39.304-0400 [INFO]  raft: starting snapshot up to: index=82251
+2025-05-06T14:35:39.304-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-0/snapshots/2-82251-1746556539304.tmp
+2025-05-06T14:35:39.319-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-0/snapshots/2-58395-1746555888775
+2025-05-06T14:35:39.324-0400 [INFO]  raft: compacting logs: from=61676 to=72013
+2025-05-06T14:35:39.328-0400 [INFO]  raft: snapshot complete up to: index=82251
+[server] 2025/05/06 14:35:41 Session extended for client client0-1746556492134406910, new lease: 55s
+[server] 2025/05/06 14:35:46 Session extended for client client0-1746556492134406910, new lease: 1m0s
+[server] 2025/05/06 14:35:51 Session extended for client client0-1746556492134406910, new lease: 1m5s
+[server] 2025/05/06 14:35:56 Session extended for client client0-1746556492134406910, new lease: 1m10s
+[server] 2025/05/06 14:36:02 Lease expired for client client0-1746556492134406910: terminating
+[server] 2025/05/06 14:36:02 Error releasing lock /file81 for client client0-1746556492134406910 on termination: Session client0-1746556492134406910 does not hold lock /file81
+[server] 2025/05/06 14:36:02 Terminated session for client client0-1746556492134406910
+[server] 2025/05/06 14:37:24 Creating session with client client0-1746556644117190872
+[server] 2025/05/06 14:37:24 Monitoring session for client client0-1746556644117190872
+[server] 2025/05/06 14:37:28 Session extended for client client0-1746556644117190872, new lease: 10s
+[server] 2025/05/06 14:37:33 Session extended for client client0-1746556644117190872, new lease: 15s
+[server] 2025/05/06 14:37:38 Session extended for client client0-1746556644117190872, new lease: 20s
+[server] 2025/05/06 14:37:43 Session extended for client client0-1746556644117190872, new lease: 25s
+[server] 2025/05/06 14:37:48 Session extended for client client0-1746556644117190872, new lease: 30s
+[server] 2025/05/06 14:37:53 Session extended for client client0-1746556644117190872, new lease: 35s
+[server] 2025/05/06 14:37:58 Session extended for client client0-1746556644117190872, new lease: 40s
+[server] 2025/05/06 14:38:03 Session extended for client client0-1746556644117190872, new lease: 45s
+[server] 2025/05/06 14:38:08 Session extended for client client0-1746556644117190872, new lease: 50s
+[server] 2025/05/06 14:38:13 Session extended for client client0-1746556644117190872, new lease: 55s
+[server] 2025/05/06 14:38:18 Session extended for client client0-1746556644117190872, new lease: 1m0s
+[server] 2025/05/06 14:38:23 Session extended for client client0-1746556644117190872, new lease: 1m5s
+[server] 2025/05/06 14:38:28 Session extended for client client0-1746556644117190872, new lease: 1m10s
+2025-05-06T14:38:33.543-0400 [INFO]  raft: starting snapshot up to: index=104394
+2025-05-06T14:38:33.543-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-0/snapshots/2-104394-1746556713543.tmp
+2025-05-06T14:38:33.557-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-0/snapshots/2-71915-1746556308762
+2025-05-06T14:38:33.563-0400 [INFO]  raft: compacting logs: from=72014 to=94154
+2025-05-06T14:38:33.575-0400 [INFO]  raft: snapshot complete up to: index=104394
+[server] 2025/05/06 14:38:34 Lease expired for client client0-1746556644117190872: terminating
+[server] 2025/05/06 14:38:34 Error releasing lock /file81 for client client0-1746556644117190872 on termination: Session client0-1746556644117190872 does not hold lock /file81
+[server] 2025/05/06 14:38:34 Terminated session for client client0-1746556644117190872
+[server] 2025/05/06 14:40:05 Creating session with client client1-1746556805094511648
+[server] 2025/05/06 14:40:05 Monitoring session for client client1-1746556805094511648
+[server] 2025/05/06 14:40:05 Creating session with client client3-1746556805094514524
+[server] 2025/05/06 14:40:05 Monitoring session for client client3-1746556805094514524
+[server] 2025/05/06 14:40:05 Creating session with client client2-1746556805094513071
+[server] 2025/05/06 14:40:05 Monitoring session for client client2-1746556805094513071
+[server] 2025/05/06 14:40:05 Creating session with client client0-1746556805094504946
+[server] 2025/05/06 14:40:05 Monitoring session for client client0-1746556805094504946
+[server] 2025/05/06 14:40:05 Creating session with client client4-1746556805094515536
+[server] 2025/05/06 14:40:05 Monitoring session for client client4-1746556805094515536
+[server] 2025/05/06 14:40:09 Session extended for client client3-1746556805094514524, new lease: 10s
+[server] 2025/05/06 14:40:09 Session extended for client client1-1746556805094511648, new lease: 10s
+[server] 2025/05/06 14:40:09 Session extended for client client2-1746556805094513071, new lease: 10s
+[server] 2025/05/06 14:40:09 Session extended for client client0-1746556805094504946, new lease: 10s
+[server] 2025/05/06 14:40:09 Session extended for client client4-1746556805094515536, new lease: 10s
+[server] 2025/05/06 14:40:14 Session extended for client client0-1746556805094504946, new lease: 15s
+[server] 2025/05/06 14:40:14 Session extended for client client1-1746556805094511648, new lease: 15s
+[server] 2025/05/06 14:40:14 Session extended for client client4-1746556805094515536, new lease: 15s
+[server] 2025/05/06 14:40:14 Session extended for client client3-1746556805094514524, new lease: 15s
+[server] 2025/05/06 14:40:14 Session extended for client client2-1746556805094513071, new lease: 15s
+[server] 2025/05/06 14:40:20 Lease expired for client client0-1746556805094504946: terminating
+[server] 2025/05/06 14:40:20 Error releasing lock /file81 for client client0-1746556805094504946 on termination: Session client0-1746556805094504946 does not hold lock /file81
+[server] 2025/05/06 14:40:20 Terminated session for client client0-1746556805094504946
+[server] 2025/05/06 14:40:20 Lease expired for client client1-1746556805094511648: terminating
+[server] 2025/05/06 14:40:20 Terminated session for client client1-1746556805094511648
+[server] 2025/05/06 14:40:20 Lease expired for client client3-1746556805094514524: terminating
+[server] 2025/05/06 14:40:20 Terminated session for client client3-1746556805094514524
+[server] 2025/05/06 14:40:20 Lease expired for client client2-1746556805094513071: terminating
+[server] 2025/05/06 14:40:20 Terminated session for client client2-1746556805094513071
+[server] 2025/05/06 14:40:20 Lease expired for client client4-1746556805094515536: terminating
+[server] 2025/05/06 14:40:20 Terminated session for client client4-1746556805094515536
+[server] 2025/05/06 14:40:36 Creating session with client client2-1746556836190427254
+[server] 2025/05/06 14:40:36 Monitoring session for client client2-1746556836190427254
+[server] 2025/05/06 14:40:36 Creating session with client client3-1746556836190428787
+[server] 2025/05/06 14:40:36 Monitoring session for client client3-1746556836190428787
+[server] 2025/05/06 14:40:36 Creating session with client client1-1746556836190425561
+[server] 2025/05/06 14:40:36 Monitoring session for client client1-1746556836190425561
+[server] 2025/05/06 14:40:36 Creating session with client client0-1746556836190417475
+[server] 2025/05/06 14:40:36 Monitoring session for client client0-1746556836190417475
+[server] 2025/05/06 14:40:36 Creating session with client client4-1746556836190429779
+[server] 2025/05/06 14:40:36 Monitoring session for client client4-1746556836190429779
+[server] 2025/05/06 14:40:40 Session extended for client client3-1746556836190428787, new lease: 10s
+[server] 2025/05/06 14:40:40 Session extended for client client2-1746556836190427254, new lease: 10s
+[server] 2025/05/06 14:40:40 Session extended for client client1-1746556836190425561, new lease: 10s
+[server] 2025/05/06 14:40:40 Session extended for client client0-1746556836190417475, new lease: 10s
+[server] 2025/05/06 14:40:40 Session extended for client client4-1746556836190429779, new lease: 10s
+[server] 2025/05/06 14:40:45 Session extended for client client3-1746556836190428787, new lease: 15s
+[server] 2025/05/06 14:40:45 Session extended for client client2-1746556836190427254, new lease: 15s
+[server] 2025/05/06 14:40:45 Session extended for client client1-1746556836190425561, new lease: 15s
+[server] 2025/05/06 14:40:45 Session extended for client client4-1746556836190429779, new lease: 15s
+[server] 2025/05/06 14:40:45 Session extended for client client0-1746556836190417475, new lease: 15s
+[server] 2025/05/06 14:40:50 Session extended for client client2-1746556836190427254, new lease: 20s
+[server] 2025/05/06 14:40:50 Session extended for client client3-1746556836190428787, new lease: 20s
+[server] 2025/05/06 14:40:50 Session extended for client client0-1746556836190417475, new lease: 20s
+[server] 2025/05/06 14:40:50 Session extended for client client1-1746556836190425561, new lease: 20s
+[server] 2025/05/06 14:40:50 Session extended for client client4-1746556836190429779, new lease: 20s
+[server] 2025/05/06 14:40:55 Session extended for client client3-1746556836190428787, new lease: 25s
+[server] 2025/05/06 14:40:55 Session extended for client client2-1746556836190427254, new lease: 25s
+[server] 2025/05/06 14:40:55 Session extended for client client4-1746556836190429779, new lease: 25s
+[server] 2025/05/06 14:40:55 Session extended for client client1-1746556836190425561, new lease: 25s
+[server] 2025/05/06 14:40:55 Session extended for client client0-1746556836190417475, new lease: 25s
+[server] 2025/05/06 14:41:00 Session extended for client client2-1746556836190427254, new lease: 30s
+[server] 2025/05/06 14:41:00 Session extended for client client3-1746556836190428787, new lease: 30s
+[server] 2025/05/06 14:41:00 Session extended for client client1-1746556836190425561, new lease: 30s
+[server] 2025/05/06 14:41:00 Session extended for client client0-1746556836190417475, new lease: 30s
+[server] 2025/05/06 14:41:00 Session extended for client client4-1746556836190429779, new lease: 30s
+[server] 2025/05/06 14:41:05 Session extended for client client4-1746556836190429779, new lease: 35s
+[server] 2025/05/06 14:41:05 Session extended for client client2-1746556836190427254, new lease: 35s
+[server] 2025/05/06 14:41:05 Session extended for client client3-1746556836190428787, new lease: 35s
+[server] 2025/05/06 14:41:05 Session extended for client client1-1746556836190425561, new lease: 35s
+[server] 2025/05/06 14:41:05 Session extended for client client0-1746556836190417475, new lease: 35s
+[server] 2025/05/06 14:41:10 Session extended for client client1-1746556836190425561, new lease: 40s
+[server] 2025/05/06 14:41:10 Session extended for client client0-1746556836190417475, new lease: 40s
+[server] 2025/05/06 14:41:10 Session extended for client client2-1746556836190427254, new lease: 40s
+[server] 2025/05/06 14:41:10 Session extended for client client3-1746556836190428787, new lease: 40s
+[server] 2025/05/06 14:41:10 Session extended for client client4-1746556836190429779, new lease: 40s
+[server] 2025/05/06 14:41:16 Lease expired for client client1-1746556836190425561: terminating
+[server] 2025/05/06 14:41:16 Error releasing lock /file87 for client client1-1746556836190425561 on termination: Session client1-1746556836190425561 does not hold lock /file87
+[server] 2025/05/06 14:41:16 Terminated session for client client1-1746556836190425561
+[server] 2025/05/06 14:41:16 Lease expired for client client2-1746556836190427254: terminating
+[server] 2025/05/06 14:41:16 Error releasing lock /file47 for client client2-1746556836190427254 on termination: Session client2-1746556836190427254 does not hold lock /file47
+[server] 2025/05/06 14:41:16 Terminated session for client client2-1746556836190427254
+[server] 2025/05/06 14:41:16 Lease expired for client client3-1746556836190428787: terminating
+[server] 2025/05/06 14:41:16 Error releasing lock /file59 for client client3-1746556836190428787 on termination: Session client3-1746556836190428787 does not hold lock /file59
+[server] 2025/05/06 14:41:16 Terminated session for client client3-1746556836190428787
+[server] 2025/05/06 14:41:16 Lease expired for client client4-1746556836190429779: terminating
+[server] 2025/05/06 14:41:16 Error releasing lock /file81 for client client4-1746556836190429779 on termination: Session client4-1746556836190429779 does not hold lock /file81
+[server] 2025/05/06 14:41:16 Terminated session for client client4-1746556836190429779
+[server] 2025/05/06 14:41:16 Lease expired for client client0-1746556836190417475: terminating
+[server] 2025/05/06 14:41:16 Error releasing lock /file81 for client client0-1746556836190417475 on termination: Session client0-1746556836190417475 does not hold lock /file81
+[server] 2025/05/06 14:41:16 Terminated session for client client0-1746556836190417475
+2025-05-06T14:41:40.961-0400 [INFO]  raft: starting snapshot up to: index=132596
+2025-05-06T14:41:40.961-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-0/snapshots/2-132596-1746556900961.tmp
+2025-05-06T14:41:40.979-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-0/snapshots/2-82251-1746556539304
+2025-05-06T14:41:40.984-0400 [INFO]  raft: compacting logs: from=94155 to=122356
+2025-05-06T14:41:41.002-0400 [INFO]  raft: snapshot complete up to: index=132596
+[server] 2025/05/06 14:41:53 Creating session with client client1-1746556913006142123
+[server] 2025/05/06 14:41:53 Monitoring session for client client1-1746556913006142123
+[server] 2025/05/06 14:41:53 Creating session with client client3-1746556913006145249
+[server] 2025/05/06 14:41:53 Monitoring session for client client3-1746556913006145249
+[server] 2025/05/06 14:41:53 Creating session with client client0-1746556913006134800
+[server] 2025/05/06 14:41:53 Monitoring session for client client0-1746556913006134800
+[server] 2025/05/06 14:41:53 Creating session with client client2-1746556913006143706
+[server] 2025/05/06 14:41:53 Monitoring session for client client2-1746556913006143706
+[server] 2025/05/06 14:41:53 Creating session with client client4-1746556913006146191
+[server] 2025/05/06 14:41:53 Monitoring session for client client4-1746556913006146191
+[server] 2025/05/06 14:41:57 Session extended for client client1-1746556913006142123, new lease: 10s
+[server] 2025/05/06 14:41:57 Session extended for client client0-1746556913006134800, new lease: 10s
+[server] 2025/05/06 14:41:57 Session extended for client client3-1746556913006145249, new lease: 10s
+[server] 2025/05/06 14:41:57 Session extended for client client4-1746556913006146191, new lease: 10s
+[server] 2025/05/06 14:41:57 Session extended for client client2-1746556913006143706, new lease: 10s
+[server] 2025/05/06 14:42:02 Session extended for client client0-1746556913006134800, new lease: 15s
+[server] 2025/05/06 14:42:02 Session extended for client client3-1746556913006145249, new lease: 15s
+[server] 2025/05/06 14:42:02 Session extended for client client1-1746556913006142123, new lease: 15s
+[server] 2025/05/06 14:42:02 Session extended for client client4-1746556913006146191, new lease: 15s
+[server] 2025/05/06 14:42:02 Session extended for client client2-1746556913006143706, new lease: 15s
+[server] 2025/05/06 14:42:07 Session extended for client client1-1746556913006142123, new lease: 20s
+[server] 2025/05/06 14:42:07 Session extended for client client0-1746556913006134800, new lease: 20s
+[server] 2025/05/06 14:42:07 Session extended for client client3-1746556913006145249, new lease: 20s
+[server] 2025/05/06 14:42:07 Session extended for client client2-1746556913006143706, new lease: 20s
+[server] 2025/05/06 14:42:07 Session extended for client client4-1746556913006146191, new lease: 20s
+[server] 2025/05/06 14:42:12 Session extended for client client0-1746556913006134800, new lease: 25s
+[server] 2025/05/06 14:42:12 Session extended for client client1-1746556913006142123, new lease: 25s
+[server] 2025/05/06 14:42:12 Session extended for client client3-1746556913006145249, new lease: 25s
+[server] 2025/05/06 14:42:12 Session extended for client client2-1746556913006143706, new lease: 25s
+[server] 2025/05/06 14:42:12 Session extended for client client4-1746556913006146191, new lease: 25s
+[server] 2025/05/06 14:42:17 Session extended for client client1-1746556913006142123, new lease: 30s
+[server] 2025/05/06 14:42:17 Session extended for client client3-1746556913006145249, new lease: 30s
+[server] 2025/05/06 14:42:17 Session extended for client client0-1746556913006134800, new lease: 30s
+[server] 2025/05/06 14:42:17 Session extended for client client2-1746556913006143706, new lease: 30s
+[server] 2025/05/06 14:42:17 Session extended for client client4-1746556913006146191, new lease: 30s
+[server] 2025/05/06 14:42:22 Session extended for client client1-1746556913006142123, new lease: 35s
+[server] 2025/05/06 14:42:22 Session extended for client client0-1746556913006134800, new lease: 35s
+[server] 2025/05/06 14:42:22 Session extended for client client3-1746556913006145249, new lease: 35s
+[server] 2025/05/06 14:42:22 Session extended for client client4-1746556913006146191, new lease: 35s
+[server] 2025/05/06 14:42:22 Session extended for client client2-1746556913006143706, new lease: 35s
+[server] 2025/05/06 14:42:27 Session extended for client client4-1746556913006146191, new lease: 40s
+[server] 2025/05/06 14:42:27 Session extended for client client1-1746556913006142123, new lease: 40s
+[server] 2025/05/06 14:42:27 Session extended for client client3-1746556913006145249, new lease: 40s
+[server] 2025/05/06 14:42:27 Session extended for client client0-1746556913006134800, new lease: 40s
+[server] 2025/05/06 14:42:27 Session extended for client client2-1746556913006143706, new lease: 40s
+[server] 2025/05/06 14:42:33 Lease expired for client client0-1746556913006134800: terminating
+[server] 2025/05/06 14:42:33 Error releasing lock /file81 for client client0-1746556913006134800 on termination: Session client0-1746556913006134800 does not hold lock /file81
+[server] 2025/05/06 14:42:33 Terminated session for client client0-1746556913006134800
+[server] 2025/05/06 14:42:33 Lease expired for client client1-1746556913006142123: terminating
+[server] 2025/05/06 14:42:33 Error releasing lock /file87 for client client1-1746556913006142123 on termination: Session client1-1746556913006142123 does not hold lock /file87
+[server] 2025/05/06 14:42:33 Terminated session for client client1-1746556913006142123
+[server] 2025/05/06 14:42:33 Lease expired for client client3-1746556913006145249: terminating
+[server] 2025/05/06 14:42:33 Error releasing lock /file59 for client client3-1746556913006145249 on termination: Session client3-1746556913006145249 does not hold lock /file59
+[server] 2025/05/06 14:42:33 Terminated session for client client3-1746556913006145249
+[server] 2025/05/06 14:42:33 Lease expired for client client4-1746556913006146191: terminating
+[server] 2025/05/06 14:42:33 Error releasing lock /file81 for client client4-1746556913006146191 on termination: Session client4-1746556913006146191 does not hold lock /file81
+[server] 2025/05/06 14:42:33 Terminated session for client client4-1746556913006146191
+[server] 2025/05/06 14:42:33 Lease expired for client client2-1746556913006143706: terminating
+[server] 2025/05/06 14:42:33 Error releasing lock /file47 for client client2-1746556913006143706 on termination: Session client2-1746556913006143706 does not hold lock /file47
+[server] 2025/05/06 14:42:33 Terminated session for client client2-1746556913006143706
+[server] 2025/05/06 14:43:53 Creating session with client client1-1746557033644338314
+[server] 2025/05/06 14:43:53 Monitoring session for client client1-1746557033644338314
+[server] 2025/05/06 14:43:53 Creating session with client client0-1746557033644331862
+[server] 2025/05/06 14:43:53 Monitoring session for client client0-1746557033644331862
+[server] 2025/05/06 14:43:53 Creating session with client client2-1746557033644340358
+[server] 2025/05/06 14:43:53 Monitoring session for client client2-1746557033644340358
+[server] 2025/05/06 14:43:53 Creating session with client client3-1746557033644341811
+[server] 2025/05/06 14:43:53 Monitoring session for client client3-1746557033644341811
+[server] 2025/05/06 14:43:53 Creating session with client client4-1746557033644342742
+[server] 2025/05/06 14:43:53 Monitoring session for client client4-1746557033644342742
+[server] 2025/05/06 14:43:57 Session extended for client client2-1746557033644340358, new lease: 10s
+[server] 2025/05/06 14:43:57 Session extended for client client1-1746557033644338314, new lease: 10s
+[server] 2025/05/06 14:43:57 Session extended for client client0-1746557033644331862, new lease: 10s
+[server] 2025/05/06 14:43:57 Session extended for client client3-1746557033644341811, new lease: 10s
+[server] 2025/05/06 14:43:57 Session extended for client client4-1746557033644342742, new lease: 10s
+2025-05-06T14:44:01.460-0400 [INFO]  raft: starting snapshot up to: index=157964
+2025-05-06T14:44:01.460-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-0/snapshots/2-157964-1746557041460.tmp
+2025-05-06T14:44:01.478-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-0/snapshots/2-104394-1746556713543
+2025-05-06T14:44:01.486-0400 [INFO]  raft: compacting logs: from=122357 to=147744
+2025-05-06T14:44:01.497-0400 [INFO]  raft: snapshot complete up to: index=157964
+[server] 2025/05/06 14:44:02 Session extended for client client2-1746557033644340358, new lease: 15s
+[server] 2025/05/06 14:44:02 Session extended for client client1-1746557033644338314, new lease: 15s
+[server] 2025/05/06 14:44:02 Session extended for client client0-1746557033644331862, new lease: 15s
+[server] 2025/05/06 14:44:02 Session extended for client client4-1746557033644342742, new lease: 15s
+[server] 2025/05/06 14:44:02 Session extended for client client3-1746557033644341811, new lease: 15s
+[server] 2025/05/06 14:44:07 Session extended for client client2-1746557033644340358, new lease: 20s
+[server] 2025/05/06 14:44:07 Session extended for client client1-1746557033644338314, new lease: 20s
+[server] 2025/05/06 14:44:07 Session extended for client client0-1746557033644331862, new lease: 20s
+[server] 2025/05/06 14:44:07 Session extended for client client3-1746557033644341811, new lease: 20s
+[server] 2025/05/06 14:44:07 Session extended for client client4-1746557033644342742, new lease: 20s
+[server] 2025/05/06 14:44:12 Session extended for client client1-1746557033644338314, new lease: 25s
+[server] 2025/05/06 14:44:12 Session extended for client client0-1746557033644331862, new lease: 25s
+[server] 2025/05/06 14:44:12 Session extended for client client2-1746557033644340358, new lease: 25s
+[server] 2025/05/06 14:44:12 Session extended for client client3-1746557033644341811, new lease: 25s
+[server] 2025/05/06 14:44:12 Session extended for client client4-1746557033644342742, new lease: 25s
+[server] 2025/05/06 14:44:17 Session extended for client client2-1746557033644340358, new lease: 30s
+[server] 2025/05/06 14:44:17 Session extended for client client1-1746557033644338314, new lease: 30s
+[server] 2025/05/06 14:44:17 Session extended for client client0-1746557033644331862, new lease: 30s
+[server] 2025/05/06 14:44:17 Session extended for client client3-1746557033644341811, new lease: 30s
+[server] 2025/05/06 14:44:17 Session extended for client client4-1746557033644342742, new lease: 30s
+[server] 2025/05/06 14:44:22 Session extended for client client1-1746557033644338314, new lease: 35s
+[server] 2025/05/06 14:44:22 Session extended for client client0-1746557033644331862, new lease: 35s
+[server] 2025/05/06 14:44:22 Session extended for client client2-1746557033644340358, new lease: 35s
+[server] 2025/05/06 14:44:22 Session extended for client client3-1746557033644341811, new lease: 35s
+[server] 2025/05/06 14:44:22 Session extended for client client4-1746557033644342742, new lease: 35s
+[server] 2025/05/06 14:44:28 Lease expired for client client2-1746557033644340358: terminating
+[server] 2025/05/06 14:44:28 Error releasing lock /file47 for client client2-1746557033644340358 on termination: Session client2-1746557033644340358 does not hold lock /file47
+[server] 2025/05/06 14:44:28 Terminated session for client client2-1746557033644340358
+[server] 2025/05/06 14:44:28 Lease expired for client client1-1746557033644338314: terminating
+[server] 2025/05/06 14:44:28 Error releasing lock /file87 for client client1-1746557033644338314 on termination: Session client1-1746557033644338314 does not hold lock /file87
+[server] 2025/05/06 14:44:28 Terminated session for client client1-1746557033644338314
+[server] 2025/05/06 14:44:28 Lease expired for client client0-1746557033644331862: terminating
+[server] 2025/05/06 14:44:28 Error releasing lock /file81 for client client0-1746557033644331862 on termination: Session client0-1746557033644331862 does not hold lock /file81
+[server] 2025/05/06 14:44:28 Terminated session for client client0-1746557033644331862
+[server] 2025/05/06 14:44:28 Lease expired for client client4-1746557033644342742: terminating
+[server] 2025/05/06 14:44:28 Error releasing lock /file81 for client client4-1746557033644342742 on termination: Session client4-1746557033644342742 does not hold lock /file81
+[server] 2025/05/06 14:44:28 Terminated session for client client4-1746557033644342742
+[server] 2025/05/06 14:44:28 Lease expired for client client3-1746557033644341811: terminating
+[server] 2025/05/06 14:44:28 Error releasing lock /file59 for client client3-1746557033644341811 on termination: Session client3-1746557033644341811 does not hold lock /file59
+[server] 2025/05/06 14:44:28 Terminated session for client client3-1746557033644341811
+[server] 2025/05/06 14:44:53 Creating session with client client2-1746557093787965447
+[server] 2025/05/06 14:44:53 Monitoring session for client client2-1746557093787965447
+[server] 2025/05/06 14:44:53 Creating session with client client3-1746557093787966649
+[server] 2025/05/06 14:44:53 Monitoring session for client client3-1746557093787966649
+[server] 2025/05/06 14:44:53 Creating session with client client1-1746557093787963924
+[server] 2025/05/06 14:44:53 Monitoring session for client client1-1746557093787963924
+[server] 2025/05/06 14:44:53 Creating session with client client0-1746557093787957482
+[server] 2025/05/06 14:44:53 Monitoring session for client client0-1746557093787957482
+[server] 2025/05/06 14:44:53 Creating session with client client4-1746557093787967641
+[server] 2025/05/06 14:44:53 Monitoring session for client client4-1746557093787967641
+[server] 2025/05/06 14:44:57 Session extended for client client2-1746557093787965447, new lease: 10s
+[server] 2025/05/06 14:44:57 Session extended for client client4-1746557093787967641, new lease: 10s
+[server] 2025/05/06 14:44:57 Session extended for client client3-1746557093787966649, new lease: 10s
+[server] 2025/05/06 14:44:57 Session extended for client client1-1746557093787963924, new lease: 10s
+[server] 2025/05/06 14:44:57 Session extended for client client0-1746557093787957482, new lease: 10s
+[server] 2025/05/06 14:45:02 Session extended for client client1-1746557093787963924, new lease: 15s
+[server] 2025/05/06 14:45:02 Session extended for client client2-1746557093787965447, new lease: 15s
+[server] 2025/05/06 14:45:02 Session extended for client client3-1746557093787966649, new lease: 15s
+[server] 2025/05/06 14:45:02 Session extended for client client0-1746557093787957482, new lease: 15s
+[server] 2025/05/06 14:45:02 Session extended for client client4-1746557093787967641, new lease: 15s
+[server] 2025/05/06 14:45:07 Session extended for client client1-1746557093787963924, new lease: 20s
+[server] 2025/05/06 14:45:07 Session extended for client client2-1746557093787965447, new lease: 20s
+[server] 2025/05/06 14:45:07 Session extended for client client3-1746557093787966649, new lease: 20s
+[server] 2025/05/06 14:45:07 Session extended for client client0-1746557093787957482, new lease: 20s
+[server] 2025/05/06 14:45:07 Session extended for client client4-1746557093787967641, new lease: 20s
+[server] 2025/05/06 14:45:12 Session extended for client client3-1746557093787966649, new lease: 25s
+[server] 2025/05/06 14:45:12 Session extended for client client2-1746557093787965447, new lease: 25s
+[server] 2025/05/06 14:45:12 Session extended for client client1-1746557093787963924, new lease: 25s
+[server] 2025/05/06 14:45:12 Session extended for client client0-1746557093787957482, new lease: 25s
+[server] 2025/05/06 14:45:12 Session extended for client client4-1746557093787967641, new lease: 25s
+[server] 2025/05/06 14:45:17 Session extended for client client3-1746557093787966649, new lease: 30s
+[server] 2025/05/06 14:45:17 Session extended for client client1-1746557093787963924, new lease: 30s
+[server] 2025/05/06 14:45:17 Session extended for client client2-1746557093787965447, new lease: 30s
+[server] 2025/05/06 14:45:17 Session extended for client client0-1746557093787957482, new lease: 30s
+[server] 2025/05/06 14:45:17 Session extended for client client4-1746557093787967641, new lease: 30s
+[server] 2025/05/06 14:45:22 Session extended for client client4-1746557093787967641, new lease: 35s
+[server] 2025/05/06 14:45:22 Session extended for client client2-1746557093787965447, new lease: 35s
+[server] 2025/05/06 14:45:22 Session extended for client client3-1746557093787966649, new lease: 35s
+[server] 2025/05/06 14:45:22 Session extended for client client1-1746557093787963924, new lease: 35s
+[server] 2025/05/06 14:45:22 Session extended for client client0-1746557093787957482, new lease: 35s
+[server] 2025/05/06 14:45:28 Lease expired for client client2-1746557093787965447: terminating
+[server] 2025/05/06 14:45:28 Error releasing lock /file47 for client client2-1746557093787965447 on termination: Session client2-1746557093787965447 does not hold lock /file47
+[server] 2025/05/06 14:45:28 Terminated session for client client2-1746557093787965447
+[server] 2025/05/06 14:45:28 Lease expired for client client4-1746557093787967641: terminating
+[server] 2025/05/06 14:45:28 Error releasing lock /file81 for client client4-1746557093787967641 on termination: Session client4-1746557093787967641 does not hold lock /file81
+[server] 2025/05/06 14:45:28 Terminated session for client client4-1746557093787967641
+[server] 2025/05/06 14:45:28 Lease expired for client client3-1746557093787966649: terminating
+[server] 2025/05/06 14:45:28 Error releasing lock /file59 for client client3-1746557093787966649 on termination: Session client3-1746557093787966649 does not hold lock /file59
+[server] 2025/05/06 14:45:28 Terminated session for client client3-1746557093787966649
+[server] 2025/05/06 14:45:28 Lease expired for client client1-1746557093787963924: terminating
+[server] 2025/05/06 14:45:28 Error releasing lock /file87 for client client1-1746557093787963924 on termination: Session client1-1746557093787963924 does not hold lock /file87
+[server] 2025/05/06 14:45:28 Terminated session for client client1-1746557093787963924
+[server] 2025/05/06 14:45:28 Lease expired for client client0-1746557093787957482: terminating
+[server] 2025/05/06 14:45:28 Error releasing lock /file81 for client client0-1746557093787957482 on termination: Session client0-1746557093787957482 does not hold lock /file81
+[server] 2025/05/06 14:45:28 Terminated session for client client0-1746557093787957482
+[server] 2025/05/06 14:45:43 Creating session with client client3-1746557143529300306
+[server] 2025/05/06 14:45:43 Monitoring session for client client3-1746557143529300306
+[server] 2025/05/06 14:45:43 Creating session with client client2-1746557143529298934
+[server] 2025/05/06 14:45:43 Monitoring session for client client2-1746557143529298934
+[server] 2025/05/06 14:45:43 Creating session with client client0-1746557143529290668
+[server] 2025/05/06 14:45:43 Monitoring session for client client0-1746557143529290668
+[server] 2025/05/06 14:45:43 Creating session with client client1-1746557143529297030
+[server] 2025/05/06 14:45:43 Monitoring session for client client1-1746557143529297030
+[server] 2025/05/06 14:45:43 Creating session with client client4-1746557143529301589
+[server] 2025/05/06 14:45:43 Monitoring session for client client4-1746557143529301589
+[server] 2025/05/06 14:45:47 Session extended for client client0-1746557143529290668, new lease: 10s
+[server] 2025/05/06 14:45:47 Session extended for client client3-1746557143529300306, new lease: 10s
+[server] 2025/05/06 14:45:47 Session extended for client client2-1746557143529298934, new lease: 10s
+[server] 2025/05/06 14:45:47 Session extended for client client1-1746557143529297030, new lease: 10s
+[server] 2025/05/06 14:45:47 Session extended for client client4-1746557143529301589, new lease: 10s
+[server] 2025/05/06 14:45:52 Session extended for client client3-1746557143529300306, new lease: 15s
+[server] 2025/05/06 14:45:52 Session extended for client client2-1746557143529298934, new lease: 15s
+[server] 2025/05/06 14:45:52 Session extended for client client0-1746557143529290668, new lease: 15s
+[server] 2025/05/06 14:45:52 Session extended for client client1-1746557143529297030, new lease: 15s
+[server] 2025/05/06 14:45:52 Session extended for client client4-1746557143529301589, new lease: 15s
+[server] 2025/05/06 14:45:57 Session extended for client client0-1746557143529290668, new lease: 20s
+[server] 2025/05/06 14:45:57 Session extended for client client3-1746557143529300306, new lease: 20s
+[server] 2025/05/06 14:45:57 Session extended for client client2-1746557143529298934, new lease: 20s
+[server] 2025/05/06 14:45:57 Session extended for client client1-1746557143529297030, new lease: 20s
+[server] 2025/05/06 14:45:57 Session extended for client client4-1746557143529301589, new lease: 20s
+[server] 2025/05/06 14:46:02 Session extended for client client3-1746557143529300306, new lease: 25s
+[server] 2025/05/06 14:46:02 Session extended for client client2-1746557143529298934, new lease: 25s
+[server] 2025/05/06 14:46:02 Session extended for client client0-1746557143529290668, new lease: 25s
+[server] 2025/05/06 14:46:02 Session extended for client client1-1746557143529297030, new lease: 25s
+[server] 2025/05/06 14:46:02 Session extended for client client4-1746557143529301589, new lease: 25s
+[server] 2025/05/06 14:46:07 Session extended for client client3-1746557143529300306, new lease: 30s
+[server] 2025/05/06 14:46:07 Session extended for client client2-1746557143529298934, new lease: 30s
+[server] 2025/05/06 14:46:07 Session extended for client client0-1746557143529290668, new lease: 30s
+[server] 2025/05/06 14:46:07 Session extended for client client1-1746557143529297030, new lease: 30s
+[server] 2025/05/06 14:46:07 Session extended for client client4-1746557143529301589, new lease: 30s
+[server] 2025/05/06 14:46:12 Session extended for client client2-1746557143529298934, new lease: 35s
+[server] 2025/05/06 14:46:12 Session extended for client client0-1746557143529290668, new lease: 35s
+[server] 2025/05/06 14:46:12 Session extended for client client3-1746557143529300306, new lease: 35s
+[server] 2025/05/06 14:46:12 Session extended for client client1-1746557143529297030, new lease: 35s
+[server] 2025/05/06 14:46:12 Session extended for client client4-1746557143529301589, new lease: 35s
+[server] 2025/05/06 14:46:18 Lease expired for client client0-1746557143529290668: terminating
+[server] 2025/05/06 14:46:18 Error releasing lock /file81 for client client0-1746557143529290668 on termination: Session client0-1746557143529290668 does not hold lock /file81
+[server] 2025/05/06 14:46:18 Terminated session for client client0-1746557143529290668
+[server] 2025/05/06 14:46:18 Lease expired for client client3-1746557143529300306: terminating
+[server] 2025/05/06 14:46:18 Error releasing lock /file59 for client client3-1746557143529300306 on termination: Session client3-1746557143529300306 does not hold lock /file59
+[server] 2025/05/06 14:46:18 Terminated session for client client3-1746557143529300306
+[server] 2025/05/06 14:46:18 Lease expired for client client2-1746557143529298934: terminating
+[server] 2025/05/06 14:46:18 Error releasing lock /file47 for client client2-1746557143529298934 on termination: Session client2-1746557143529298934 does not hold lock /file47
+[server] 2025/05/06 14:46:18 Terminated session for client client2-1746557143529298934
+[server] 2025/05/06 14:46:18 Lease expired for client client4-1746557143529301589: terminating
+[server] 2025/05/06 14:46:18 Error releasing lock /file81 for client client4-1746557143529301589 on termination: Session client4-1746557143529301589 does not hold lock /file81
+[server] 2025/05/06 14:46:18 Terminated session for client client4-1746557143529301589
+[server] 2025/05/06 14:46:18 Lease expired for client client1-1746557143529297030: terminating
+[server] 2025/05/06 14:46:18 Error releasing lock /file87 for client client1-1746557143529297030 on termination: Session client1-1746557143529297030 does not hold lock /file87
+[server] 2025/05/06 14:46:18 Terminated session for client client1-1746557143529297030
+[server] 2025/05/06 14:46:40 Creating session with client client2-1746557200124556687
+[server] 2025/05/06 14:46:40 Monitoring session for client client2-1746557200124556687
+[server] 2025/05/06 14:46:40 Creating session with client client1-1746557200124555315
+[server] 2025/05/06 14:46:40 Monitoring session for client client1-1746557200124555315
+[server] 2025/05/06 14:46:40 Creating session with client client0-1746557200124548181
+[server] 2025/05/06 14:46:40 Monitoring session for client client0-1746557200124548181
+[server] 2025/05/06 14:46:40 Creating session with client client3-1746557200124557659
+[server] 2025/05/06 14:46:40 Monitoring session for client client3-1746557200124557659
+[server] 2025/05/06 14:46:40 Creating session with client client4-1746557200124558571
+[server] 2025/05/06 14:46:40 Monitoring session for client client4-1746557200124558571
+[server] 2025/05/06 14:46:44 Session extended for client client1-1746557200124555315, new lease: 10s
+[server] 2025/05/06 14:46:44 Session extended for client client0-1746557200124548181, new lease: 10s
+[server] 2025/05/06 14:46:44 Session extended for client client2-1746557200124556687, new lease: 10s
+[server] 2025/05/06 14:46:44 Session extended for client client4-1746557200124558571, new lease: 10s
+[server] 2025/05/06 14:46:44 Session extended for client client3-1746557200124557659, new lease: 10s
+[server] 2025/05/06 14:46:49 Session extended for client client2-1746557200124556687, new lease: 15s
+[server] 2025/05/06 14:46:49 Session extended for client client1-1746557200124555315, new lease: 15s
+[server] 2025/05/06 14:46:49 Session extended for client client0-1746557200124548181, new lease: 15s
+[server] 2025/05/06 14:46:49 Session extended for client client3-1746557200124557659, new lease: 15s
+[server] 2025/05/06 14:46:49 Session extended for client client4-1746557200124558571, new lease: 15s
+[server] 2025/05/06 14:46:54 Session extended for client client2-1746557200124556687, new lease: 20s
+[server] 2025/05/06 14:46:54 Session extended for client client0-1746557200124548181, new lease: 20s
+[server] 2025/05/06 14:46:54 Session extended for client client1-1746557200124555315, new lease: 20s
+[server] 2025/05/06 14:46:54 Session extended for client client3-1746557200124557659, new lease: 20s
+[server] 2025/05/06 14:46:54 Session extended for client client4-1746557200124558571, new lease: 20s
+[server] 2025/05/06 14:46:59 Session extended for client client2-1746557200124556687, new lease: 25s
+[server] 2025/05/06 14:46:59 Session extended for client client0-1746557200124548181, new lease: 25s
+[server] 2025/05/06 14:46:59 Session extended for client client1-1746557200124555315, new lease: 25s
+[server] 2025/05/06 14:46:59 Session extended for client client3-1746557200124557659, new lease: 25s
+[server] 2025/05/06 14:46:59 Session extended for client client4-1746557200124558571, new lease: 25s
+[server] 2025/05/06 14:47:04 Session extended for client client2-1746557200124556687, new lease: 30s
+[server] 2025/05/06 14:47:04 Session extended for client client0-1746557200124548181, new lease: 30s
+[server] 2025/05/06 14:47:04 Session extended for client client1-1746557200124555315, new lease: 30s
+[server] 2025/05/06 14:47:04 Session extended for client client3-1746557200124557659, new lease: 30s
+[server] 2025/05/06 14:47:04 Session extended for client client4-1746557200124558571, new lease: 30s
+[server] 2025/05/06 14:47:09 Session extended for client client2-1746557200124556687, new lease: 35s
+[server] 2025/05/06 14:47:09 Session extended for client client1-1746557200124555315, new lease: 35s
+[server] 2025/05/06 14:47:09 Session extended for client client0-1746557200124548181, new lease: 35s
+[server] 2025/05/06 14:47:09 Session extended for client client3-1746557200124557659, new lease: 35s
+[server] 2025/05/06 14:47:09 Session extended for client client4-1746557200124558571, new lease: 35s
+[server] 2025/05/06 14:47:15 Lease expired for client client0-1746557200124548181: terminating
+[server] 2025/05/06 14:47:15 Error releasing lock /file81 for client client0-1746557200124548181 on termination: Session client0-1746557200124548181 does not hold lock /file81
+[server] 2025/05/06 14:47:15 Terminated session for client client0-1746557200124548181
+[server] 2025/05/06 14:47:15 Lease expired for client client2-1746557200124556687: terminating
+[server] 2025/05/06 14:47:15 Error releasing lock /file47 for client client2-1746557200124556687 on termination: Session client2-1746557200124556687 does not hold lock /file47
+[server] 2025/05/06 14:47:15 Terminated session for client client2-1746557200124556687
+[server] 2025/05/06 14:47:15 Lease expired for client client1-1746557200124555315: terminating
+[server] 2025/05/06 14:47:15 Error releasing lock /file87 for client client1-1746557200124555315 on termination: Session client1-1746557200124555315 does not hold lock /file87
+[server] 2025/05/06 14:47:15 Terminated session for client client1-1746557200124555315
+[server] 2025/05/06 14:47:15 Lease expired for client client4-1746557200124558571: terminating
+[server] 2025/05/06 14:47:15 Error releasing lock /file81 for client client4-1746557200124558571 on termination: Session client4-1746557200124558571 does not hold lock /file81
+[server] 2025/05/06 14:47:15 Terminated session for client client4-1746557200124558571
+[server] 2025/05/06 14:47:15 Lease expired for client client3-1746557200124557659: terminating
+[server] 2025/05/06 14:47:15 Error releasing lock /file59 for client client3-1746557200124557659 on termination: Session client3-1746557200124557659 does not hold lock /file59
+[server] 2025/05/06 14:47:15 Terminated session for client client3-1746557200124557659
+[server] 2025/05/06 14:47:30 Creating session with client client1-1746557250455515713
+[server] 2025/05/06 14:47:30 Monitoring session for client client1-1746557250455515713
+[server] 2025/05/06 14:47:30 Creating session with client client0-1746557250455508529
+[server] 2025/05/06 14:47:30 Monitoring session for client client0-1746557250455508529
+[server] 2025/05/06 14:47:30 Creating session with client client2-1746557250455517156
+[server] 2025/05/06 14:47:30 Monitoring session for client client2-1746557250455517156
+[server] 2025/05/06 14:47:30 Creating session with client client4-1746557250455519059
+[server] 2025/05/06 14:47:30 Monitoring session for client client4-1746557250455519059
+[server] 2025/05/06 14:47:30 Creating session with client client3-1746557250455518097
+[server] 2025/05/06 14:47:30 Monitoring session for client client3-1746557250455518097
+[server] 2025/05/06 14:47:34 Session extended for client client1-1746557250455515713, new lease: 10s
+[server] 2025/05/06 14:47:34 Session extended for client client2-1746557250455517156, new lease: 10s
+[server] 2025/05/06 14:47:34 Session extended for client client0-1746557250455508529, new lease: 10s
+[server] 2025/05/06 14:47:34 Session extended for client client3-1746557250455518097, new lease: 10s
+[server] 2025/05/06 14:47:34 Session extended for client client4-1746557250455519059, new lease: 10s
+[server] 2025/05/06 14:47:40 Lease expired for client client1-1746557250455515713: terminating
+[server] 2025/05/06 14:47:40 Terminated session for client client1-1746557250455515713
+[server] 2025/05/06 14:47:40 Lease expired for client client0-1746557250455508529: terminating
+[server] 2025/05/06 14:47:40 Error releasing lock /file81 for client client0-1746557250455508529 on termination: Session client0-1746557250455508529 does not hold lock /file81
+[server] 2025/05/06 14:47:40 Terminated session for client client0-1746557250455508529
+[server] 2025/05/06 14:47:40 Lease expired for client client2-1746557250455517156: terminating
+[server] 2025/05/06 14:47:40 Terminated session for client client2-1746557250455517156
+[server] 2025/05/06 14:47:40 Lease expired for client client3-1746557250455518097: terminating
+[server] 2025/05/06 14:47:40 Terminated session for client client3-1746557250455518097
+[server] 2025/05/06 14:47:40 Lease expired for client client4-1746557250455519059: terminating
+[server] 2025/05/06 14:47:40 Terminated session for client client4-1746557250455519059
+[server] 2025/05/06 14:47:40 Client client2-1746557250455517156 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:47:40 Creating session with client client2-1746557250455517156
+[server] 2025/05/06 14:47:40 New session for client client2-1746557250455517156 created
+[server] 2025/05/06 14:47:40 Lock /file47 reacquired successfully.
+[server] 2025/05/06 14:47:40 Finished jeopardy KeepAlive process for client client2-1746557250455517156
+[server] 2025/05/06 14:47:40 Monitoring session for client client2-1746557250455517156
+[server] 2025/05/06 14:47:40 Client client3-1746557250455518097 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:47:40 Creating session with client client3-1746557250455518097
+[server] 2025/05/06 14:47:40 New session for client client3-1746557250455518097 created
+[server] 2025/05/06 14:47:40 Lock /file59 reacquired successfully.
+[server] 2025/05/06 14:47:40 Finished jeopardy KeepAlive process for client client3-1746557250455518097
+[server] 2025/05/06 14:47:40 Monitoring session for client client3-1746557250455518097
+[server] 2025/05/06 14:47:40 Client client0-1746557250455508529 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:47:40 Creating session with client client0-1746557250455508529
+[server] 2025/05/06 14:47:40 New session for client client0-1746557250455508529 created
+[server] 2025/05/06 14:47:40 Lock /file81 reacquired successfully.
+[server] 2025/05/06 14:47:40 Finished jeopardy KeepAlive process for client client0-1746557250455508529
+[server] 2025/05/06 14:47:40 Monitoring session for client client0-1746557250455508529
+[server] 2025/05/06 14:47:40 Client client1-1746557250455515713 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:47:40 Creating session with client client1-1746557250455515713
+[server] 2025/05/06 14:47:40 New session for client client1-1746557250455515713 created
+[server] 2025/05/06 14:47:40 Lock /file87 reacquired successfully.
+[server] 2025/05/06 14:47:40 Finished jeopardy KeepAlive process for client client1-1746557250455515713
+[server] 2025/05/06 14:47:40 Monitoring session for client client1-1746557250455515713
+[server] 2025/05/06 14:47:40 Client client4-1746557250455519059 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:47:40 Creating session with client client4-1746557250455519059
+[server] 2025/05/06 14:47:40 New session for client client4-1746557250455519059 created
+[server] 2025/05/06 14:47:40 Lock /file81 reacquired successfully.
+[server] 2025/05/06 14:47:40 Finished jeopardy KeepAlive process for client client4-1746557250455519059
+[server] 2025/05/06 14:47:40 Monitoring session for client client4-1746557250455519059
+[server] 2025/05/06 14:47:44 Session extended for client client1-1746557250455515713, new lease: 10s
+[server] 2025/05/06 14:47:44 Session extended for client client2-1746557250455517156, new lease: 10s
+[server] 2025/05/06 14:47:44 Session extended for client client3-1746557250455518097, new lease: 10s
+[server] 2025/05/06 14:47:44 Session extended for client client0-1746557250455508529, new lease: 10s
+[server] 2025/05/06 14:47:44 Session extended for client client4-1746557250455519059, new lease: 10s
+[server] 2025/05/06 14:47:50 Lease expired for client client4-1746557250455519059: terminating
+[server] 2025/05/06 14:47:50 Terminated session for client client4-1746557250455519059
+[server] 2025/05/06 14:47:50 Lease expired for client client2-1746557250455517156: terminating
+[server] 2025/05/06 14:47:50 Terminated session for client client2-1746557250455517156
+[server] 2025/05/06 14:47:50 Lease expired for client client3-1746557250455518097: terminating
+[server] 2025/05/06 14:47:50 Terminated session for client client3-1746557250455518097
+[server] 2025/05/06 14:47:50 Lease expired for client client0-1746557250455508529: terminating
+[server] 2025/05/06 14:47:50 Error releasing lock /file81 for client client0-1746557250455508529 on termination: Session client0-1746557250455508529 does not hold lock /file81
+[server] 2025/05/06 14:47:50 Terminated session for client client0-1746557250455508529
+[server] 2025/05/06 14:47:50 Lease expired for client client1-1746557250455515713: terminating
+[server] 2025/05/06 14:47:50 Terminated session for client client1-1746557250455515713
+[server] 2025/05/06 14:47:50 Client client2-1746557250455517156 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:47:50 Creating session with client client2-1746557250455517156
+[server] 2025/05/06 14:47:50 New session for client client2-1746557250455517156 created
+[server] 2025/05/06 14:47:50 Lock /file47 reacquired successfully.
+[server] 2025/05/06 14:47:50 Finished jeopardy KeepAlive process for client client2-1746557250455517156
+[server] 2025/05/06 14:47:50 Monitoring session for client client2-1746557250455517156
+[server] 2025/05/06 14:47:50 Client client0-1746557250455508529 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:47:50 Creating session with client client0-1746557250455508529
+[server] 2025/05/06 14:47:50 New session for client client0-1746557250455508529 created
+[server] 2025/05/06 14:47:50 Lock /file81 reacquired successfully.
+[server] 2025/05/06 14:47:50 Finished jeopardy KeepAlive process for client client0-1746557250455508529
+[server] 2025/05/06 14:47:50 Monitoring session for client client0-1746557250455508529
+[server] 2025/05/06 14:47:50 Client client3-1746557250455518097 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:47:50 Creating session with client client3-1746557250455518097
+[server] 2025/05/06 14:47:50 New session for client client3-1746557250455518097 created
+[server] 2025/05/06 14:47:50 Lock /file59 reacquired successfully.
+[server] 2025/05/06 14:47:50 Finished jeopardy KeepAlive process for client client3-1746557250455518097
+[server] 2025/05/06 14:47:50 Monitoring session for client client3-1746557250455518097
+[server] 2025/05/06 14:47:50 Client client1-1746557250455515713 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:47:50 Creating session with client client1-1746557250455515713
+[server] 2025/05/06 14:47:50 New session for client client1-1746557250455515713 created
+[server] 2025/05/06 14:47:50 Lock /file87 reacquired successfully.
+[server] 2025/05/06 14:47:50 Finished jeopardy KeepAlive process for client client1-1746557250455515713
+[server] 2025/05/06 14:47:50 Monitoring session for client client1-1746557250455515713
+[server] 2025/05/06 14:47:50 Client client4-1746557250455519059 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:47:50 Creating session with client client4-1746557250455519059
+[server] 2025/05/06 14:47:50 New session for client client4-1746557250455519059 created
+[server] 2025/05/06 14:47:50 Lock /file81 reacquired successfully.
+[server] 2025/05/06 14:47:50 Finished jeopardy KeepAlive process for client client4-1746557250455519059
+[server] 2025/05/06 14:47:50 Monitoring session for client client4-1746557250455519059
+2025-05-06T14:47:51.174-0400 [INFO]  raft: starting snapshot up to: index=250069
+2025-05-06T14:47:51.174-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-0/snapshots/2-250069-1746557271174.tmp
+2025-05-06T14:47:51.218-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-0/snapshots/2-132596-1746556900961
+2025-05-06T14:47:51.224-0400 [INFO]  raft: compacting logs: from=147745 to=239835
+2025-05-06T14:47:51.266-0400 [INFO]  raft: snapshot complete up to: index=250069
+[server] 2025/05/06 14:47:54 Session extended for client client2-1746557250455517156, new lease: 10s
+[server] 2025/05/06 14:47:54 Session extended for client client0-1746557250455508529, new lease: 10s
+[server] 2025/05/06 14:47:54 Session extended for client client3-1746557250455518097, new lease: 10s
+[server] 2025/05/06 14:47:54 Session extended for client client1-1746557250455515713, new lease: 10s
+[server] 2025/05/06 14:47:54 Session extended for client client4-1746557250455519059, new lease: 10s
+[server] 2025/05/06 14:48:00 Lease expired for client client1-1746557250455515713: terminating
+[server] 2025/05/06 14:48:00 Terminated session for client client1-1746557250455515713
+[server] 2025/05/06 14:48:00 Lease expired for client client2-1746557250455517156: terminating
+[server] 2025/05/06 14:48:00 Terminated session for client client2-1746557250455517156
+[server] 2025/05/06 14:48:00 Lease expired for client client0-1746557250455508529: terminating
+[server] 2025/05/06 14:48:00 Error releasing lock /file81 for client client0-1746557250455508529 on termination: Session client0-1746557250455508529 does not hold lock /file81
+[server] 2025/05/06 14:48:00 Terminated session for client client0-1746557250455508529
+[server] 2025/05/06 14:48:00 Lease expired for client client3-1746557250455518097: terminating
+[server] 2025/05/06 14:48:00 Terminated session for client client3-1746557250455518097
+[server] 2025/05/06 14:48:00 Lease expired for client client4-1746557250455519059: terminating
+[server] 2025/05/06 14:48:00 Terminated session for client client4-1746557250455519059
+[server] 2025/05/06 14:48:00 Client client2-1746557250455517156 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:48:00 Creating session with client client2-1746557250455517156
+[server] 2025/05/06 14:48:00 New session for client client2-1746557250455517156 created
+[server] 2025/05/06 14:48:00 Lock /file47 reacquired successfully.
+[server] 2025/05/06 14:48:00 Finished jeopardy KeepAlive process for client client2-1746557250455517156
+[server] 2025/05/06 14:48:00 Monitoring session for client client2-1746557250455517156
+[server] 2025/05/06 14:48:00 Client client1-1746557250455515713 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:48:00 Creating session with client client1-1746557250455515713
+[server] 2025/05/06 14:48:00 New session for client client1-1746557250455515713 created
+[server] 2025/05/06 14:48:00 Lock /file87 reacquired successfully.
+[server] 2025/05/06 14:48:00 Finished jeopardy KeepAlive process for client client1-1746557250455515713
+[server] 2025/05/06 14:48:00 Monitoring session for client client1-1746557250455515713
+[server] 2025/05/06 14:48:00 Client client0-1746557250455508529 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:48:00 Creating session with client client0-1746557250455508529
+[server] 2025/05/06 14:48:00 New session for client client0-1746557250455508529 created
+[server] 2025/05/06 14:48:00 Lock /file81 reacquired successfully.
+[server] 2025/05/06 14:48:00 Finished jeopardy KeepAlive process for client client0-1746557250455508529
+[server] 2025/05/06 14:48:00 Monitoring session for client client0-1746557250455508529
+[server] 2025/05/06 14:48:00 Client client3-1746557250455518097 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:48:00 Creating session with client client3-1746557250455518097
+[server] 2025/05/06 14:48:00 New session for client client3-1746557250455518097 created
+[server] 2025/05/06 14:48:00 Lock /file59 reacquired successfully.
+[server] 2025/05/06 14:48:00 Finished jeopardy KeepAlive process for client client3-1746557250455518097
+[server] 2025/05/06 14:48:00 Monitoring session for client client3-1746557250455518097
+[server] 2025/05/06 14:48:00 Client client4-1746557250455519059 sent jeopardy KeepAlive: creating new session
+[server] 2025/05/06 14:48:00 Creating session with client client4-1746557250455519059
+[server] 2025/05/06 14:48:00 New session for client client4-1746557250455519059 created
+[server] 2025/05/06 14:48:00 Lock /file81 reacquired successfully.
+[server] 2025/05/06 14:48:00 Finished jeopardy KeepAlive process for client client4-1746557250455519059
+[server] 2025/05/06 14:48:00 Monitoring session for client client4-1746557250455519059
+[server] 2025/05/06 14:48:04 Session extended for client client1-1746557250455515713, new lease: 10s
+[server] 2025/05/06 14:48:04 Session extended for client client0-1746557250455508529, new lease: 10s
+[server] 2025/05/06 14:48:04 Session extended for client client3-1746557250455518097, new lease: 10s
+[server] 2025/05/06 14:48:04 Session extended for client client2-1746557250455517156, new lease: 10s
+[server] 2025/05/06 14:48:04 Session extended for client client4-1746557250455519059, new lease: 10s
+[server] 2025/05/06 14:48:10 Lease expired for client client4-1746557250455519059: terminating
+[server] 2025/05/06 14:48:10 Terminated session for client client4-1746557250455519059
+[server] 2025/05/06 14:48:10 Lease expired for client client2-1746557250455517156: terminating
+[server] 2025/05/06 14:48:10 Error releasing lock /file47 for client client2-1746557250455517156 on termination: Session client2-1746557250455517156 does not hold lock /file47
+[server] 2025/05/06 14:48:10 Terminated session for client client2-1746557250455517156
+[server] 2025/05/06 14:48:10 Lease expired for client client1-1746557250455515713: terminating
+[server] 2025/05/06 14:48:10 Error releasing lock /file87 for client client1-1746557250455515713 on termination: Session client1-1746557250455515713 does not hold lock /file87
+[server] 2025/05/06 14:48:10 Terminated session for client client1-1746557250455515713
+[server] 2025/05/06 14:48:10 Lease expired for client client0-1746557250455508529: terminating
+[server] 2025/05/06 14:48:10 Error releasing lock /file81 for client client0-1746557250455508529 on termination: Session client0-1746557250455508529 does not hold lock /file81
+[server] 2025/05/06 14:48:10 Terminated session for client client0-1746557250455508529
+[server] 2025/05/06 14:48:10 Lease expired for client client3-1746557250455518097: terminating
+[server] 2025/05/06 14:48:10 Error releasing lock /file59 for client client3-1746557250455518097 on termination: Session client3-1746557250455518097 does not hold lock /file59
+[server] 2025/05/06 14:48:10 Terminated session for client client3-1746557250455518097
+[server] 2025/05/06 14:52:19 Creating session with client client2-1746557539307667969
+[server] 2025/05/06 14:52:19 Monitoring session for client client2-1746557539307667969
+[server] 2025/05/06 14:52:19 Creating session with client client1-1746557539307666466
+[server] 2025/05/06 14:52:19 Monitoring session for client client1-1746557539307666466
+[server] 2025/05/06 14:52:19 Creating session with client client0-1746557539307660896
+[server] 2025/05/06 14:52:19 Monitoring session for client client0-1746557539307660896
+[server] 2025/05/06 14:52:19 Creating session with client client4-1746557539307670444
+[server] 2025/05/06 14:52:19 Monitoring session for client client4-1746557539307670444
+[server] 2025/05/06 14:52:19 Creating session with client client3-1746557539307669362
+[server] 2025/05/06 14:52:19 Monitoring session for client client3-1746557539307669362
+[server] 2025/05/06 14:52:23 Session extended for client client0-1746557539307660896, new lease: 10s
+[server] 2025/05/06 14:52:23 Session extended for client client2-1746557539307667969, new lease: 10s
+[server] 2025/05/06 14:52:23 Session extended for client client1-1746557539307666466, new lease: 10s
+[server] 2025/05/06 14:52:23 Session extended for client client3-1746557539307669362, new lease: 10s
+[server] 2025/05/06 14:52:23 Session extended for client client4-1746557539307670444, new lease: 10s
+[server] 2025/05/06 14:52:28 Session extended for client client0-1746557539307660896, new lease: 15s
+[server] 2025/05/06 14:52:28 Session extended for client client2-1746557539307667969, new lease: 15s
+[server] 2025/05/06 14:52:28 Session extended for client client1-1746557539307666466, new lease: 15s
+[server] 2025/05/06 14:52:28 Session extended for client client4-1746557539307670444, new lease: 15s
+[server] 2025/05/06 14:52:28 Session extended for client client3-1746557539307669362, new lease: 15s
+[server] 2025/05/06 14:52:33 Session extended for client client1-1746557539307666466, new lease: 20s
+[server] 2025/05/06 14:52:33 Session extended for client client2-1746557539307667969, new lease: 20s
+[server] 2025/05/06 14:52:33 Session extended for client client0-1746557539307660896, new lease: 20s
+[server] 2025/05/06 14:52:33 Session extended for client client3-1746557539307669362, new lease: 20s
+[server] 2025/05/06 14:52:33 Session extended for client client4-1746557539307670444, new lease: 20s
+[server] 2025/05/06 14:52:38 Session extended for client client2-1746557539307667969, new lease: 25s
+[server] 2025/05/06 14:52:38 Session extended for client client0-1746557539307660896, new lease: 25s
+[server] 2025/05/06 14:52:38 Session extended for client client1-1746557539307666466, new lease: 25s
+[server] 2025/05/06 14:52:38 Session extended for client client4-1746557539307670444, new lease: 25s
+[server] 2025/05/06 14:52:38 Session extended for client client3-1746557539307669362, new lease: 25s
+[server] 2025/05/06 14:52:43 Session extended for client client0-1746557539307660896, new lease: 30s
+[server] 2025/05/06 14:52:43 Session extended for client client2-1746557539307667969, new lease: 30s
+[server] 2025/05/06 14:52:43 Session extended for client client1-1746557539307666466, new lease: 30s
+[server] 2025/05/06 14:52:43 Session extended for client client3-1746557539307669362, new lease: 30s
+[server] 2025/05/06 14:52:43 Session extended for client client4-1746557539307670444, new lease: 30s
+[server] 2025/05/06 14:52:48 Session extended for client client0-1746557539307660896, new lease: 35s
+[server] 2025/05/06 14:52:48 Session extended for client client2-1746557539307667969, new lease: 35s
+[server] 2025/05/06 14:52:48 Session extended for client client1-1746557539307666466, new lease: 35s
+[server] 2025/05/06 14:52:48 Session extended for client client4-1746557539307670444, new lease: 35s
+[server] 2025/05/06 14:52:48 Session extended for client client3-1746557539307669362, new lease: 35s
+[server] 2025/05/06 14:52:53 Session extended for client client2-1746557539307667969, new lease: 40s
+[server] 2025/05/06 14:52:53 Session extended for client client1-1746557539307666466, new lease: 40s
+[server] 2025/05/06 14:52:53 Session extended for client client4-1746557539307670444, new lease: 40s
+[server] 2025/05/06 14:52:53 Session extended for client client0-1746557539307660896, new lease: 40s
+[server] 2025/05/06 14:52:53 Session extended for client client3-1746557539307669362, new lease: 40s
+[server] 2025/05/06 14:52:59 Lease expired for client client0-1746557539307660896: terminating
+[server] 2025/05/06 14:52:59 Error releasing lock /file81 for client client0-1746557539307660896 on termination: Session client0-1746557539307660896 does not hold lock /file81
+[server] 2025/05/06 14:52:59 Terminated session for client client0-1746557539307660896
+[server] 2025/05/06 14:52:59 Lease expired for client client2-1746557539307667969: terminating
+[server] 2025/05/06 14:52:59 Error releasing lock /file47 for client client2-1746557539307667969 on termination: Session client2-1746557539307667969 does not hold lock /file47
+[server] 2025/05/06 14:52:59 Terminated session for client client2-1746557539307667969
+[server] 2025/05/06 14:52:59 Lease expired for client client1-1746557539307666466: terminating
+[server] 2025/05/06 14:52:59 Error releasing lock /file87 for client client1-1746557539307666466 on termination: Session client1-1746557539307666466 does not hold lock /file87
+[server] 2025/05/06 14:52:59 Terminated session for client client1-1746557539307666466
+[server] 2025/05/06 14:52:59 Lease expired for client client3-1746557539307669362: terminating
+[server] 2025/05/06 14:52:59 Error releasing lock /file59 for client client3-1746557539307669362 on termination: Session client3-1746557539307669362 does not hold lock /file59
+[server] 2025/05/06 14:52:59 Terminated session for client client3-1746557539307669362
+[server] 2025/05/06 14:52:59 Lease expired for client client4-1746557539307670444: terminating
+[server] 2025/05/06 14:52:59 Error releasing lock /file81 for client client4-1746557539307670444 on termination: Session client4-1746557539307670444 does not hold lock /file81
+[server] 2025/05/06 14:52:59 Terminated session for client client4-1746557539307670444
+2025-05-06T14:54:13.766-0400 [INFO]  raft: starting snapshot up to: index=271251
+2025-05-06T14:54:13.766-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-0/snapshots/2-271251-1746557653766.tmp
+2025-05-06T14:54:13.780-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-0/snapshots/2-157964-1746557041460
+2025-05-06T14:54:13.787-0400 [INFO]  raft: compacting logs: from=239836 to=261011
+2025-05-06T14:54:13.798-0400 [INFO]  raft: snapshot complete up to: index=271251
+slurmstepd: error: *** STEP 8558679.0 ON argo-01 CANCELLED AT 2025-05-06T15:04:49 ***

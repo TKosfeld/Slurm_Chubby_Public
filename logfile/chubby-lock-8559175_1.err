@@ -1,0 +1,10 @@
+2025-05-06T17:22:33.380-0400 [INFO]  raft: initial configuration: index=0 servers=[]
+2025-05-06T17:22:33.381-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.111:9001 [Follower]" leader-address= leader-id=
+[server] 2025/05/06 17:22:33 Attempting to join cluster at argo-01:8000 as node argo-11:8001 with Raft address argo-11:9001
+2025-05-06T17:22:33.384-0400 [WARN]  raft: failed to get previous log: previous-index=4 last-index=0 error="log not found"
+[server] 2025/05/06 17:22:33 Successfully joined cluster.
+[server] 2025/05/06 17:22:33 Listening for client RPC connections on argo-11:8001
+2025-05-06T17:26:31.529-0400 [INFO]  raft: starting snapshot up to: index=24565
+2025-05-06T17:26:31.529-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8559175-1/snapshots/2-24565-1746566791529.tmp
+2025-05-06T17:26:31.544-0400 [INFO]  raft: compacting logs: from=1 to=14325
+2025-05-06T17:26:31.552-0400 [INFO]  raft: snapshot complete up to: index=24565

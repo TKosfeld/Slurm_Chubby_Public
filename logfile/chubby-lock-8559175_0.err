@@ -1,0 +1,69 @@
+2025-05-06T17:22:18.648-0400 [INFO]  raft: initial configuration: index=0 servers=[]
+2025-05-06T17:22:18.649-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.101:9000 [Follower]" leader-address= leader-id=
+[server] 2025/05/06 17:22:18 Bootstrapped as single-node cluster.
+[server] 2025/05/06 17:22:18 Listening for client RPC connections on argo-01:8000
+2025-05-06T17:22:19.988-0400 [WARN]  raft: heartbeat timeout reached, starting election: last-leader-addr= last-leader-id=
+2025-05-06T17:22:19.988-0400 [INFO]  raft: entering candidate state: node="Node at 172.17.7.101:9000 [Candidate]" term=2
+2025-05-06T17:22:19.989-0400 [DEBUG] raft: voting for self: term=2 id=argo-01:8000
+2025-05-06T17:22:19.991-0400 [DEBUG] raft: calculated votes needed: needed=1 term=2
+2025-05-06T17:22:19.991-0400 [DEBUG] raft: vote granted: from=argo-01:8000 term=2 tally=1
+2025-05-06T17:22:19.991-0400 [INFO]  raft: election won: term=2 tally=1
+2025-05-06T17:22:19.991-0400 [INFO]  raft: entering leader state: leader="Node at 172.17.7.101:9000 [Leader]"
+[store] 2025/05/06 17:22:33 received join request for remote node argo-18:8003 at argo-18:9003
+2025-05-06T17:22:33.345-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-18:8003 server-addr=argo-18:9003 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-18:8003 Address:argo-18:9003}]"
+2025-05-06T17:22:33.347-0400 [INFO]  raft: added peer, starting replication: peer=argo-18:8003
+[store] 2025/05/06 17:22:33 node argo-18:8003 at argo-18:9003 joined successfully
+2025-05-06T17:22:33.349-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-18:8003 argo-18:9003}" next=1
+2025-05-06T17:22:33.350-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-18:8003 argo-18:9003}"
+[store] 2025/05/06 17:22:33 received join request for remote node argo-11:8001 at argo-11:9001
+2025-05-06T17:22:33.381-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-11:8001 server-addr=argo-11:9001 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-18:8003 Address:argo-18:9003} {Suffrage:Voter ID:argo-11:8001 Address:argo-11:9001}]"
+2025-05-06T17:22:33.382-0400 [INFO]  raft: added peer, starting replication: peer=argo-11:8001
+[store] 2025/05/06 17:22:33 node argo-11:8001 at argo-11:9001 joined successfully
+2025-05-06T17:22:33.383-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-11:8001 argo-11:9001}" next=1
+2025-05-06T17:22:33.385-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-11:8001 argo-11:9001}"
+[store] 2025/05/06 17:22:33 received join request for remote node argo-14:8002 at argo-14:9002
+2025-05-06T17:22:33.387-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-14:8002 server-addr=argo-14:9002 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-18:8003 Address:argo-18:9003} {Suffrage:Voter ID:argo-11:8001 Address:argo-11:9001} {Suffrage:Voter ID:argo-14:8002 Address:argo-14:9002}]"
+2025-05-06T17:22:33.389-0400 [INFO]  raft: added peer, starting replication: peer=argo-14:8002
+[store] 2025/05/06 17:22:33 node argo-14:8002 at argo-14:9002 joined successfully
+2025-05-06T17:22:33.390-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-14:8002 argo-14:9002}" next=1
+2025-05-06T17:22:33.392-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-14:8002 argo-14:9002}"
+[store] 2025/05/06 17:22:33 received join request for remote node argo-36:8004 at argo-36:9004
+2025-05-06T17:22:33.403-0400 [INFO]  raft: updating configuration: command=AddVoter server-id=argo-36:8004 server-addr=argo-36:9004 servers="[{Suffrage:Voter ID:argo-01:8000 Address:172.17.7.101:9000} {Suffrage:Voter ID:argo-18:8003 Address:argo-18:9003} {Suffrage:Voter ID:argo-11:8001 Address:argo-11:9001} {Suffrage:Voter ID:argo-14:8002 Address:argo-14:9002} {Suffrage:Voter ID:argo-36:8004 Address:argo-36:9004}]"
+2025-05-06T17:22:33.405-0400 [INFO]  raft: added peer, starting replication: peer=argo-36:8004
+[store] 2025/05/06 17:22:33 node argo-36:8004 at argo-36:9004 joined successfully
+2025-05-06T17:22:33.406-0400 [WARN]  raft: appendEntries rejected, sending older logs: peer="{Voter argo-36:8004 argo-36:9004}" next=1
+2025-05-06T17:22:33.408-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-36:8004 argo-36:9004}"
+[server] 2025/05/06 17:23:28 Creating session with client client2-1746566608598287228
+[server] 2025/05/06 17:23:28 Monitoring session for client client2-1746566608598287228
+[server] 2025/05/06 17:23:28 Creating session with client client1-1746566608598261640
+[server] 2025/05/06 17:23:28 Monitoring session for client client1-1746566608598261640
+[server] 2025/05/06 17:23:28 Creating session with client client3-1746566608598288841
+[server] 2025/05/06 17:23:28 Monitoring session for client client3-1746566608598288841
+[server] 2025/05/06 17:23:28 Creating session with client client0-1746566608598252542
+[server] 2025/05/06 17:23:28 Monitoring session for client client0-1746566608598252542
+[server] 2025/05/06 17:23:28 Creating session with client client4-1746566608598289813
+[server] 2025/05/06 17:23:28 Monitoring session for client client4-1746566608598289813
+[server] 2025/05/06 17:23:57 Session extended for client client3-1746566608598288841, new lease: 1m0s
+[server] 2025/05/06 17:23:57 Session extended for client client2-1746566608598287228, new lease: 1m0s
+[server] 2025/05/06 17:23:57 Session extended for client client1-1746566608598261640, new lease: 1m0s
+[server] 2025/05/06 17:23:57 Session extended for client client4-1746566608598289813, new lease: 1m0s
+[server] 2025/05/06 17:23:57 Session extended for client client0-1746566608598252542, new lease: 1m0s
+[server] 2025/05/06 17:24:28 Lease expired for client client3-1746566608598288841: terminating
+[server] 2025/05/06 17:24:28 Error releasing lock /file59 for client client3-1746566608598288841 on termination: Session client3-1746566608598288841 does not hold lock /file59
+[server] 2025/05/06 17:24:28 Terminated session for client client3-1746566608598288841
+[server] 2025/05/06 17:24:28 Lease expired for client client2-1746566608598287228: terminating
+[server] 2025/05/06 17:24:28 Error releasing lock /file47 for client client2-1746566608598287228 on termination: Session client2-1746566608598287228 does not hold lock /file47
+[server] 2025/05/06 17:24:28 Terminated session for client client2-1746566608598287228
+[server] 2025/05/06 17:24:28 Lease expired for client client1-1746566608598261640: terminating
+[server] 2025/05/06 17:24:28 Error releasing lock /file87 for client client1-1746566608598261640 on termination: Session client1-1746566608598261640 does not hold lock /file87
+[server] 2025/05/06 17:24:28 Terminated session for client client1-1746566608598261640
+[server] 2025/05/06 17:24:28 Lease expired for client client4-1746566608598289813: terminating
+[server] 2025/05/06 17:24:28 Error releasing lock /file81 for client client4-1746566608598289813 on termination: Session client4-1746566608598289813 does not hold lock /file81
+[server] 2025/05/06 17:24:28 Terminated session for client client4-1746566608598289813
+[server] 2025/05/06 17:24:28 Lease expired for client client0-1746566608598252542: terminating
+[server] 2025/05/06 17:24:28 Error releasing lock /file81 for client client0-1746566608598252542 on termination: Session client0-1746566608598252542 does not hold lock /file81
+[server] 2025/05/06 17:24:28 Terminated session for client client0-1746566608598252542
+2025-05-06T17:24:38.180-0400 [INFO]  raft: starting snapshot up to: index=24565
+2025-05-06T17:24:38.180-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8559175-0/snapshots/2-24565-1746566678180.tmp
+2025-05-06T17:24:38.194-0400 [INFO]  raft: compacting logs: from=1 to=14325
+2025-05-06T17:24:38.202-0400 [INFO]  raft: snapshot complete up to: index=24565

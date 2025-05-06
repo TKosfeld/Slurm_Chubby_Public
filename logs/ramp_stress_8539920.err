@@ -1,0 +1,936 @@
+2025/05/05 13:56:38 Trying InitSession on argo-19:8002
+2025/05/05 13:56:38 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 13:56:38 Trying InitSession on argo-06:8000
+2025/05/05 13:56:38 Connected to leader argo-06:8000
+2025/05/05 13:56:39 Prepopulated locks on leader argo-06:8000
+2025/05/05 13:56:39 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 13:56:39 Client client0-1746467799037668056: Connected to leader at argo-06:8000
+2025/05/05 13:56:39 Client client2-1746467799037671152: Connected to leader at argo-06:8000
+2025/05/05 13:56:39 Client client4-1746467799037672955: Connected to leader at argo-06:8000
+2025/05/05 13:56:39 Client client3-1746467799037672214: Connected to leader at argo-06:8000
+2025/05/05 13:56:39 Client client1-1746467799037670100: Connected to leader at argo-06:8000
+2025/05/05 13:57:39 Client client3-1746467799037672214: KeepAlive failed: read tcp 172.17.7.115:38122->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:57:39 Client client0-1746467799037668056: KeepAlive failed: read tcp 172.17.7.115:38100->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:57:39 Client client2-1746467799037671152: KeepAlive failed: read tcp 172.17.7.115:38114->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:57:39 Client client4-1746467799037672955: KeepAlive failed: read tcp 172.17.7.115:38110->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:57:39 Client client1-1746467799037670100: KeepAlive failed: read tcp 172.17.7.115:38126->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:57:39 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 13:57:39 client0-1746467799037668056 - Success: 599, Fail: 0
+2025/05/05 13:57:39 client3-1746467799037672214 - Success: 599, Fail: 0
+2025/05/05 13:57:39 client1-1746467799037670100 - Success: 599, Fail: 0
+2025/05/05 13:57:39 client2-1746467799037671152 - Success: 599, Fail: 0
+2025/05/05 13:57:39 client4-1746467799037672955 - Success: 599, Fail: 0
+2025/05/05 13:57:39 Trying InitSession on argo-19:8002
+2025/05/05 13:57:39 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 13:57:39 Trying InitSession on argo-06:8000
+2025/05/05 13:57:39 Connected to leader argo-06:8000
+2025/05/05 13:57:39 Prepopulated locks on leader argo-06:8000
+2025/05/05 13:57:39 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 13:57:39 Client client0-1746467859633990194: Connected to leader at argo-06:8000
+2025/05/05 13:57:39 Client client2-1746467859633993110: Connected to leader at argo-06:8000
+2025/05/05 13:57:39 Client client4-1746467859633994893: Connected to leader at argo-06:8000
+2025/05/05 13:57:39 Client client3-1746467859633994152: Connected to leader at argo-06:8000
+2025/05/05 13:57:39 Client client1-1746467859633992018: Connected to leader at argo-06:8000
+2025/05/05 13:58:39 Client client3-1746467859633994152: KeepAlive failed: read tcp 172.17.7.115:54756->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:58:39 Client client1-1746467859633992018: KeepAlive failed: read tcp 172.17.7.115:54770->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:58:39 Client client0-1746467859633990194: KeepAlive failed: read tcp 172.17.7.115:54724->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:58:39 Client client2-1746467859633993110: KeepAlive failed: read tcp 172.17.7.115:54736->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:58:39 Client client4-1746467859633994893: KeepAlive failed: read tcp 172.17.7.115:54742->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:58:39 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 13:58:39 client0-1746467859633990194 - Success: 1199, Fail: 0
+2025/05/05 13:58:39 client4-1746467859633994893 - Success: 1199, Fail: 0
+2025/05/05 13:58:39 client2-1746467859633993110 - Success: 1199, Fail: 0
+2025/05/05 13:58:39 client1-1746467859633992018 - Success: 1199, Fail: 0
+2025/05/05 13:58:39 client3-1746467859633994152 - Success: 1199, Fail: 0
+2025/05/05 13:58:39 Trying InitSession on argo-19:8002
+2025/05/05 13:58:39 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 13:58:39 Trying InitSession on argo-06:8000
+2025/05/05 13:58:39 Connected to leader argo-06:8000
+2025/05/05 13:58:40 Prepopulated locks on leader argo-06:8000
+2025/05/05 13:58:40 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 13:58:40 Client client0-1746467920226431530: Connected to leader at argo-06:8000
+2025/05/05 13:58:40 Client client2-1746467920226434476: Connected to leader at argo-06:8000
+2025/05/05 13:58:40 Client client4-1746467920226436279: Connected to leader at argo-06:8000
+2025/05/05 13:58:40 Client client3-1746467920226435548: Connected to leader at argo-06:8000
+2025/05/05 13:58:40 Client client1-1746467920226433414: Connected to leader at argo-06:8000
+2025/05/05 13:59:40 Client client1-1746467920226433414: KeepAlive failed: read tcp 172.17.7.115:52074->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:59:40 Client client0-1746467920226431530: KeepAlive failed: read tcp 172.17.7.115:52026->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:59:40 Client client2-1746467920226434476: KeepAlive failed: read tcp 172.17.7.115:52036->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:59:40 Client client4-1746467920226436279: KeepAlive failed: read tcp 172.17.7.115:52048->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:59:40 Client client3-1746467920226435548: KeepAlive failed: read tcp 172.17.7.115:52060->172.17.7.106:8000: use of closed network connection
+2025/05/05 13:59:40 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 13:59:40 client1-1746467920226433414 - Success: 2390, Fail: 0
+2025/05/05 13:59:40 client3-1746467920226435548 - Success: 2393, Fail: 0
+2025/05/05 13:59:40 client4-1746467920226436279 - Success: 2394, Fail: 0
+2025/05/05 13:59:40 client0-1746467920226431530 - Success: 2390, Fail: 0
+2025/05/05 13:59:40 client2-1746467920226434476 - Success: 2394, Fail: 0
+2025/05/05 13:59:40 Trying InitSession on argo-19:8002
+2025/05/05 13:59:40 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 13:59:40 Trying InitSession on argo-06:8000
+2025/05/05 13:59:40 Connected to leader argo-06:8000
+2025/05/05 13:59:40 Prepopulated locks on leader argo-06:8000
+2025/05/05 13:59:40 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 13:59:40 Client client0-1746467980835371069: Connected to leader at argo-06:8000
+2025/05/05 13:59:40 Client client4-1746467980835375657: Connected to leader at argo-06:8000
+2025/05/05 13:59:40 Client client2-1746467980835373924: Connected to leader at argo-06:8000
+2025/05/05 13:59:40 Client client3-1746467980835374946: Connected to leader at argo-06:8000
+2025/05/05 13:59:40 Client client1-1746467980835372902: Connected to leader at argo-06:8000
+2025/05/05 14:00:40 Client client1-1746467980835372902: KeepAlive failed: read tcp 172.17.7.115:60762->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:00:40 Client client0-1746467980835371069: KeepAlive failed: read tcp 172.17.7.115:60720->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:00:40 Client client4-1746467980835375657: KeepAlive failed: read tcp 172.17.7.115:60730->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:00:40 Client client2-1746467980835373924: KeepAlive failed: read tcp 172.17.7.115:60738->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:00:40 Client client3-1746467980835374946: KeepAlive failed: read tcp 172.17.7.115:60748->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:00:40 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:00:40 client4-1746467980835375657 - Success: 4735, Fail: 0
+2025/05/05 14:00:40 client0-1746467980835371069 - Success: 4744, Fail: 0
+2025/05/05 14:00:40 client1-1746467980835372902 - Success: 4744, Fail: 0
+2025/05/05 14:00:40 client2-1746467980835373924 - Success: 4734, Fail: 0
+2025/05/05 14:00:40 client3-1746467980835374946 - Success: 4747, Fail: 0
+2025/05/05 14:00:40 Trying InitSession on argo-19:8002
+2025/05/05 14:00:40 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:00:40 Trying InitSession on argo-06:8000
+2025/05/05 14:00:40 Connected to leader argo-06:8000
+2025/05/05 14:00:41 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:00:41 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 14:00:41 Client client0-1746468041530193870: Connected to leader at argo-06:8000
+2025/05/05 14:00:41 Client client2-1746468041530196766: Connected to leader at argo-06:8000
+2025/05/05 14:00:41 Client client4-1746468041530198509: Connected to leader at argo-06:8000
+2025/05/05 14:00:41 Client client3-1746468041530197788: Connected to leader at argo-06:8000
+2025/05/05 14:00:41 Client client1-1746468041530195714: Connected to leader at argo-06:8000
+2025/05/05 14:01:41 Client client4-1746468041530198509: KeepAlive failed: read tcp 172.17.7.115:49916->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:01:41 Client client0-1746468041530193870: KeepAlive failed: read tcp 172.17.7.115:49902->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:01:41 Client client3-1746468041530197788: KeepAlive failed: read tcp 172.17.7.115:49928->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:01:41 Client client1-1746468041530195714: KeepAlive failed: read tcp 172.17.7.115:49944->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:01:41 Client client2-1746468041530196766: KeepAlive failed: read tcp 172.17.7.115:49918->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:01:41 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:01:41 client0-1746468041530193870 - Success: 7468, Fail: 0
+2025/05/05 14:01:41 client4-1746468041530198509 - Success: 7415, Fail: 0
+2025/05/05 14:01:41 client3-1746468041530197788 - Success: 7457, Fail: 0
+2025/05/05 14:01:41 client1-1746468041530195714 - Success: 7442, Fail: 0
+2025/05/05 14:01:41 client2-1746468041530196766 - Success: 7470, Fail: 0
+2025/05/05 14:01:41 Trying InitSession on argo-19:8002
+2025/05/05 14:01:41 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:01:41 Trying InitSession on argo-06:8000
+2025/05/05 14:01:41 Connected to leader argo-06:8000
+2025/05/05 14:01:42 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:01:42 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 14:01:42 Client client2-1746468102342700329: Connected to leader at argo-06:8000
+2025/05/05 14:01:42 Client client0-1746468102342697513: Connected to leader at argo-06:8000
+2025/05/05 14:01:42 Client client4-1746468102342702162: Connected to leader at argo-06:8000
+2025/05/05 14:01:42 Client client3-1746468102342701441: Connected to leader at argo-06:8000
+2025/05/05 14:01:42 Client client1-1746468102342699297: Connected to leader at argo-06:8000
+2025/05/05 14:02:42 Client client4-1746468102342702162: KeepAlive failed: read tcp 172.17.7.115:49032->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:02:42 Client client2-1746468102342700329: KeepAlive failed: read tcp 172.17.7.115:49020->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:02:42 Client client0-1746468102342697513: KeepAlive failed: read tcp 172.17.7.115:49006->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:02:42 Client client3-1746468102342701441: KeepAlive failed: read tcp 172.17.7.115:49040->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:02:42 Client client1-1746468102342699297: KeepAlive failed: read tcp 172.17.7.115:49056->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:02:42 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:02:42 client3-1746468102342701441 - Success: 8877, Fail: 0
+2025/05/05 14:02:42 client4-1746468102342702162 - Success: 8818, Fail: 0
+2025/05/05 14:02:42 client0-1746468102342697513 - Success: 8599, Fail: 0
+2025/05/05 14:02:42 client2-1746468102342700329 - Success: 8692, Fail: 0
+2025/05/05 14:02:42 client1-1746468102342699297 - Success: 8702, Fail: 0
+2025/05/05 14:02:42 Trying InitSession on argo-19:8002
+2025/05/05 14:02:42 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:02:42 Trying InitSession on argo-06:8000
+2025/05/05 14:02:42 Connected to leader argo-06:8000
+2025/05/05 14:02:43 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:02:43 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 14:02:43 Client client0-1746468163045123652: Connected to leader at argo-06:8000
+2025/05/05 14:02:43 Client client2-1746468163045126537: Connected to leader at argo-06:8000
+2025/05/05 14:02:43 Client client4-1746468163045128391: Connected to leader at argo-06:8000
+2025/05/05 14:02:43 Client client3-1746468163045127609: Connected to leader at argo-06:8000
+2025/05/05 14:02:43 Client client1-1746468163045125475: Connected to leader at argo-06:8000
+2025/05/05 14:03:43 Client client1-1746468163045125475: KeepAlive failed: read tcp 172.17.7.115:58162->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:03:43 Client client2-1746468163045126537: KeepAlive failed: read tcp 172.17.7.115:58142->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:03:43 Client client0-1746468163045123652: KeepAlive failed: read tcp 172.17.7.115:58128->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:03:43 Client client4-1746468163045128391: KeepAlive failed: read tcp 172.17.7.115:58148->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:03:43 Client client3-1746468163045127609: KeepAlive failed: read tcp 172.17.7.115:58152->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:03:43 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:03:43 client2-1746468163045126537 - Success: 8734, Fail: 0
+2025/05/05 14:03:43 client4-1746468163045128391 - Success: 8932, Fail: 0
+2025/05/05 14:03:43 client3-1746468163045127609 - Success: 8842, Fail: 0
+2025/05/05 14:03:43 client1-1746468163045125475 - Success: 8839, Fail: 0
+2025/05/05 14:03:43 client0-1746468163045123652 - Success: 8860, Fail: 0
+2025/05/05 14:03:43 Trying InitSession on argo-19:8002
+2025/05/05 14:03:43 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:03:43 Trying InitSession on argo-06:8000
+2025/05/05 14:03:43 Connected to leader argo-06:8000
+2025/05/05 14:03:43 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:03:43 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 14:03:43 Client client0-1746468223657358540: Connected to leader at argo-06:8000
+2025/05/05 14:03:43 Client client2-1746468223657361396: Connected to leader at argo-06:8000
+2025/05/05 14:03:43 Client client4-1746468223657363199: Connected to leader at argo-06:8000
+2025/05/05 14:03:43 Client client3-1746468223657362438: Connected to leader at argo-06:8000
+2025/05/05 14:03:43 Client client1-1746468223657360354: Connected to leader at argo-06:8000
+2025/05/05 14:04:43 Client client3-1746468223657362438: KeepAlive failed: read tcp 172.17.7.115:35100->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:04:43 Client client0-1746468223657358540: KeepAlive failed: read tcp 172.17.7.115:35070->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:04:43 Client client2-1746468223657361396: KeepAlive failed: read tcp 172.17.7.115:35078->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:04:43 Client client1-1746468223657360354: KeepAlive failed: read tcp 172.17.7.115:35104->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:04:43 Client client4-1746468223657363199: KeepAlive failed: read tcp 172.17.7.115:35088->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:04:43 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:04:43 client4-1746468223657363199 - Success: 10068, Fail: 0
+2025/05/05 14:04:43 client0-1746468223657358540 - Success: 9769, Fail: 0
+2025/05/05 14:04:43 client2-1746468223657361396 - Success: 10077, Fail: 0
+2025/05/05 14:04:43 client1-1746468223657360354 - Success: 9939, Fail: 0
+2025/05/05 14:04:43 client3-1746468223657362438 - Success: 10052, Fail: 0
+2025/05/05 14:04:43 Trying InitSession on argo-19:8002
+2025/05/05 14:04:43 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:04:43 Trying InitSession on argo-06:8000
+2025/05/05 14:04:43 Connected to leader argo-06:8000
+2025/05/05 14:04:44 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:04:44 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 14:04:44 Client client0-1746468284248083087: Connected to leader at argo-06:8000
+2025/05/05 14:04:44 Client client4-1746468284248088056: Connected to leader at argo-06:8000
+2025/05/05 14:04:44 Client client2-1746468284248086062: Connected to leader at argo-06:8000
+2025/05/05 14:04:44 Client client3-1746468284248087265: Connected to leader at argo-06:8000
+2025/05/05 14:04:44 Client client1-1746468284248084960: Connected to leader at argo-06:8000
+2025/05/05 14:05:44 Client client3-1746468284248087265: KeepAlive failed: read tcp 172.17.7.115:33016->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:05:44 Client client1-1746468284248084960: KeepAlive failed: read tcp 172.17.7.115:33024->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:05:44 Client client4-1746468284248088056: KeepAlive failed: read tcp 172.17.7.115:33000->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:05:44 Client client2-1746468284248086062: KeepAlive failed: read tcp 172.17.7.115:32990->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:05:44 Client client0-1746468284248083087: KeepAlive failed: read tcp 172.17.7.115:32988->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:05:44 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:05:44 client4-1746468284248088056 - Success: 10137, Fail: 0
+2025/05/05 14:05:44 client3-1746468284248087265 - Success: 10333, Fail: 0
+2025/05/05 14:05:44 client1-1746468284248084960 - Success: 10273, Fail: 0
+2025/05/05 14:05:44 client2-1746468284248086062 - Success: 10429, Fail: 0
+2025/05/05 14:05:44 client0-1746468284248083087 - Success: 10307, Fail: 0
+2025/05/05 14:05:44 Trying InitSession on argo-19:8002
+2025/05/05 14:05:44 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:05:44 Trying InitSession on argo-06:8000
+2025/05/05 14:05:44 Connected to leader argo-06:8000
+2025/05/05 14:05:44 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:05:44 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 14:05:44 Client client0-1746468344837086156: Connected to leader at argo-06:8000
+2025/05/05 14:05:44 Client client2-1746468344837089232: Connected to leader at argo-06:8000
+2025/05/05 14:05:44 Client client4-1746468344837091195: Connected to leader at argo-06:8000
+2025/05/05 14:05:44 Client client3-1746468344837090384: Connected to leader at argo-06:8000
+2025/05/05 14:05:44 Client client1-1746468344837088069: Connected to leader at argo-06:8000
+2025/05/05 14:06:44 Client client4-1746468344837091195: KeepAlive failed: read tcp 172.17.7.115:58460->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:06:44 Client client1-1746468344837088069: KeepAlive failed: read tcp 172.17.7.115:58466->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:06:44 Client client2-1746468344837089232: KeepAlive failed: read tcp 172.17.7.115:58452->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:06:44 Client client0-1746468344837086156: KeepAlive failed: read tcp 172.17.7.115:58442->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:06:44 Client client3-1746468344837090384: KeepAlive failed: read tcp 172.17.7.115:58464->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:06:44 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:06:44 client4-1746468344837091195 - Success: 9522, Fail: 0
+2025/05/05 14:06:44 client0-1746468344837086156 - Success: 9521, Fail: 0
+2025/05/05 14:06:44 client2-1746468344837089232 - Success: 9645, Fail: 0
+2025/05/05 14:06:44 client3-1746468344837090384 - Success: 9572, Fail: 0
+2025/05/05 14:06:44 client1-1746468344837088069 - Success: 9558, Fail: 0
+2025/05/05 14:06:44 Trying InitSession on argo-19:8002
+2025/05/05 14:06:44 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:06:44 Trying InitSession on argo-06:8000
+2025/05/05 14:06:44 Connected to leader argo-06:8000
+2025/05/05 14:06:45 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:06:45 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 14:06:45 Client client0-1746468405466520276: Connected to leader at argo-06:8000
+2025/05/05 14:06:45 Client client2-1746468405466523422: Connected to leader at argo-06:8000
+2025/05/05 14:06:45 Client client4-1746468405466525215: Connected to leader at argo-06:8000
+2025/05/05 14:06:45 Client client3-1746468405466524484: Connected to leader at argo-06:8000
+2025/05/05 14:06:45 Client client1-1746468405466522350: Connected to leader at argo-06:8000
+2025/05/05 14:07:45 Client client1-1746468405466522350: KeepAlive failed: read tcp 172.17.7.115:58468->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:07:45 Client client3-1746468405466524484: KeepAlive failed: read tcp 172.17.7.115:58448->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:07:45 Client client0-1746468405466520276: KeepAlive failed: read tcp 172.17.7.115:58416->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:07:45 Client client2-1746468405466523422: KeepAlive failed: read tcp 172.17.7.115:58436->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:07:45 Client client4-1746468405466525215: KeepAlive failed: read tcp 172.17.7.115:58418->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:07:45 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:07:45 client0-1746468405466520276 - Success: 10119, Fail: 0
+2025/05/05 14:07:45 client2-1746468405466523422 - Success: 10029, Fail: 0
+2025/05/05 14:07:45 client1-1746468405466522350 - Success: 10157, Fail: 0
+2025/05/05 14:07:45 client3-1746468405466524484 - Success: 10120, Fail: 0
+2025/05/05 14:07:45 client4-1746468405466525215 - Success: 10238, Fail: 0
+2025/05/05 14:07:45 Trying InitSession on argo-19:8002
+2025/05/05 14:07:45 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:07:45 Trying InitSession on argo-06:8000
+2025/05/05 14:07:45 Connected to leader argo-06:8000
+2025/05/05 14:07:46 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:07:46 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 14:07:46 Client client0-1746468466127722980: Connected to leader at argo-06:8000
+2025/05/05 14:07:46 Client client4-1746468466127727749: Connected to leader at argo-06:8000
+2025/05/05 14:07:46 Client client2-1746468466127725936: Connected to leader at argo-06:8000
+2025/05/05 14:07:46 Client client3-1746468466127726998: Connected to leader at argo-06:8000
+2025/05/05 14:07:46 Client client1-1746468466127724863: Connected to leader at argo-06:8000
+2025/05/05 14:08:46 Client client1-1746468466127724863: KeepAlive failed: read tcp 172.17.7.115:35782->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:08:46 Client client0-1746468466127722980: KeepAlive failed: read tcp 172.17.7.115:35744->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:08:46 Client client3-1746468466127726998: KeepAlive failed: read tcp 172.17.7.115:35776->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:08:46 Client client4-1746468466127727749: KeepAlive failed: read tcp 172.17.7.115:35754->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:08:46 Client client2-1746468466127725936: KeepAlive failed: read tcp 172.17.7.115:35764->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:08:46 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:08:46 client2-1746468466127725936 - Success: 10679, Fail: 0
+2025/05/05 14:08:46 client4-1746468466127727749 - Success: 10470, Fail: 0
+2025/05/05 14:08:46 client0-1746468466127722980 - Success: 10495, Fail: 0
+2025/05/05 14:08:46 client3-1746468466127726998 - Success: 10613, Fail: 0
+2025/05/05 14:08:46 client1-1746468466127724863 - Success: 10573, Fail: 0
+2025/05/05 14:08:46 Trying InitSession on argo-19:8002
+2025/05/05 14:08:46 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:08:46 Trying InitSession on argo-06:8000
+2025/05/05 14:08:46 Connected to leader argo-06:8000
+2025/05/05 14:08:46 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:08:46 Starting stress test: 5 clients doing 'mixed' for 1m0s
+2025/05/05 14:08:46 Client client2-1746468526878987359: Connected to leader at argo-06:8000
+2025/05/05 14:08:46 Client client4-1746468526878989172: Connected to leader at argo-06:8000
+2025/05/05 14:08:46 Client client0-1746468526878984403: Connected to leader at argo-06:8000
+2025/05/05 14:08:46 Client client3-1746468526878988441: Connected to leader at argo-06:8000
+2025/05/05 14:08:46 Client client1-1746468526878986257: Connected to leader at argo-06:8000
+2025/05/05 14:09:46 Client client1-1746468526878986257: KeepAlive failed: read tcp 172.17.7.115:35216->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:09:46 Client client4-1746468526878989172: KeepAlive failed: read tcp 172.17.7.115:35196->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:09:46 Client client2-1746468526878987359: KeepAlive failed: read tcp 172.17.7.115:35184->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:09:46 Client client0-1746468526878984403: KeepAlive failed: read tcp 172.17.7.115:35180->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:09:46 Client client3-1746468526878988441: KeepAlive failed: read tcp 172.17.7.115:35204->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:09:46 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:09:46 client0-1746468526878984403 - Success: 10094, Fail: 0
+2025/05/05 14:09:46 client4-1746468526878989172 - Success: 10252, Fail: 0
+2025/05/05 14:09:46 client3-1746468526878988441 - Success: 10125, Fail: 0
+2025/05/05 14:09:46 client1-1746468526878986257 - Success: 10209, Fail: 0
+2025/05/05 14:09:46 client2-1746468526878987359 - Success: 10262, Fail: 0
+2025/05/05 14:09:46 Trying InitSession on argo-19:8002
+2025/05/05 14:09:46 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:09:46 Trying InitSession on argo-06:8000
+2025/05/05 14:09:46 Connected to leader argo-06:8000
+2025/05/05 14:09:47 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:09:47 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:09:47 Client client0-1746468587552802173: Connected to leader at argo-06:8000
+2025/05/05 14:09:47 Client client4-1746468587552806821: Connected to leader at argo-06:8000
+2025/05/05 14:09:47 Client client2-1746468587552805048: Connected to leader at argo-06:8000
+2025/05/05 14:09:47 Client client1-1746468587552803986: Connected to leader at argo-06:8000
+2025/05/05 14:09:47 Client client3-1746468587552806100: Connected to leader at argo-06:8000
+2025/05/05 14:10:47 Client client0-1746468587552802173: KeepAlive failed: read tcp 172.17.7.115:56860->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:10:47 Client client3-1746468587552806100: KeepAlive failed: read tcp 172.17.7.115:56888->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:10:47 Client client4-1746468587552806821: KeepAlive failed: read tcp 172.17.7.115:56862->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:10:47 Client client2-1746468587552805048: KeepAlive failed: read tcp 172.17.7.115:56878->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:10:47 Client client1-1746468587552803986: KeepAlive failed: read tcp 172.17.7.115:56882->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:10:47 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:10:47 client0-1746468587552802173 - Success: 599, Fail: 0
+2025/05/05 14:10:47 client3-1746468587552806100 - Success: 599, Fail: 0
+2025/05/05 14:10:47 client1-1746468587552803986 - Success: 599, Fail: 0
+2025/05/05 14:10:47 client2-1746468587552805048 - Success: 599, Fail: 0
+2025/05/05 14:10:47 client4-1746468587552806821 - Success: 599, Fail: 0
+2025/05/05 14:10:47 Trying InitSession on argo-19:8002
+2025/05/05 14:10:47 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:10:47 Trying InitSession on argo-06:8000
+2025/05/05 14:10:47 Connected to leader argo-06:8000
+2025/05/05 14:10:48 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:10:48 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:10:48 Client client2-1746468648101357436: Connected to leader at argo-06:8000
+2025/05/05 14:10:48 Client client0-1746468648101354600: Connected to leader at argo-06:8000
+2025/05/05 14:10:48 Client client4-1746468648101359239: Connected to leader at argo-06:8000
+2025/05/05 14:10:48 Client client3-1746468648101358508: Connected to leader at argo-06:8000
+2025/05/05 14:10:48 Client client1-1746468648101356414: Connected to leader at argo-06:8000
+2025/05/05 14:11:48 Client client3-1746468648101358508: KeepAlive failed: read tcp 172.17.7.115:44136->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:11:48 Client client2-1746468648101357436: KeepAlive failed: read tcp 172.17.7.115:44100->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:11:48 Client client0-1746468648101354600: KeepAlive failed: read tcp 172.17.7.115:44110->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:11:48 Client client4-1746468648101359239: KeepAlive failed: read tcp 172.17.7.115:44124->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:11:48 Client client1-1746468648101356414: KeepAlive failed: read tcp 172.17.7.115:44138->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:11:48 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:11:48 client4-1746468648101359239 - Success: 1197, Fail: 0
+2025/05/05 14:11:48 client1-1746468648101356414 - Success: 1199, Fail: 0
+2025/05/05 14:11:48 client3-1746468648101358508 - Success: 1199, Fail: 0
+2025/05/05 14:11:48 client2-1746468648101357436 - Success: 1198, Fail: 0
+2025/05/05 14:11:48 client0-1746468648101354600 - Success: 1198, Fail: 0
+2025/05/05 14:11:48 Trying InitSession on argo-19:8002
+2025/05/05 14:11:48 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:11:48 Trying InitSession on argo-06:8000
+2025/05/05 14:11:48 Connected to leader argo-06:8000
+2025/05/05 14:11:48 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:11:48 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:11:48 Client client0-1746468708710258752: Connected to leader at argo-06:8000
+2025/05/05 14:11:48 Client client2-1746468708710261688: Connected to leader at argo-06:8000
+2025/05/05 14:11:48 Client client4-1746468708710263451: Connected to leader at argo-06:8000
+2025/05/05 14:11:48 Client client3-1746468708710262730: Connected to leader at argo-06:8000
+2025/05/05 14:11:48 Client client1-1746468708710260626: Connected to leader at argo-06:8000
+2025/05/05 14:12:48 Client client1-1746468708710260626: KeepAlive failed: read tcp 172.17.7.115:58080->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:12:48 Client client0-1746468708710258752: KeepAlive failed: read tcp 172.17.7.115:58034->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:12:48 Client client2-1746468708710261688: KeepAlive failed: read tcp 172.17.7.115:58062->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:12:48 Client client4-1746468708710263451: KeepAlive failed: read tcp 172.17.7.115:58048->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:12:48 Client client3-1746468708710262730: KeepAlive failed: read tcp 172.17.7.115:58064->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:12:48 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:12:48 client4-1746468708710263451 - Success: 2333, Fail: 0
+2025/05/05 14:12:48 client2-1746468708710261688 - Success: 2335, Fail: 0
+2025/05/05 14:12:48 client0-1746468708710258752 - Success: 2334, Fail: 0
+2025/05/05 14:12:48 client3-1746468708710262730 - Success: 2333, Fail: 0
+2025/05/05 14:12:48 client1-1746468708710260626 - Success: 2338, Fail: 0
+2025/05/05 14:12:48 Trying InitSession on argo-19:8002
+2025/05/05 14:12:48 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:12:48 Trying InitSession on argo-06:8000
+2025/05/05 14:12:48 Connected to leader argo-06:8000
+2025/05/05 14:12:49 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:12:49 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:12:49 Client client0-1746468769289447423: Connected to leader at argo-06:8000
+2025/05/05 14:12:49 Client client2-1746468769289450359: Connected to leader at argo-06:8000
+2025/05/05 14:12:49 Client client4-1746468769289452132: Connected to leader at argo-06:8000
+2025/05/05 14:12:49 Client client3-1746468769289451421: Connected to leader at argo-06:8000
+2025/05/05 14:12:49 Client client1-1746468769289449297: Connected to leader at argo-06:8000
+2025/05/05 14:13:49 Client client4-1746468769289452132: KeepAlive failed: read tcp 172.17.7.115:44602->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:13:49 Client client0-1746468769289447423: KeepAlive failed: read tcp 172.17.7.115:44580->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:13:49 Client client2-1746468769289450359: KeepAlive failed: read tcp 172.17.7.115:44596->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:13:49 Client client1-1746468769289449297: KeepAlive failed: read tcp 172.17.7.115:44612->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:13:49 Client client3-1746468769289451421: KeepAlive failed: read tcp 172.17.7.115:44620->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:13:49 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:13:49 client0-1746468769289447423 - Success: 4537, Fail: 0
+2025/05/05 14:13:49 client2-1746468769289450359 - Success: 4494, Fail: 0
+2025/05/05 14:13:49 client4-1746468769289452132 - Success: 4481, Fail: 0
+2025/05/05 14:13:49 client1-1746468769289449297 - Success: 4539, Fail: 0
+2025/05/05 14:13:49 client3-1746468769289451421 - Success: 4512, Fail: 0
+2025/05/05 14:13:49 Trying InitSession on argo-19:8002
+2025/05/05 14:13:49 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:13:49 Trying InitSession on argo-06:8000
+2025/05/05 14:13:49 Connected to leader argo-06:8000
+2025/05/05 14:13:49 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:13:49 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:13:49 Client client0-1746468829944408031: Connected to leader at argo-06:8000
+2025/05/05 14:13:49 Client client4-1746468829944412720: Connected to leader at argo-06:8000
+2025/05/05 14:13:49 Client client2-1746468829944410907: Connected to leader at argo-06:8000
+2025/05/05 14:13:49 Client client3-1746468829944411959: Connected to leader at argo-06:8000
+2025/05/05 14:13:49 Client client1-1746468829944409845: Connected to leader at argo-06:8000
+2025/05/05 14:14:49 Client client3-1746468829944411959: KeepAlive failed: read tcp 172.17.7.115:47496->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:14:49 Client client4-1746468829944412720: KeepAlive failed: read tcp 172.17.7.115:47480->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:14:49 Client client1-1746468829944409845: KeepAlive failed: read tcp 172.17.7.115:47510->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:14:49 Client client0-1746468829944408031: KeepAlive failed: read tcp 172.17.7.115:47478->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:14:49 Client client2-1746468829944410907: KeepAlive failed: read tcp 172.17.7.115:47484->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:14:49 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:14:49 client2-1746468829944410907 - Success: 4955, Fail: 0
+2025/05/05 14:14:49 client3-1746468829944411959 - Success: 4938, Fail: 0
+2025/05/05 14:14:49 client1-1746468829944409845 - Success: 4970, Fail: 0
+2025/05/05 14:14:49 client4-1746468829944412720 - Success: 4973, Fail: 0
+2025/05/05 14:14:49 client0-1746468829944408031 - Success: 5021, Fail: 0
+2025/05/05 14:14:49 Trying InitSession on argo-19:8002
+2025/05/05 14:14:49 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:14:49 Trying InitSession on argo-06:8000
+2025/05/05 14:14:49 Connected to leader argo-06:8000
+2025/05/05 14:14:50 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:14:50 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:14:50 Client client0-1746468890579156070: Connected to leader at argo-06:8000
+2025/05/05 14:14:50 Client client2-1746468890579158985: Connected to leader at argo-06:8000
+2025/05/05 14:14:50 Client client4-1746468890579160748: Connected to leader at argo-06:8000
+2025/05/05 14:14:50 Client client3-1746468890579160017: Connected to leader at argo-06:8000
+2025/05/05 14:14:50 Client client1-1746468890579157933: Connected to leader at argo-06:8000
+2025/05/05 14:15:50 Client client4-1746468890579160748: KeepAlive failed: read tcp 172.17.7.115:33662->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:15:50 Client client2-1746468890579158985: KeepAlive failed: read tcp 172.17.7.115:33658->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:15:50 Client client3-1746468890579160017: KeepAlive failed: read tcp 172.17.7.115:33672->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:15:50 Client client0-1746468890579156070: KeepAlive failed: read tcp 172.17.7.115:33642->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:15:50 Client client1-1746468890579157933: KeepAlive failed: read tcp 172.17.7.115:33680->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:15:50 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:15:50 client0-1746468890579156070 - Success: 4573, Fail: 0
+2025/05/05 14:15:50 client1-1746468890579157933 - Success: 4571, Fail: 0
+2025/05/05 14:15:50 client3-1746468890579160017 - Success: 4544, Fail: 0
+2025/05/05 14:15:50 client2-1746468890579158985 - Success: 4565, Fail: 0
+2025/05/05 14:15:50 client4-1746468890579160748 - Success: 4491, Fail: 0
+2025/05/05 14:15:50 Trying InitSession on argo-19:8002
+2025/05/05 14:15:50 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:15:50 Trying InitSession on argo-06:8000
+2025/05/05 14:15:50 Connected to leader argo-06:8000
+2025/05/05 14:15:51 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:15:51 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:15:51 Client client0-1746468951164274369: Connected to leader at argo-06:8000
+2025/05/05 14:15:51 Client client2-1746468951164277274: Connected to leader at argo-06:8000
+2025/05/05 14:15:51 Client client4-1746468951164279048: Connected to leader at argo-06:8000
+2025/05/05 14:15:51 Client client3-1746468951164278316: Connected to leader at argo-06:8000
+2025/05/05 14:15:51 Client client1-1746468951164276232: Connected to leader at argo-06:8000
+2025/05/05 14:16:51 Client client2-1746468951164277274: KeepAlive failed: read tcp 172.17.7.115:58680->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:16:51 Client client0-1746468951164274369: KeepAlive failed: read tcp 172.17.7.115:58674->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:16:51 Client client3-1746468951164278316: KeepAlive failed: read tcp 172.17.7.115:58694->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:16:51 Client client1-1746468951164276232: KeepAlive failed: read tcp 172.17.7.115:58708->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:16:51 Client client4-1746468951164279048: KeepAlive failed: read tcp 172.17.7.115:58690->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:16:51 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:16:51 client1-1746468951164276232 - Success: 4852, Fail: 0
+2025/05/05 14:16:51 client2-1746468951164277274 - Success: 4803, Fail: 0
+2025/05/05 14:16:51 client4-1746468951164279048 - Success: 4902, Fail: 0
+2025/05/05 14:16:51 client0-1746468951164274369 - Success: 4877, Fail: 0
+2025/05/05 14:16:51 client3-1746468951164278316 - Success: 4834, Fail: 0
+2025/05/05 14:16:51 Trying InitSession on argo-19:8002
+2025/05/05 14:16:51 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:16:51 Trying InitSession on argo-06:8000
+2025/05/05 14:16:51 Connected to leader argo-06:8000
+2025/05/05 14:16:51 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:16:51 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:16:51 Client client0-1746469011973278204: Connected to leader at argo-06:8000
+2025/05/05 14:16:51 Client client2-1746469011973281159: Connected to leader at argo-06:8000
+2025/05/05 14:16:51 Client client4-1746469011973282983: Connected to leader at argo-06:8000
+2025/05/05 14:16:51 Client client3-1746469011973282242: Connected to leader at argo-06:8000
+2025/05/05 14:16:51 Client client1-1746469011973280057: Connected to leader at argo-06:8000
+2025/05/05 14:17:51 Client client2-1746469011973281159: KeepAlive failed: read tcp 172.17.7.115:34518->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:17:51 Client client1-1746469011973280057: KeepAlive failed: read tcp 172.17.7.115:34542->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:17:51 Client client0-1746469011973278204: KeepAlive failed: read tcp 172.17.7.115:34510->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:17:51 Client client4-1746469011973282983: KeepAlive failed: read tcp 172.17.7.115:34526->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:17:51 Client client3-1746469011973282242: KeepAlive failed: read tcp 172.17.7.115:34536->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:17:51 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:17:51 client0-1746469011973278204 - Success: 4778, Fail: 0
+2025/05/05 14:17:51 client4-1746469011973282983 - Success: 4844, Fail: 0
+2025/05/05 14:17:51 client2-1746469011973281159 - Success: 4832, Fail: 0
+2025/05/05 14:17:51 client1-1746469011973280057 - Success: 4808, Fail: 0
+2025/05/05 14:17:51 client3-1746469011973282242 - Success: 4804, Fail: 0
+2025/05/05 14:17:51 Trying InitSession on argo-19:8002
+2025/05/05 14:17:51 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:17:51 Trying InitSession on argo-06:8000
+2025/05/05 14:17:52 Connected to leader argo-06:8000
+2025/05/05 14:17:52 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:17:52 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:17:52 Client client0-1746469072609759458: Connected to leader at argo-06:8000
+2025/05/05 14:17:52 Client client4-1746469072609764247: Connected to leader at argo-06:8000
+2025/05/05 14:17:52 Client client2-1746469072609762464: Connected to leader at argo-06:8000
+2025/05/05 14:17:52 Client client3-1746469072609763516: Connected to leader at argo-06:8000
+2025/05/05 14:17:52 Client client1-1746469072609761352: Connected to leader at argo-06:8000
+2025/05/05 14:18:52 Client client3-1746469072609763516: KeepAlive failed: read tcp 172.17.7.115:54960->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:18:52 Client client4-1746469072609764247: KeepAlive failed: read tcp 172.17.7.115:54948->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:18:52 Client client1-1746469072609761352: KeepAlive failed: read tcp 172.17.7.115:54972->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:18:52 Client client0-1746469072609759458: KeepAlive failed: read tcp 172.17.7.115:54944->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:18:52 Client client2-1746469072609762464: KeepAlive failed: read tcp 172.17.7.115:54956->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:18:52 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:18:52 client3-1746469072609763516 - Success: 4640, Fail: 0
+2025/05/05 14:18:52 client2-1746469072609762464 - Success: 4657, Fail: 0
+2025/05/05 14:18:52 client0-1746469072609759458 - Success: 4626, Fail: 0
+2025/05/05 14:18:52 client1-1746469072609761352 - Success: 4680, Fail: 0
+2025/05/05 14:18:52 client4-1746469072609764247 - Success: 4606, Fail: 0
+2025/05/05 14:18:52 Trying InitSession on argo-19:8002
+2025/05/05 14:18:52 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:18:52 Trying InitSession on argo-06:8000
+2025/05/05 14:18:52 Connected to leader argo-06:8000
+2025/05/05 14:18:53 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:18:53 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:18:53 Client client0-1746469133294639160: Connected to leader at argo-06:8000
+2025/05/05 14:18:53 Client client2-1746469133294642016: Connected to leader at argo-06:8000
+2025/05/05 14:18:53 Client client4-1746469133294643779: Connected to leader at argo-06:8000
+2025/05/05 14:18:53 Client client3-1746469133294643048: Connected to leader at argo-06:8000
+2025/05/05 14:18:53 Client client1-1746469133294640964: Connected to leader at argo-06:8000
+2025/05/05 14:19:53 Client client4-1746469133294643779: KeepAlive failed: read tcp 172.17.7.115:47836->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:19:53 Client client2-1746469133294642016: KeepAlive failed: read tcp 172.17.7.115:47834->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:19:53 Client client0-1746469133294639160: KeepAlive failed: read tcp 172.17.7.115:47822->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:19:53 Client client1-1746469133294640964: KeepAlive failed: read tcp 172.17.7.115:47854->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:19:53 Client client3-1746469133294643048: KeepAlive failed: read tcp 172.17.7.115:47848->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:19:53 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:19:53 client0-1746469133294639160 - Success: 4764, Fail: 0
+2025/05/05 14:19:53 client1-1746469133294640964 - Success: 4686, Fail: 0
+2025/05/05 14:19:53 client4-1746469133294643779 - Success: 4775, Fail: 0
+2025/05/05 14:19:53 client3-1746469133294643048 - Success: 4711, Fail: 0
+2025/05/05 14:19:53 client2-1746469133294642016 - Success: 4740, Fail: 0
+2025/05/05 14:19:53 Trying InitSession on argo-19:8002
+2025/05/05 14:19:53 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:19:53 Trying InitSession on argo-06:8000
+2025/05/05 14:19:53 Connected to leader argo-06:8000
+2025/05/05 14:19:54 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:19:54 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:19:54 Client client2-1746469194028045518: Connected to leader at argo-06:8000
+2025/05/05 14:19:54 Client client0-1746469194028042613: Connected to leader at argo-06:8000
+2025/05/05 14:19:54 Client client4-1746469194028047301: Connected to leader at argo-06:8000
+2025/05/05 14:19:54 Client client1-1746469194028044476: Connected to leader at argo-06:8000
+2025/05/05 14:19:54 Client client3-1746469194028046570: Connected to leader at argo-06:8000
+2025/05/05 14:20:54 Client client2-1746469194028045518: KeepAlive failed: read tcp 172.17.7.115:42784->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:20:54 Client client3-1746469194028046570: KeepAlive failed: read tcp 172.17.7.115:42818->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:20:54 Client client0-1746469194028042613: KeepAlive failed: read tcp 172.17.7.115:42776->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:20:54 Client client1-1746469194028044476: KeepAlive failed: read tcp 172.17.7.115:42810->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:20:54 Client client4-1746469194028047301: KeepAlive failed: read tcp 172.17.7.115:42796->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:20:54 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:20:54 client2-1746469194028045518 - Success: 4116, Fail: 0
+2025/05/05 14:20:54 client3-1746469194028046570 - Success: 4109, Fail: 0
+2025/05/05 14:20:54 client0-1746469194028042613 - Success: 4159, Fail: 0
+2025/05/05 14:20:54 client1-1746469194028044476 - Success: 4065, Fail: 0
+2025/05/05 14:20:54 client4-1746469194028047301 - Success: 4072, Fail: 0
+2025/05/05 14:20:54 Trying InitSession on argo-19:8002
+2025/05/05 14:20:54 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:20:54 Trying InitSession on argo-06:8000
+2025/05/05 14:20:54 Connected to leader argo-06:8000
+2025/05/05 14:20:54 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:20:54 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:20:54 Client client0-1746469254700213924: Connected to leader at argo-06:8000
+2025/05/05 14:20:54 Client client4-1746469254700218663: Connected to leader at argo-06:8000
+2025/05/05 14:20:54 Client client2-1746469254700216859: Connected to leader at argo-06:8000
+2025/05/05 14:20:54 Client client3-1746469254700217931: Connected to leader at argo-06:8000
+2025/05/05 14:20:54 Client client1-1746469254700215747: Connected to leader at argo-06:8000
+2025/05/05 14:21:54 Client client0-1746469254700213924: KeepAlive failed: read tcp 172.17.7.115:60406->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:21:54 Client client3-1746469254700217931: KeepAlive failed: read tcp 172.17.7.115:60426->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:21:54 Client client4-1746469254700218663: KeepAlive failed: read tcp 172.17.7.115:60412->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:21:54 Client client2-1746469254700216859: KeepAlive failed: read tcp 172.17.7.115:60420->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:21:54 Client client1-1746469254700215747: KeepAlive failed: read tcp 172.17.7.115:60438->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:21:54 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:21:54 client4-1746469254700218663 - Success: 3675, Fail: 0
+2025/05/05 14:21:54 client2-1746469254700216859 - Success: 3616, Fail: 0
+2025/05/05 14:21:54 client3-1746469254700217931 - Success: 3609, Fail: 0
+2025/05/05 14:21:54 client0-1746469254700213924 - Success: 3635, Fail: 0
+2025/05/05 14:21:54 client1-1746469254700215747 - Success: 3596, Fail: 0
+2025/05/05 14:21:54 Trying InitSession on argo-19:8002
+2025/05/05 14:21:54 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:21:54 Trying InitSession on argo-06:8000
+2025/05/05 14:21:54 Connected to leader argo-06:8000
+2025/05/05 14:21:55 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:21:55 Starting stress test: 5 clients doing 'write' for 1m0s
+2025/05/05 14:21:55 Client client0-1746469315879806823: Connected to leader at argo-06:8000
+2025/05/05 14:21:55 Client client2-1746469315879809708: Connected to leader at argo-06:8000
+2025/05/05 14:21:55 Client client4-1746469315879811602: Connected to leader at argo-06:8000
+2025/05/05 14:21:55 Client client3-1746469315879810730: Connected to leader at argo-06:8000
+2025/05/05 14:21:55 Client client1-1746469315879808706: Connected to leader at argo-06:8000
+2025/05/05 14:22:55 Client client1-1746469315879808706: KeepAlive failed: read tcp 172.17.7.115:36522->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:22:55 Client client3-1746469315879810730: KeepAlive failed: read tcp 172.17.7.115:36510->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:22:55 Client client2-1746469315879809708: KeepAlive failed: read tcp 172.17.7.115:36488->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:22:55 Client client4-1746469315879811602: KeepAlive failed: read tcp 172.17.7.115:36504->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:22:55 Client client0-1746469315879806823: KeepAlive failed: read tcp 172.17.7.115:36472->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:22:55 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:22:55 client0-1746469315879806823 - Success: 2627, Fail: 0
+2025/05/05 14:22:55 client4-1746469315879811602 - Success: 2643, Fail: 0
+2025/05/05 14:22:55 client1-1746469315879808706 - Success: 2633, Fail: 0
+2025/05/05 14:22:55 client2-1746469315879809708 - Success: 2634, Fail: 0
+2025/05/05 14:22:55 client3-1746469315879810730 - Success: 2628, Fail: 0
+2025/05/05 14:22:55 Trying InitSession on argo-19:8002
+2025/05/05 14:22:55 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:22:55 Trying InitSession on argo-06:8000
+2025/05/05 14:22:55 Connected to leader argo-06:8000
+2025/05/05 14:22:57 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:22:57 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:22:57 Client client0-1746469377460396652: Connected to leader at argo-06:8000
+2025/05/05 14:22:57 Client client4-1746469377460401451: Connected to leader at argo-06:8000
+2025/05/05 14:22:57 Client client2-1746469377460399627: Connected to leader at argo-06:8000
+2025/05/05 14:22:57 Client client3-1746469377460400689: Connected to leader at argo-06:8000
+2025/05/05 14:22:57 Client client1-1746469377460398575: Connected to leader at argo-06:8000
+2025/05/05 14:23:57 Client client1-1746469377460398575: KeepAlive failed: read tcp 172.17.7.115:42702->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:23:57 Client client0-1746469377460396652: KeepAlive failed: read tcp 172.17.7.115:42662->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:23:57 Client client4-1746469377460401451: KeepAlive failed: read tcp 172.17.7.115:42682->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:23:57 Client client2-1746469377460399627: KeepAlive failed: read tcp 172.17.7.115:42672->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:23:57 Client client3-1746469377460400689: KeepAlive failed: read tcp 172.17.7.115:42686->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:23:57 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:23:57 client0-1746469377460396652 - Success: 599, Fail: 0
+2025/05/05 14:23:57 client3-1746469377460400689 - Success: 599, Fail: 0
+2025/05/05 14:23:57 client1-1746469377460398575 - Success: 599, Fail: 0
+2025/05/05 14:23:57 client2-1746469377460399627 - Success: 599, Fail: 0
+2025/05/05 14:23:57 client4-1746469377460401451 - Success: 599, Fail: 0
+2025/05/05 14:23:57 Trying InitSession on argo-19:8002
+2025/05/05 14:23:57 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:23:57 Trying InitSession on argo-06:8000
+2025/05/05 14:23:57 Connected to leader argo-06:8000
+2025/05/05 14:23:58 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:23:58 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:23:58 Client client0-1746469438833204863: Connected to leader at argo-06:8000
+2025/05/05 14:23:58 Client client4-1746469438833209693: Connected to leader at argo-06:8000
+2025/05/05 14:23:58 Client client2-1746469438833207869: Connected to leader at argo-06:8000
+2025/05/05 14:23:58 Client client3-1746469438833208941: Connected to leader at argo-06:8000
+2025/05/05 14:23:58 Client client1-1746469438833206767: Connected to leader at argo-06:8000
+2025/05/05 14:24:58 Client client2-1746469438833207869: KeepAlive failed: read tcp 172.17.7.115:47990->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:24:58 Client client0-1746469438833204863: KeepAlive failed: read tcp 172.17.7.115:47964->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:24:58 Client client4-1746469438833209693: KeepAlive failed: read tcp 172.17.7.115:47980->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:24:58 Client client1-1746469438833206767: KeepAlive failed: read tcp 172.17.7.115:48014->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:24:58 Client client3-1746469438833208941: KeepAlive failed: read tcp 172.17.7.115:48004->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:24:58 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:24:58 client2-1746469438833207869 - Success: 1199, Fail: 0
+2025/05/05 14:24:58 client4-1746469438833209693 - Success: 1199, Fail: 0
+2025/05/05 14:24:58 client0-1746469438833204863 - Success: 1199, Fail: 0
+2025/05/05 14:24:58 client3-1746469438833208941 - Success: 1199, Fail: 0
+2025/05/05 14:24:58 client1-1746469438833206767 - Success: 1199, Fail: 0
+2025/05/05 14:24:58 Trying InitSession on argo-19:8002
+2025/05/05 14:24:58 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:24:58 Trying InitSession on argo-06:8000
+2025/05/05 14:24:58 Connected to leader argo-06:8000
+2025/05/05 14:25:00 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:25:00 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:25:00 Client client0-1746469500480559192: Connected to leader at argo-06:8000
+2025/05/05 14:25:00 Client client2-1746469500480562137: Connected to leader at argo-06:8000
+2025/05/05 14:25:00 Client client4-1746469500480563941: Connected to leader at argo-06:8000
+2025/05/05 14:25:00 Client client3-1746469500480563199: Connected to leader at argo-06:8000
+2025/05/05 14:25:00 Client client1-1746469500480561075: Connected to leader at argo-06:8000
+2025/05/05 14:26:00 Client client4-1746469500480563941: KeepAlive failed: read tcp 172.17.7.115:34322->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:26:00 Client client0-1746469500480559192: KeepAlive failed: read tcp 172.17.7.115:34310->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:26:00 Client client2-1746469500480562137: KeepAlive failed: read tcp 172.17.7.115:34336->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:26:00 Client client1-1746469500480561075: KeepAlive failed: read tcp 172.17.7.115:34358->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:26:00 Client client3-1746469500480563199: KeepAlive failed: read tcp 172.17.7.115:34344->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:26:00 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:26:00 client0-1746469500480559192 - Success: 2398, Fail: 0
+2025/05/05 14:26:00 client3-1746469500480563199 - Success: 2398, Fail: 0
+2025/05/05 14:26:00 client4-1746469500480563941 - Success: 2398, Fail: 0
+2025/05/05 14:26:00 client2-1746469500480562137 - Success: 2398, Fail: 0
+2025/05/05 14:26:00 client1-1746469500480561075 - Success: 2398, Fail: 0
+2025/05/05 14:26:00 Trying InitSession on argo-19:8002
+2025/05/05 14:26:00 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:26:00 Trying InitSession on argo-06:8000
+2025/05/05 14:26:00 Connected to leader argo-06:8000
+2025/05/05 14:26:02 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:26:02 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:26:02 Client client0-1746469562067099907: Connected to leader at argo-06:8000
+2025/05/05 14:26:02 Client client4-1746469562067104716: Connected to leader at argo-06:8000
+2025/05/05 14:26:02 Client client2-1746469562067102832: Connected to leader at argo-06:8000
+2025/05/05 14:26:02 Client client3-1746469562067103904: Connected to leader at argo-06:8000
+2025/05/05 14:26:02 Client client1-1746469562067101780: Connected to leader at argo-06:8000
+2025/05/05 14:27:02 Client client1-1746469562067101780: KeepAlive failed: read tcp 172.17.7.115:49852->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:27:02 Client client0-1746469562067099907: KeepAlive failed: read tcp 172.17.7.115:49822->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:27:02 Client client4-1746469562067104716: KeepAlive failed: read tcp 172.17.7.115:49826->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:27:02 Client client2-1746469562067102832: KeepAlive failed: read tcp 172.17.7.115:49828->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:27:02 Client client3-1746469562067103904: KeepAlive failed: read tcp 172.17.7.115:49838->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:27:02 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:27:02 client0-1746469562067099907 - Success: 4786, Fail: 0
+2025/05/05 14:27:02 client4-1746469562067104716 - Success: 4786, Fail: 0
+2025/05/05 14:27:02 client2-1746469562067102832 - Success: 4786, Fail: 0
+2025/05/05 14:27:02 client3-1746469562067103904 - Success: 4786, Fail: 0
+2025/05/05 14:27:02 client1-1746469562067101780 - Success: 4786, Fail: 0
+2025/05/05 14:27:02 Trying InitSession on argo-19:8002
+2025/05/05 14:27:02 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:27:02 Trying InitSession on argo-06:8000
+2025/05/05 14:27:02 Connected to leader argo-06:8000
+2025/05/05 14:27:03 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:27:03 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:27:03 Client client0-1746469623832680284: Connected to leader at argo-06:8000
+2025/05/05 14:27:03 Client client4-1746469623832685113: Connected to leader at argo-06:8000
+2025/05/05 14:27:03 Client client2-1746469623832683300: Connected to leader at argo-06:8000
+2025/05/05 14:27:03 Client client3-1746469623832684362: Connected to leader at argo-06:8000
+2025/05/05 14:27:03 Client client1-1746469623832682218: Connected to leader at argo-06:8000
+2025/05/05 14:28:03 Client client0-1746469623832680284: KeepAlive failed: read tcp 172.17.7.115:37628->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:28:03 Client client1-1746469623832682218: KeepAlive failed: read tcp 172.17.7.115:37666->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:28:03 Client client4-1746469623832685113: KeepAlive failed: read tcp 172.17.7.115:37652->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:28:03 Client client2-1746469623832683300: KeepAlive failed: read tcp 172.17.7.115:37640->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:28:03 Client client3-1746469623832684362: KeepAlive failed: read tcp 172.17.7.115:37658->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:28:03 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:28:03 client3-1746469623832684362 - Success: 9549, Fail: 0
+2025/05/05 14:28:03 client1-1746469623832682218 - Success: 9547, Fail: 0
+2025/05/05 14:28:03 client4-1746469623832685113 - Success: 9550, Fail: 0
+2025/05/05 14:28:03 client2-1746469623832683300 - Success: 9549, Fail: 0
+2025/05/05 14:28:03 client0-1746469623832680284 - Success: 9551, Fail: 0
+2025/05/05 14:28:03 Trying InitSession on argo-19:8002
+2025/05/05 14:28:03 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:28:03 Trying InitSession on argo-06:8000
+2025/05/05 14:28:03 Connected to leader argo-06:8000
+2025/05/05 14:28:05 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:28:05 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:28:05 Client client2-1746469685570459087: Connected to leader at argo-06:8000
+2025/05/05 14:28:05 Client client0-1746469685570456151: Connected to leader at argo-06:8000
+2025/05/05 14:28:05 Client client4-1746469685570460970: Connected to leader at argo-06:8000
+2025/05/05 14:28:05 Client client3-1746469685570460189: Connected to leader at argo-06:8000
+2025/05/05 14:28:05 Client client1-1746469685570457994: Connected to leader at argo-06:8000
+2025/05/05 14:29:05 Client client2-1746469685570459087: KeepAlive failed: read tcp 172.17.7.115:37150->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:29:05 Client client1-1746469685570457994: KeepAlive failed: read tcp 172.17.7.115:37182->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:29:05 Client client0-1746469685570456151: KeepAlive failed: read tcp 172.17.7.115:37144->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:29:05 Client client4-1746469685570460970: KeepAlive failed: read tcp 172.17.7.115:37164->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:29:05 Client client3-1746469685570460189: KeepAlive failed: read tcp 172.17.7.115:37170->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:29:05 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:29:05 client2-1746469685570459087 - Success: 19158, Fail: 0
+2025/05/05 14:29:05 client1-1746469685570457994 - Success: 19156, Fail: 0
+2025/05/05 14:29:05 client4-1746469685570460970 - Success: 19157, Fail: 0
+2025/05/05 14:29:05 client3-1746469685570460189 - Success: 19155, Fail: 0
+2025/05/05 14:29:05 client0-1746469685570456151 - Success: 19157, Fail: 0
+2025/05/05 14:29:05 Trying InitSession on argo-19:8002
+2025/05/05 14:29:05 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:29:05 Trying InitSession on argo-06:8000
+2025/05/05 14:29:05 Connected to leader argo-06:8000
+2025/05/05 14:29:07 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:29:07 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:29:07 Client client0-1746469747304003973: Connected to leader at argo-06:8000
+2025/05/05 14:29:07 Client client4-1746469747304008682: Connected to leader at argo-06:8000
+2025/05/05 14:29:07 Client client2-1746469747304006909: Connected to leader at argo-06:8000
+2025/05/05 14:29:07 Client client3-1746469747304007951: Connected to leader at argo-06:8000
+2025/05/05 14:29:07 Client client1-1746469747304005837: Connected to leader at argo-06:8000
+2025/05/05 14:30:07 Client client1-1746469747304005837: KeepAlive failed: read tcp 172.17.7.115:54024->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:30:07 Client client0-1746469747304003973: KeepAlive failed: read tcp 172.17.7.115:53990->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:30:07 Client client4-1746469747304008682: KeepAlive failed: read tcp 172.17.7.115:54012->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:30:07 Client client2-1746469747304006909: KeepAlive failed: read tcp 172.17.7.115:54002->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:30:07 Client client3-1746469747304007951: KeepAlive failed: read tcp 172.17.7.115:54014->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:30:07 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:30:07 client3-1746469747304007951 - Success: 38293, Fail: 0
+2025/05/05 14:30:07 client1-1746469747304005837 - Success: 38293, Fail: 0
+2025/05/05 14:30:07 client4-1746469747304008682 - Success: 38287, Fail: 0
+2025/05/05 14:30:07 client0-1746469747304003973 - Success: 38290, Fail: 0
+2025/05/05 14:30:07 client2-1746469747304006909 - Success: 38289, Fail: 0
+2025/05/05 14:30:07 Trying InitSession on argo-19:8002
+2025/05/05 14:30:07 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:30:07 Trying InitSession on argo-06:8000
+2025/05/05 14:30:07 Connected to leader argo-06:8000
+2025/05/05 14:30:09 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:30:09 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:30:09 Client client0-1746469809235079311: Connected to leader at argo-06:8000
+2025/05/05 14:30:09 Client client4-1746469809235084110: Connected to leader at argo-06:8000
+2025/05/05 14:30:09 Client client2-1746469809235082287: Connected to leader at argo-06:8000
+2025/05/05 14:30:09 Client client3-1746469809235083359: Connected to leader at argo-06:8000
+2025/05/05 14:30:09 Client client1-1746469809235081235: Connected to leader at argo-06:8000
+2025/05/05 14:31:09 Client client1-1746469809235081235: KeepAlive failed: read tcp 172.17.7.115:37192->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:31:09 Client client0-1746469809235079311: KeepAlive failed: read tcp 172.17.7.115:37152->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:31:09 Client client4-1746469809235084110: KeepAlive failed: read tcp 172.17.7.115:37170->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:31:09 Client client3-1746469809235083359: KeepAlive failed: read tcp 172.17.7.115:37180->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:31:09 Client client2-1746469809235082287: KeepAlive failed: read tcp 172.17.7.115:37158->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:31:09 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:31:09 client1-1746469809235081235 - Success: 76671, Fail: 0
+2025/05/05 14:31:09 client0-1746469809235079311 - Success: 76670, Fail: 0
+2025/05/05 14:31:09 client4-1746469809235084110 - Success: 76672, Fail: 0
+2025/05/05 14:31:09 client2-1746469809235082287 - Success: 76672, Fail: 0
+2025/05/05 14:31:09 client3-1746469809235083359 - Success: 76669, Fail: 0
+2025/05/05 14:31:09 Trying InitSession on argo-19:8002
+2025/05/05 14:31:09 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:31:09 Trying InitSession on argo-06:8000
+2025/05/05 14:31:09 Connected to leader argo-06:8000
+2025/05/05 14:31:11 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:31:11 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:31:11 Client client0-1746469871175504199: Connected to leader at argo-06:8000
+2025/05/05 14:31:11 Client client4-1746469871175513527: Connected to leader at argo-06:8000
+2025/05/05 14:31:11 Client client2-1746469871175509750: Connected to leader at argo-06:8000
+2025/05/05 14:31:11 Client client3-1746469871175511984: Connected to leader at argo-06:8000
+2025/05/05 14:31:11 Client client1-1746469871175507626: Connected to leader at argo-06:8000
+2025/05/05 14:32:11 Client client1-1746469871175507626: KeepAlive failed: read tcp 172.17.7.115:52300->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:32:11 Client client4-1746469871175513527: KeepAlive failed: read tcp 172.17.7.115:52268->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:32:11 Client client3-1746469871175511984: KeepAlive failed: read tcp 172.17.7.115:52290->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:32:11 Client client0-1746469871175504199: KeepAlive failed: read tcp 172.17.7.115:52262->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:32:11 Client client2-1746469871175509750: KeepAlive failed: read tcp 172.17.7.115:52282->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:32:11 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:32:11 client4-1746469871175513527 - Success: 131893, Fail: 0
+2025/05/05 14:32:11 client2-1746469871175509750 - Success: 110915, Fail: 0
+2025/05/05 14:32:11 client0-1746469871175504199 - Success: 111505, Fail: 0
+2025/05/05 14:32:11 client3-1746469871175511984 - Success: 111051, Fail: 0
+2025/05/05 14:32:11 client1-1746469871175507626 - Success: 110987, Fail: 0
+2025/05/05 14:32:11 Trying InitSession on argo-19:8002
+2025/05/05 14:32:11 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:32:11 Trying InitSession on argo-06:8000
+2025/05/05 14:32:11 Connected to leader argo-06:8000
+2025/05/05 14:32:12 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:32:13 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:32:13 Client client0-1746469933021943173: Connected to leader at argo-06:8000
+2025/05/05 14:32:13 Client client2-1746469933021946199: Connected to leader at argo-06:8000
+2025/05/05 14:32:13 Client client4-1746469933021948023: Connected to leader at argo-06:8000
+2025/05/05 14:32:13 Client client3-1746469933021947261: Connected to leader at argo-06:8000
+2025/05/05 14:32:13 Client client1-1746469933021945087: Connected to leader at argo-06:8000
+2025/05/05 14:33:13 Client client3-1746469933021947261: KeepAlive failed: read tcp 172.17.7.115:50786->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:33:13 Client client1-1746469933021945087: KeepAlive failed: read tcp 172.17.7.115:50788->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:33:13 Client client2-1746469933021946199: KeepAlive failed: read tcp 172.17.7.115:50754->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:33:13 Client client4-1746469933021948023: KeepAlive failed: read tcp 172.17.7.115:50770->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:33:13 Client client0-1746469933021943173: KeepAlive failed: read tcp 172.17.7.115:50738->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:33:13 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:33:13 client3-1746469933021947261 - Success: 134641, Fail: 0
+2025/05/05 14:33:13 client2-1746469933021946199 - Success: 132986, Fail: 0
+2025/05/05 14:33:13 client4-1746469933021948023 - Success: 129793, Fail: 0
+2025/05/05 14:33:13 client0-1746469933021943173 - Success: 133127, Fail: 0
+2025/05/05 14:33:13 client1-1746469933021945087 - Success: 129969, Fail: 0
+2025/05/05 14:33:13 Trying InitSession on argo-19:8002
+2025/05/05 14:33:13 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:33:13 Trying InitSession on argo-06:8000
+2025/05/05 14:33:13 Connected to leader argo-06:8000
+2025/05/05 14:33:14 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:33:14 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:33:14 Client client0-1746469994861180029: Connected to leader at argo-06:8000
+2025/05/05 14:33:14 Client client3-1746469994861184147: Connected to leader at argo-06:8000
+2025/05/05 14:33:14 Client client4-1746469994861184888: Connected to leader at argo-06:8000
+2025/05/05 14:33:14 Client client2-1746469994861183115: Connected to leader at argo-06:8000
+2025/05/05 14:33:14 Client client1-1746469994861181983: Connected to leader at argo-06:8000
+2025/05/05 14:34:14 Client client0-1746469994861180029: KeepAlive failed: read tcp 172.17.7.115:51968->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:34:14 Client client2-1746469994861183115: KeepAlive failed: read tcp 172.17.7.115:51998->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:34:14 Client client3-1746469994861184147: KeepAlive failed: read tcp 172.17.7.115:52002->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:34:14 Client client1-1746469994861181983: KeepAlive failed: read tcp 172.17.7.115:52006->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:34:14 Client client4-1746469994861184888: KeepAlive failed: read tcp 172.17.7.115:51984->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:34:14 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:34:14 client3-1746469994861184147 - Success: 123247, Fail: 0
+2025/05/05 14:34:14 client0-1746469994861180029 - Success: 124606, Fail: 0
+2025/05/05 14:34:14 client2-1746469994861183115 - Success: 105920, Fail: 0
+2025/05/05 14:34:14 client4-1746469994861184888 - Success: 105987, Fail: 0
+2025/05/05 14:34:14 client1-1746469994861181983 - Success: 105449, Fail: 0
+2025/05/05 14:34:14 Trying InitSession on argo-19:8002
+2025/05/05 14:34:14 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:34:14 Trying InitSession on argo-06:8000
+2025/05/05 14:34:14 Connected to leader argo-06:8000
+2025/05/05 14:34:16 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:34:16 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:34:16 Client client0-1746470056584810948: Connected to leader at argo-06:8000
+2025/05/05 14:34:16 Client client2-1746470056584813923: Connected to leader at argo-06:8000
+2025/05/05 14:34:16 Client client3-1746470056584814985: Connected to leader at argo-06:8000
+2025/05/05 14:34:16 Client client4-1746470056584815717: Connected to leader at argo-06:8000
+2025/05/05 14:34:16 Client client1-1746470056584812841: Connected to leader at argo-06:8000
+2025/05/05 14:35:16 Client client2-1746470056584813923: KeepAlive failed: read tcp 172.17.7.115:43472->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:35:16 Client client1-1746470056584812841: KeepAlive failed: read tcp 172.17.7.115:43490->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:35:16 Client client3-1746470056584814985: KeepAlive failed: read tcp 172.17.7.115:43486->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:35:16 Client client0-1746470056584810948: KeepAlive failed: read tcp 172.17.7.115:43452->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:35:16 Client client4-1746470056584815717: KeepAlive failed: read tcp 172.17.7.115:43468->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:35:16 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:35:16 client1-1746470056584812841 - Success: 123540, Fail: 0
+2025/05/05 14:35:16 client4-1746470056584815717 - Success: 103040, Fail: 0
+2025/05/05 14:35:16 client3-1746470056584814985 - Success: 103802, Fail: 0
+2025/05/05 14:35:16 client0-1746470056584810948 - Success: 114274, Fail: 0
+2025/05/05 14:35:16 client2-1746470056584813923 - Success: 103707, Fail: 0
+2025/05/05 14:35:16 Trying InitSession on argo-19:8002
+2025/05/05 14:35:16 RPC error from argo-19:8002: Node argo-19:8002 is not the leader
+2025/05/05 14:35:16 Trying InitSession on argo-06:8000
+2025/05/05 14:35:16 Connected to leader argo-06:8000
+2025/05/05 14:35:18 Prepopulated locks on leader argo-06:8000
+2025/05/05 14:35:18 Starting stress test: 5 clients doing 'read' for 1m0s
+2025/05/05 14:35:18 Client client0-1746470118321464193: Connected to leader at argo-06:8000
+2025/05/05 14:35:18 Client client2-1746470118321467148: Connected to leader at argo-06:8000
+2025/05/05 14:35:18 Client client4-1746470118321469082: Connected to leader at argo-06:8000
+2025/05/05 14:35:18 Client client3-1746470118321468301: Connected to leader at argo-06:8000
+2025/05/05 14:35:18 Client client1-1746470118321466106: Connected to leader at argo-06:8000
+2025/05/05 14:36:18 Client client0-1746470118321464193: KeepAlive failed: read tcp 172.17.7.115:44142->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:36:18 Client client1-1746470118321466106: KeepAlive failed: read tcp 172.17.7.115:44184->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:36:18 Client client3-1746470118321468301: KeepAlive failed: read tcp 172.17.7.115:44182->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:36:18 Client client2-1746470118321467148: KeepAlive failed: read tcp 172.17.7.115:44152->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:36:18 Client client4-1746470118321469082: KeepAlive failed: read tcp 172.17.7.115:44166->172.17.7.106:8000: use of closed network connection
+2025/05/05 14:36:18 Stress test completed.
+
+Operation Summary (per client):
+2025/05/05 14:36:18 client3-1746470118321468301 - Success: 116620, Fail: 0
+2025/05/05 14:36:18 client1-1746470118321466106 - Success: 116836, Fail: 0
+2025/05/05 14:36:18 client2-1746470118321467148 - Success: 125550, Fail: 0
+2025/05/05 14:36:18 client4-1746470118321469082 - Success: 124419, Fail: 0
+2025/05/05 14:36:18 client0-1746470118321464193 - Success: 121413, Fail: 0

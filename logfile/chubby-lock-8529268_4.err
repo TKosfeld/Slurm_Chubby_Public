@@ -1,0 +1,572 @@
+2025-05-05T11:42:09.317-0400 [INFO]  raft: initial configuration: index=0 servers=[]
+2025-05-05T11:42:09.322-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.137:9004 [Follower]" leader-address= leader-id=
+[server] 2025/05/05 11:42:09 Attempting to join cluster at argo-06:8000 as node argo-37:8004 with Raft address argo-37:9004
+2025-05-05T11:42:09.335-0400 [WARN]  raft: failed to get previous log: previous-index=5 last-index=0 error="log not found"
+[server] 2025/05/05 11:42:09 Successfully joined cluster.
+[server] 2025/05/05 11:42:09 Listening for client RPC connections on argo-37:8004
+2025-05-05T11:49:51.746-0400 [INFO]  raft: starting snapshot up to: index=26464
+2025-05-05T11:49:51.746-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-26464-1746460191746.tmp
+2025-05-05T11:49:51.776-0400 [INFO]  raft: compacting logs: from=1 to=16237
+2025-05-05T11:49:51.790-0400 [INFO]  raft: snapshot complete up to: index=26464
+2025-05-05T11:53:49.151-0400 [INFO]  raft: starting snapshot up to: index=110420
+2025-05-05T11:53:49.151-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-110420-1746460429151.tmp
+2025-05-05T11:53:49.193-0400 [INFO]  raft: compacting logs: from=16238 to=100201
+2025-05-05T11:53:49.234-0400 [INFO]  raft: snapshot complete up to: index=110420
+2025-05-05T11:56:18.509-0400 [INFO]  raft: starting snapshot up to: index=170194
+2025-05-05T11:56:18.509-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-170194-1746460578509.tmp
+2025-05-05T11:56:18.543-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-26464-1746460191746
+2025-05-05T11:56:18.552-0400 [INFO]  raft: compacting logs: from=100202 to=159977
+2025-05-05T11:56:18.583-0400 [INFO]  raft: snapshot complete up to: index=170194
+2025-05-05T11:58:22.649-0400 [INFO]  raft: starting snapshot up to: index=208351
+2025-05-05T11:58:22.649-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-208351-1746460702649.tmp
+2025-05-05T11:58:22.793-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-110420-1746460429151
+2025-05-05T11:58:22.830-0400 [INFO]  raft: compacting logs: from=159978 to=198111
+2025-05-05T11:58:22.909-0400 [INFO]  raft: snapshot complete up to: index=208351
+2025-05-05T12:04:08.671-0400 [INFO]  raft: starting snapshot up to: index=221192
+2025-05-05T12:04:08.671-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-221192-1746461048671.tmp
+2025-05-05T12:04:09.182-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-170194-1746460578509
+2025-05-05T12:04:09.372-0400 [INFO]  raft: compacting logs: from=198112 to=211104
+2025-05-05T12:04:09.411-0400 [INFO]  raft: snapshot complete up to: index=221192
+2025-05-05T12:08:04.744-0400 [INFO]  raft: starting snapshot up to: index=274408
+2025-05-05T12:08:04.744-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-274408-1746461284744.tmp
+2025-05-05T12:08:04.904-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-208351-1746460702649
+2025-05-05T12:08:04.977-0400 [INFO]  raft: compacting logs: from=211105 to=264225
+2025-05-05T12:08:05.020-0400 [INFO]  raft: snapshot complete up to: index=274408
+2025-05-05T12:11:06.053-0400 [INFO]  raft: starting snapshot up to: index=313166
+2025-05-05T12:11:06.053-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-313166-1746461466053.tmp
+2025-05-05T12:11:06.283-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-221192-1746461048671
+2025-05-05T12:11:06.345-0400 [INFO]  raft: compacting logs: from=264226 to=302946
+2025-05-05T12:11:06.369-0400 [INFO]  raft: snapshot complete up to: index=313166
+2025-05-05T12:13:40.664-0400 [INFO]  raft: starting snapshot up to: index=338654
+2025-05-05T12:13:40.664-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-338654-1746461620664.tmp
+2025-05-05T12:13:40.913-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-274408-1746461284744
+2025-05-05T12:13:41.012-0400 [INFO]  raft: compacting logs: from=302947 to=328504
+2025-05-05T12:13:41.041-0400 [INFO]  raft: snapshot complete up to: index=338654
+2025-05-05T12:16:53.710-0400 [INFO]  raft: starting snapshot up to: index=391200
+2025-05-05T12:16:53.710-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-391200-1746461813710.tmp
+2025-05-05T12:16:53.966-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-313166-1746461466053
+2025-05-05T12:16:54.056-0400 [INFO]  raft: compacting logs: from=328505 to=381082
+2025-05-05T12:16:54.094-0400 [INFO]  raft: snapshot complete up to: index=391200
+2025-05-05T12:19:11.331-0400 [INFO]  raft: starting snapshot up to: index=417331
+2025-05-05T12:19:11.331-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-417331-1746461951331.tmp
+2025-05-05T12:19:11.561-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-338654-1746461620664
+2025-05-05T12:19:11.656-0400 [INFO]  raft: compacting logs: from=381083 to=407178
+2025-05-05T12:19:11.686-0400 [INFO]  raft: snapshot complete up to: index=417331
+2025-05-05T13:02:17.332-0400 [INFO]  raft: starting snapshot up to: index=437801
+2025-05-05T13:02:17.332-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-437801-1746464537332.tmp
+2025-05-05T13:02:17.370-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-391200-1746461813710
+2025-05-05T13:02:17.383-0400 [INFO]  raft: compacting logs: from=407179 to=427583
+2025-05-05T13:02:17.398-0400 [INFO]  raft: snapshot complete up to: index=437801
+2025-05-05T13:05:23.782-0400 [INFO]  raft: starting snapshot up to: index=500387
+2025-05-05T13:05:23.782-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-500387-1746464723782.tmp
+2025-05-05T13:05:23.821-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-417331-1746461951331
+2025-05-05T13:05:23.832-0400 [INFO]  raft: compacting logs: from=427584 to=490172
+2025-05-05T13:05:23.876-0400 [INFO]  raft: snapshot complete up to: index=500387
+2025-05-05T13:07:28.815-0400 [INFO]  raft: starting snapshot up to: index=543520
+2025-05-05T13:07:28.815-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-543520-1746464848815.tmp
+2025-05-05T13:07:28.879-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-437801-1746464537332
+2025-05-05T13:07:28.896-0400 [INFO]  raft: compacting logs: from=490173 to=533303
+2025-05-05T13:07:28.927-0400 [INFO]  raft: snapshot complete up to: index=543520
+2025-05-05T13:10:37.779-0400 [INFO]  raft: starting snapshot up to: index=585828
+2025-05-05T13:10:37.779-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-585828-1746465037779.tmp
+2025-05-05T13:10:37.817-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-500387-1746464723782
+2025-05-05T13:10:37.840-0400 [INFO]  raft: compacting logs: from=533304 to=575588
+2025-05-05T13:10:37.870-0400 [INFO]  raft: snapshot complete up to: index=585828
+2025-05-05T13:21:41.745-0400 [INFO]  raft: starting snapshot up to: index=602676
+2025-05-05T13:21:41.745-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-602676-1746465701745.tmp
+2025-05-05T13:21:41.771-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-543520-1746464848815
+2025-05-05T13:21:41.783-0400 [INFO]  raft: compacting logs: from=575589 to=592436
+2025-05-05T13:21:41.795-0400 [INFO]  raft: snapshot complete up to: index=602676
+2025-05-05T13:25:32.190-0400 [INFO]  raft: starting snapshot up to: index=619202
+2025-05-05T13:25:32.190-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-619202-1746465932190.tmp
+2025-05-05T13:25:32.217-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-585828-1746465037779
+2025-05-05T13:25:32.225-0400 [INFO]  raft: compacting logs: from=592437 to=608966
+2025-05-05T13:25:32.237-0400 [INFO]  raft: snapshot complete up to: index=619202
+2025-05-05T13:28:59.426-0400 [INFO]  raft: starting snapshot up to: index=677685
+2025-05-05T13:28:59.426-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-677685-1746466139426.tmp
+2025-05-05T13:28:59.564-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-602676-1746465701745
+2025-05-05T13:28:59.588-0400 [INFO]  raft: compacting logs: from=608967 to=667470
+2025-05-05T13:28:59.620-0400 [INFO]  raft: snapshot complete up to: index=677685
+2025-05-05T13:32:22.374-0400 [INFO]  raft: starting snapshot up to: index=747950
+2025-05-05T13:32:22.374-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-747950-1746466342374.tmp
+2025-05-05T13:32:22.405-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-619202-1746465932190
+2025-05-05T13:32:22.417-0400 [INFO]  raft: compacting logs: from=667471 to=737733
+2025-05-05T13:32:22.455-0400 [INFO]  raft: snapshot complete up to: index=747950
+2025-05-05T13:55:37.223-0400 [INFO]  raft: starting snapshot up to: index=758291
+2025-05-05T13:55:37.223-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-758291-1746467737223.tmp
+2025-05-05T13:55:37.258-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-677685-1746466139426
+2025-05-05T13:55:37.281-0400 [INFO]  raft: compacting logs: from=737734 to=748051
+2025-05-05T13:55:37.297-0400 [INFO]  raft: snapshot complete up to: index=758291
+2025-05-05T14:00:55.618-0400 [INFO]  raft: starting snapshot up to: index=785513
+2025-05-05T14:00:55.618-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-785513-1746468055618.tmp
+2025-05-05T14:00:55.653-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-747950-1746466342374
+2025-05-05T14:00:55.660-0400 [INFO]  raft: compacting logs: from=748052 to=775291
+2025-05-05T14:00:55.675-0400 [INFO]  raft: snapshot complete up to: index=785513
+2025-05-05T14:03:03.848-0400 [INFO]  raft: starting snapshot up to: index=829535
+2025-05-05T14:03:03.848-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-829535-1746468183848.tmp
+2025-05-05T14:03:03.895-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-758291-1746467737223
+2025-05-05T14:03:03.911-0400 [INFO]  raft: compacting logs: from=775292 to=819316
+2025-05-05T14:03:03.967-0400 [INFO]  raft: snapshot complete up to: index=829535
+2025-05-05T14:05:51.055-0400 [INFO]  raft: starting snapshot up to: index=897193
+2025-05-05T14:05:51.055-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-897193-1746468351055.tmp
+2025-05-05T14:05:51.087-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-785513-1746468055618
+2025-05-05T14:05:51.110-0400 [INFO]  raft: compacting logs: from=819317 to=886976
+2025-05-05T14:05:51.148-0400 [INFO]  raft: snapshot complete up to: index=897193
+2025-05-05T14:07:59.417-0400 [INFO]  raft: starting snapshot up to: index=949100
+2025-05-05T14:07:59.417-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-949100-1746468479417.tmp
+2025-05-05T14:07:59.442-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-829535-1746468183848
+2025-05-05T14:07:59.454-0400 [INFO]  raft: compacting logs: from=886977 to=938881
+2025-05-05T14:07:59.491-0400 [INFO]  raft: snapshot complete up to: index=949100
+2025-05-05T14:10:23.579-0400 [INFO]  raft: starting snapshot up to: index=997108
+2025-05-05T14:10:23.579-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-997108-1746468623579.tmp
+2025-05-05T14:10:23.604-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-897193-1746468351055
+2025-05-05T14:10:23.612-0400 [INFO]  raft: compacting logs: from=938882 to=986872
+2025-05-05T14:10:23.646-0400 [INFO]  raft: snapshot complete up to: index=997108
+2025-05-05T14:12:29.008-0400 [INFO]  raft: starting snapshot up to: index=1012253
+2025-05-05T14:12:29.008-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-1012253-1746468749008.tmp
+2025-05-05T14:12:29.032-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-949100-1746468479417
+2025-05-05T14:12:29.041-0400 [INFO]  raft: compacting logs: from=986873 to=1002022
+2025-05-05T14:12:29.054-0400 [INFO]  raft: snapshot complete up to: index=1012253
+2025-05-05T14:15:10.569-0400 [INFO]  raft: starting snapshot up to: index=1071489
+2025-05-05T14:15:10.569-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-1071489-1746468910569.tmp
+2025-05-05T14:15:10.612-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-997108-1746468623579
+2025-05-05T14:15:10.640-0400 [INFO]  raft: compacting logs: from=1002023 to=1061269
+2025-05-05T14:15:10.681-0400 [INFO]  raft: snapshot complete up to: index=1071489
+2025-05-05T14:17:25.991-0400 [INFO]  raft: starting snapshot up to: index=1125051
+2025-05-05T14:17:25.991-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-1125051-1746469045991.tmp
+2025-05-05T14:17:26.021-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-1012253-1746468749008
+2025-05-05T14:17:26.033-0400 [INFO]  raft: compacting logs: from=1061270 to=1114834
+2025-05-05T14:17:26.079-0400 [INFO]  raft: snapshot complete up to: index=1125051
+2025-05-05T14:20:38.498-0400 [INFO]  raft: starting snapshot up to: index=1197692
+2025-05-05T14:20:38.498-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-1197692-1746469238498.tmp
+2025-05-05T14:20:38.570-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-1071489-1746468910569
+2025-05-05T14:20:38.602-0400 [INFO]  raft: compacting logs: from=1114835 to=1187481
+2025-05-05T14:20:38.663-0400 [INFO]  raft: snapshot complete up to: index=1197692
+2025-05-05T14:23:45.779-0400 [INFO]  raft: starting snapshot up to: index=1234471
+2025-05-05T14:23:45.779-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/2-1234471-1746469425779.tmp
+2025-05-05T14:23:46.108-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-1125051-1746469045991
+2025-05-05T14:23:46.222-0400 [INFO]  raft: compacting logs: from=1187482 to=1224231
+2025-05-05T14:23:46.278-0400 [INFO]  raft: snapshot complete up to: index=1234471
+2025-05-05T15:14:49.455-0400 [WARN]  raft: rejecting vote request since we have a leader: from=172.17.7.136:9003 leader=172.17.7.106:9000 leader-id=argo-06:8000
+2025-05-05T15:14:49.609-0400 [WARN]  raft: rejecting vote request since we have a leader: from=172.17.7.119:9002 leader=172.17.7.106:9000 leader-id=argo-06:8000
+2025-05-05T15:14:49.759-0400 [WARN]  raft: heartbeat timeout reached, starting election: last-leader-addr=172.17.7.106:9000 last-leader-id=argo-06:8000
+2025-05-05T15:14:49.759-0400 [INFO]  raft: entering candidate state: node="Node at 172.17.7.137:9004 [Candidate]" term=3
+2025-05-05T15:14:49.771-0400 [DEBUG] raft: asking for vote: term=3 from=argo-06:8000 address=172.17.7.106:9000
+2025-05-05T15:14:49.771-0400 [DEBUG] raft: asking for vote: term=3 from=argo-08:8001 address=argo-08:9001
+2025-05-05T15:14:49.771-0400 [DEBUG] raft: asking for vote: term=3 from=argo-19:8002 address=argo-19:9002
+2025-05-05T15:14:49.771-0400 [DEBUG] raft: voting for self: term=3 id=argo-37:8004
+2025-05-05T15:14:49.784-0400 [DEBUG] raft: asking for vote: term=3 from=argo-36:8003 address=argo-36:9003
+2025-05-05T15:14:49.784-0400 [DEBUG] raft: calculated votes needed: needed=3 term=3
+2025-05-05T15:14:49.784-0400 [DEBUG] raft: vote granted: from=argo-37:8004 term=3 tally=1
+2025-05-05T15:14:50.691-0400 [INFO]  raft: duplicate requestVote for same term: term=3
+2025-05-05T15:14:50.899-0400 [DEBUG] raft: lost leadership because received a requestVote with a newer term
+2025-05-05T15:14:50.914-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.137:9004 [Follower]" leader-address= leader-id=
+/usr/bin/bash: line 5: 429150 Killed                  ./chubby-raft -listen='argo-37:8004' -raftbind='argo-37:9004' -raftdir='raft_data/8529268-4' -id='argo-37:8004' -join='argo-06:8000' -single='false' -lease_duration='60'
+2025-05-05T15:17:04.750-0400 [INFO]  raft: starting restore from snapshot: id=2-1234471-1746469425779 last-index=1234471 last-term=2 size-in-bytes=1691
+2025-05-05T15:17:04.818-0400 [INFO]  raft: snapshot restore progress: id=2-1234471-1746469425779 last-index=1234471 last-term=2 size-in-bytes=1691 read-bytes=1691 percent-complete="100.00%"
+2025-05-05T15:17:04.818-0400 [INFO]  raft: restored from snapshot: id=2-1234471-1746469425779 last-index=1234471 last-term=2 size-in-bytes=1691
+2025-05-05T15:17:09.667-0400 [INFO]  raft: initial configuration: index=6 servers="[{Suffrage:Voter ID:argo-06:8000 Address:172.17.7.106:9000} {Suffrage:Voter ID:argo-08:8001 Address:argo-08:9001} {Suffrage:Voter ID:argo-19:8002 Address:argo-19:9002} {Suffrage:Voter ID:argo-37:8004 Address:argo-37:9004} {Suffrage:Voter ID:argo-36:8003 Address:argo-36:9003}]"
+2025-05-05T15:17:09.668-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.137:9004 [Follower]" leader-address= leader-id=
+[server] 2025/05/05 15:17:09 Attempting to join cluster at argo-06:8000 as node argo-37:8004 with Raft address argo-37:9004
+[server] 2025/05/05 15:17:09 Successfully joined cluster.
+[server] 2025/05/05 15:17:09 Listening for client RPC connections on argo-37:8004
+2025-05-05T15:20:34.603-0400 [ERROR] raft-net: failed to flush response: error="write tcp 172.17.7.137:9004->172.17.7.136:59190: write: connection reset by peer"
+2025-05-05T15:20:36.061-0400 [DEBUG] raft: lost leadership because received a requestVote with a newer term
+2025-05-05T15:20:36.083-0400 [WARN]  raft: failed to get previous log: previous-index=1256049 last-index=1256048 error="log not found"
+2025-05-05T15:20:55.904-0400 [INFO]  raft: starting snapshot up to: index=1256049
+2025-05-05T15:20:55.904-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/4-1256049-1746472855904.tmp
+2025-05-05T15:20:56.183-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-1197692-1746469238498
+2025-05-05T15:20:56.310-0400 [INFO]  raft: compacting logs: from=1224232 to=1245810
+2025-05-05T15:21:02.422-0400 [INFO]  raft: snapshot complete up to: index=1256049
+2025-05-05T15:31:32.511-0400 [INFO]  raft: starting snapshot up to: index=1273649
+2025-05-05T15:31:32.511-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/5-1273649-1746473492511.tmp
+2025-05-05T15:31:32.711-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/2-1234471-1746469425779
+2025-05-05T15:31:32.778-0400 [INFO]  raft: compacting logs: from=1245811 to=1263409
+2025-05-05T15:31:32.793-0400 [INFO]  raft: snapshot complete up to: index=1273649
+2025-05-05T15:35:11.353-0400 [INFO]  raft: starting snapshot up to: index=1294604
+2025-05-05T15:35:11.353-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/5-1294604-1746473711353.tmp
+2025-05-05T15:35:11.389-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/4-1256049-1746472855904
+2025-05-05T15:35:11.397-0400 [INFO]  raft: compacting logs: from=1263410 to=1284364
+2025-05-05T15:35:11.412-0400 [INFO]  raft: snapshot complete up to: index=1294604
+/usr/bin/bash: line 5: 1812580 Killed                  ./chubby-raft -listen='argo-37:8004' -raftbind='argo-37:9004' -raftdir='raft_data/8529268-4' -id='argo-37:8004' -join='argo-06:8000' -single='false' -lease_duration='60'
+2025-05-05T15:35:18.227-0400 [INFO]  raft: starting restore from snapshot: id=5-1294604-1746473711353 last-index=1294604 last-term=5 size-in-bytes=2150
+2025-05-05T15:35:18.228-0400 [INFO]  raft: snapshot restore progress: id=5-1294604-1746473711353 last-index=1294604 last-term=5 size-in-bytes=2150 read-bytes=2150 percent-complete="100.00%"
+2025-05-05T15:35:18.228-0400 [INFO]  raft: restored from snapshot: id=5-1294604-1746473711353 last-index=1294604 last-term=5 size-in-bytes=2150
+2025-05-05T15:35:18.304-0400 [INFO]  raft: initial configuration: index=6 servers="[{Suffrage:Voter ID:argo-06:8000 Address:172.17.7.106:9000} {Suffrage:Voter ID:argo-08:8001 Address:argo-08:9001} {Suffrage:Voter ID:argo-19:8002 Address:argo-19:9002} {Suffrage:Voter ID:argo-37:8004 Address:argo-37:9004} {Suffrage:Voter ID:argo-36:8003 Address:argo-36:9003}]"
+2025-05-05T15:35:18.304-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.137:9004 [Follower]" leader-address= leader-id=
+[server] 2025/05/05 15:35:18 Attempting to join cluster at argo-06:8000 as node argo-37:8004 with Raft address argo-37:9004
+[server] 2025/05/05 15:35:18 Successfully joined cluster.
+[server] 2025/05/05 15:35:18 Listening for client RPC connections on argo-37:8004
+2025-05-05T15:35:24.135-0400 [WARN]  raft: rejecting vote request since we have a leader: from=172.17.7.119:9002 leader=172.17.7.136:9003 leader-id=argo-36:8003
+2025-05-05T15:35:24.176-0400 [WARN]  raft: rejecting vote request since we have a leader: from=172.17.7.108:9001 leader=172.17.7.136:9003 leader-id=argo-36:8003
+2025-05-05T15:35:24.181-0400 [WARN]  raft: heartbeat timeout reached, starting election: last-leader-addr=172.17.7.136:9003 last-leader-id=argo-36:8003
+2025-05-05T15:35:24.181-0400 [INFO]  raft: entering candidate state: node="Node at 172.17.7.137:9004 [Candidate]" term=6
+2025-05-05T15:35:24.183-0400 [DEBUG] raft: asking for vote: term=6 from=argo-06:8000 address=172.17.7.106:9000
+2025-05-05T15:35:24.183-0400 [DEBUG] raft: asking for vote: term=6 from=argo-08:8001 address=argo-08:9001
+2025-05-05T15:35:24.183-0400 [DEBUG] raft: asking for vote: term=6 from=argo-19:8002 address=argo-19:9002
+2025-05-05T15:35:24.183-0400 [DEBUG] raft: voting for self: term=6 id=argo-37:8004
+2025-05-05T15:35:24.187-0400 [DEBUG] raft: asking for vote: term=6 from=argo-36:8003 address=argo-36:9003
+2025-05-05T15:35:24.187-0400 [DEBUG] raft: calculated votes needed: needed=3 term=6
+2025-05-05T15:35:24.187-0400 [DEBUG] raft: vote granted: from=argo-37:8004 term=6 tally=1
+2025-05-05T15:35:25.270-0400 [WARN]  raft: Election timeout reached, restarting election
+2025-05-05T15:35:25.270-0400 [INFO]  raft: entering candidate state: node="Node at 172.17.7.137:9004 [Candidate]" term=7
+2025-05-05T15:35:25.274-0400 [DEBUG] raft: asking for vote: term=7 from=argo-06:8000 address=172.17.7.106:9000
+2025-05-05T15:35:25.274-0400 [DEBUG] raft: asking for vote: term=7 from=argo-08:8001 address=argo-08:9001
+2025-05-05T15:35:25.274-0400 [DEBUG] raft: asking for vote: term=7 from=argo-19:8002 address=argo-19:9002
+2025-05-05T15:35:25.274-0400 [DEBUG] raft: voting for self: term=7 id=argo-37:8004
+2025-05-05T15:35:25.278-0400 [DEBUG] raft: asking for vote: term=7 from=argo-36:8003 address=argo-36:9003
+2025-05-05T15:35:25.278-0400 [DEBUG] raft: calculated votes needed: needed=3 term=7
+2025-05-05T15:35:25.278-0400 [DEBUG] raft: vote granted: from=argo-37:8004 term=7 tally=1
+2025-05-05T15:35:25.279-0400 [DEBUG] raft: vote granted: from=argo-19:8002 term=7 tally=2
+2025-05-05T15:35:25.279-0400 [DEBUG] raft: vote granted: from=argo-08:8001 term=7 tally=3
+2025-05-05T15:35:25.279-0400 [INFO]  raft: election won: term=7 tally=3
+2025-05-05T15:35:25.279-0400 [INFO]  raft: entering leader state: leader="Node at 172.17.7.137:9004 [Leader]"
+2025-05-05T15:35:25.279-0400 [INFO]  raft: added peer, starting replication: peer=argo-06:8000
+2025-05-05T15:35:25.279-0400 [INFO]  raft: added peer, starting replication: peer=argo-08:8001
+2025-05-05T15:35:25.279-0400 [INFO]  raft: added peer, starting replication: peer=argo-19:8002
+2025-05-05T15:35:25.279-0400 [INFO]  raft: added peer, starting replication: peer=argo-36:8003
+2025-05-05T15:35:25.280-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-08:8001 argo-08:9001}"
+2025-05-05T15:35:25.280-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-19:8002 argo-19:9002}"
+2025-05-05T15:35:25.284-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-06:8000 172.17.7.106:9000}"
+2025-05-05T15:35:25.394-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-36:8003 argo-36:9003}"
+[server] 2025/05/05 15:35:25 Creating session with client client4-1746473711956101097
+[server] 2025/05/05 15:35:25 Monitoring session for client client4-1746473711956101097
+[server] 2025/05/05 15:35:25 Creating session with client client2-1746473711956098572
+[server] 2025/05/05 15:35:25 Monitoring session for client client2-1746473711956098572
+[server] 2025/05/05 15:35:25 Creating session with client client1-1746473711956096778
+[server] 2025/05/05 15:35:25 Monitoring session for client client1-1746473711956096778
+[server] 2025/05/05 15:35:25 Creating session with client client3-1746473711956100035
+[server] 2025/05/05 15:35:25 Monitoring session for client client3-1746473711956100035
+[server] 2025/05/05 15:35:25 Creating session with client client0-1746473711956090627
+[server] 2025/05/05 15:35:25 Monitoring session for client client0-1746473711956090627
+[server] 2025/05/05 15:36:24 Session extended for client client4-1746473711956101097, new lease: 2m0s
+[server] 2025/05/05 15:36:24 Session extended for client client2-1746473711956098572, new lease: 2m0s
+[server] 2025/05/05 15:36:24 Session extended for client client1-1746473711956096778, new lease: 2m0s
+[server] 2025/05/05 15:36:24 Session extended for client client0-1746473711956090627, new lease: 2m0s
+[server] 2025/05/05 15:36:24 Session extended for client client3-1746473711956100035, new lease: 2m0s
+[server] 2025/05/05 15:37:25 Lease expired for client client1-1746473711956096778: terminating
+[server] 2025/05/05 15:37:25 Error releasing lock /file18 for client client1-1746473711956096778 on termination: Session client1-1746473711956096778 does not hold lock /file18
+[server] 2025/05/05 15:37:25 Terminated session for client client1-1746473711956096778
+[server] 2025/05/05 15:37:25 Lease expired for client client4-1746473711956101097: terminating
+[server] 2025/05/05 15:37:25 Error releasing lock /file56 for client client4-1746473711956101097 on termination: Session client4-1746473711956101097 does not hold lock /file56
+[server] 2025/05/05 15:37:25 Terminated session for client client4-1746473711956101097
+[server] 2025/05/05 15:37:25 Lease expired for client client2-1746473711956098572: terminating
+[server] 2025/05/05 15:37:25 Error releasing lock /file25 for client client2-1746473711956098572 on termination: Session client2-1746473711956098572 does not hold lock /file25
+[server] 2025/05/05 15:37:25 Terminated session for client client2-1746473711956098572
+[server] 2025/05/05 15:37:25 Lease expired for client client0-1746473711956090627: terminating
+[server] 2025/05/05 15:37:25 Error releasing lock /file81 for client client0-1746473711956090627 on termination: Session client0-1746473711956090627 does not hold lock /file81
+[server] 2025/05/05 15:37:25 Terminated session for client client0-1746473711956090627
+[server] 2025/05/05 15:37:25 Lease expired for client client3-1746473711956100035: terminating
+[server] 2025/05/05 15:37:25 Error releasing lock /file40 for client client3-1746473711956100035 on termination: Session client3-1746473711956100035 does not hold lock /file40
+[server] 2025/05/05 15:37:25 Terminated session for client client3-1746473711956100035
+2025-05-05T15:38:50.191-0400 [INFO]  raft: starting snapshot up to: index=1309020
+2025-05-05T15:38:50.191-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/7-1309020-1746473930191.tmp
+2025-05-05T15:38:50.220-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/5-1273649-1746473492511
+2025-05-05T15:38:50.226-0400 [INFO]  raft: compacting logs: from=1284365 to=1298780
+2025-05-05T15:38:50.747-0400 [INFO]  raft: snapshot complete up to: index=1309020
+[server] 2025/05/05 15:40:24 Creating session with client prewriter
+[server] 2025/05/05 15:40:24 Monitoring session for client prewriter
+[server] 2025/05/05 15:40:25 Creating session with client client3-1746474025433051851
+[server] 2025/05/05 15:40:25 Monitoring session for client client3-1746474025433051851
+[server] 2025/05/05 15:40:25 Creating session with client client4-1746474025433053114
+[server] 2025/05/05 15:40:25 Monitoring session for client client4-1746474025433053114
+[server] 2025/05/05 15:40:25 Creating session with client client0-1746474025433042995
+[server] 2025/05/05 15:40:25 Monitoring session for client client0-1746474025433042995
+[server] 2025/05/05 15:40:25 Creating session with client client2-1746474025433050659
+[server] 2025/05/05 15:40:25 Monitoring session for client client2-1746474025433050659
+[server] 2025/05/05 15:40:25 Creating session with client client1-1746474025433048084
+[server] 2025/05/05 15:40:25 Monitoring session for client client1-1746474025433048084
+/usr/bin/bash: line 5: 1824727 Killed                  ./chubby-raft -listen='argo-37:8004' -raftbind='argo-37:9004' -raftdir='raft_data/8529268-4' -id='argo-37:8004' -join='argo-06:8000' -single='false' -lease_duration='60'
+2025-05-05T15:40:36.154-0400 [INFO]  raft: starting restore from snapshot: id=7-1309020-1746473930191 last-index=1309020 last-term=7 size-in-bytes=2151
+2025-05-05T15:40:36.156-0400 [INFO]  raft: snapshot restore progress: id=7-1309020-1746473930191 last-index=1309020 last-term=7 size-in-bytes=2151 read-bytes=2151 percent-complete="100.00%"
+2025-05-05T15:40:36.156-0400 [INFO]  raft: restored from snapshot: id=7-1309020-1746473930191 last-index=1309020 last-term=7 size-in-bytes=2151
+2025-05-05T15:40:36.159-0400 [INFO]  raft: initial configuration: index=6 servers="[{Suffrage:Voter ID:argo-06:8000 Address:172.17.7.106:9000} {Suffrage:Voter ID:argo-08:8001 Address:argo-08:9001} {Suffrage:Voter ID:argo-19:8002 Address:argo-19:9002} {Suffrage:Voter ID:argo-37:8004 Address:argo-37:9004} {Suffrage:Voter ID:argo-36:8003 Address:argo-36:9003}]"
+2025-05-05T15:40:36.160-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.137:9004 [Follower]" leader-address= leader-id=
+[server] 2025/05/05 15:40:36 Attempting to join cluster at argo-06:8000 as node argo-37:8004 with Raft address argo-37:9004
+[server] 2025/05/05 15:40:36 Successfully joined cluster.
+[server] 2025/05/05 15:40:36 Listening for client RPC connections on argo-37:8004
+2025-05-05T15:40:37.199-0400 [WARN]  raft: heartbeat timeout reached, starting election: last-leader-addr= last-leader-id=
+2025-05-05T15:40:37.199-0400 [INFO]  raft: entering candidate state: node="Node at 172.17.7.137:9004 [Candidate]" term=8
+2025-05-05T15:40:37.204-0400 [DEBUG] raft: asking for vote: term=8 from=argo-06:8000 address=172.17.7.106:9000
+2025-05-05T15:40:37.204-0400 [DEBUG] raft: asking for vote: term=8 from=argo-08:8001 address=argo-08:9001
+2025-05-05T15:40:37.204-0400 [DEBUG] raft: asking for vote: term=8 from=argo-19:8002 address=argo-19:9002
+2025-05-05T15:40:37.204-0400 [DEBUG] raft: voting for self: term=8 id=argo-37:8004
+2025-05-05T15:40:37.209-0400 [DEBUG] raft: asking for vote: term=8 from=argo-36:8003 address=argo-36:9003
+2025-05-05T15:40:37.209-0400 [DEBUG] raft: calculated votes needed: needed=3 term=8
+2025-05-05T15:40:37.209-0400 [DEBUG] raft: vote granted: from=argo-37:8004 term=8 tally=1
+2025-05-05T15:40:37.214-0400 [DEBUG] raft: vote granted: from=argo-08:8001 term=8 tally=2
+2025-05-05T15:40:37.215-0400 [DEBUG] raft: vote granted: from=argo-06:8000 term=8 tally=3
+2025-05-05T15:40:37.215-0400 [INFO]  raft: election won: term=8 tally=3
+2025-05-05T15:40:37.215-0400 [INFO]  raft: entering leader state: leader="Node at 172.17.7.137:9004 [Leader]"
+2025-05-05T15:40:37.215-0400 [INFO]  raft: added peer, starting replication: peer=argo-06:8000
+2025-05-05T15:40:37.215-0400 [INFO]  raft: added peer, starting replication: peer=argo-08:8001
+2025-05-05T15:40:37.215-0400 [INFO]  raft: added peer, starting replication: peer=argo-19:8002
+2025-05-05T15:40:37.215-0400 [INFO]  raft: added peer, starting replication: peer=argo-36:8003
+2025-05-05T15:40:37.215-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-08:8001 argo-08:9001}"
+2025-05-05T15:40:37.215-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-06:8000 172.17.7.106:9000}"
+2025-05-05T15:40:37.217-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-36:8003 argo-36:9003}"
+2025-05-05T15:40:37.217-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-19:8002 argo-19:9002}"
+[server] 2025/05/05 15:40:37 Creating session with client client1-1746474025433048084
+[server] 2025/05/05 15:40:37 Monitoring session for client client1-1746474025433048084
+[server] 2025/05/05 15:40:37 Creating session with client client3-1746474025433051851
+[server] 2025/05/05 15:40:37 Monitoring session for client client3-1746474025433051851
+[server] 2025/05/05 15:40:37 Creating session with client client4-1746474025433053114
+[server] 2025/05/05 15:40:37 Monitoring session for client client4-1746474025433053114
+[server] 2025/05/05 15:40:37 Creating session with client client2-1746474025433050659
+[server] 2025/05/05 15:40:37 Monitoring session for client client2-1746474025433050659
+[server] 2025/05/05 15:40:37 Creating session with client client0-1746474025433042995
+[server] 2025/05/05 15:40:37 Monitoring session for client client0-1746474025433042995
+[server] 2025/05/05 15:41:36 Session extended for client client2-1746474025433050659, new lease: 2m0s
+[server] 2025/05/05 15:41:36 Session extended for client client1-1746474025433048084, new lease: 2m0s
+[server] 2025/05/05 15:41:36 Session extended for client client3-1746474025433051851, new lease: 2m0s
+[server] 2025/05/05 15:41:36 Session extended for client client4-1746474025433053114, new lease: 2m0s
+[server] 2025/05/05 15:41:36 Session extended for client client0-1746474025433042995, new lease: 2m0s
+[server] 2025/05/05 15:42:37 Lease expired for client client3-1746474025433051851: terminating
+[server] 2025/05/05 15:42:37 Error releasing lock /file40 for client client3-1746474025433051851 on termination: Session client3-1746474025433051851 does not hold lock /file40
+[server] 2025/05/05 15:42:37 Terminated session for client client3-1746474025433051851
+[server] 2025/05/05 15:42:37 Lease expired for client client1-1746474025433048084: terminating
+[server] 2025/05/05 15:42:37 Error releasing lock /file18 for client client1-1746474025433048084 on termination: Session client1-1746474025433048084 does not hold lock /file18
+[server] 2025/05/05 15:42:37 Terminated session for client client1-1746474025433048084
+[server] 2025/05/05 15:42:37 Lease expired for client client2-1746474025433050659: terminating
+[server] 2025/05/05 15:42:37 Error releasing lock /file25 for client client2-1746474025433050659 on termination: Session client2-1746474025433050659 does not hold lock /file25
+[server] 2025/05/05 15:42:37 Terminated session for client client2-1746474025433050659
+[server] 2025/05/05 15:42:37 Lease expired for client client4-1746474025433053114: terminating
+[server] 2025/05/05 15:42:37 Error releasing lock /file56 for client client4-1746474025433053114 on termination: Session client4-1746474025433053114 does not hold lock /file56
+[server] 2025/05/05 15:42:37 Terminated session for client client4-1746474025433053114
+[server] 2025/05/05 15:42:37 Lease expired for client client0-1746474025433042995: terminating
+[server] 2025/05/05 15:42:37 Error releasing lock /file81 for client client0-1746474025433042995 on termination: Session client0-1746474025433042995 does not hold lock /file81
+[server] 2025/05/05 15:42:37 Terminated session for client client0-1746474025433042995
+[server] 2025/05/05 15:53:14 Creating session with client prewriter
+[server] 2025/05/05 15:53:14 Monitoring session for client prewriter
+[server] 2025/05/05 15:53:15 Creating session with client client3-1746474795273407616
+[server] 2025/05/05 15:53:15 Monitoring session for client client3-1746474795273407616
+[server] 2025/05/05 15:53:15 Creating session with client client0-1746474795273399069
+[server] 2025/05/05 15:53:15 Monitoring session for client client0-1746474795273399069
+[server] 2025/05/05 15:53:15 Creating session with client client4-1746474795273408467
+[server] 2025/05/05 15:53:15 Monitoring session for client client4-1746474795273408467
+[server] 2025/05/05 15:53:15 Creating session with client client2-1746474795273406233
+[server] 2025/05/05 15:53:15 Monitoring session for client client2-1746474795273406233
+[server] 2025/05/05 15:53:15 Creating session with client client1-1746474795273403999
+[server] 2025/05/05 15:53:15 Monitoring session for client client1-1746474795273403999
+/usr/bin/bash: line 5: 1825688 Killed                  ./chubby-raft -listen='argo-37:8004' -raftbind='argo-37:9004' -raftdir='raft_data/8529268-4' -id='argo-37:8004' -join='argo-06:8000' -single='false' -lease_duration='60'
+2025-05-05T15:53:24.104-0400 [INFO]  raft: starting restore from snapshot: id=7-1309020-1746473930191 last-index=1309020 last-term=7 size-in-bytes=2151
+2025-05-05T15:53:24.105-0400 [INFO]  raft: snapshot restore progress: id=7-1309020-1746473930191 last-index=1309020 last-term=7 size-in-bytes=2151 read-bytes=2151 percent-complete="100.00%"
+2025-05-05T15:53:24.105-0400 [INFO]  raft: restored from snapshot: id=7-1309020-1746473930191 last-index=1309020 last-term=7 size-in-bytes=2151
+2025-05-05T15:53:24.108-0400 [INFO]  raft: initial configuration: index=6 servers="[{Suffrage:Voter ID:argo-06:8000 Address:172.17.7.106:9000} {Suffrage:Voter ID:argo-08:8001 Address:argo-08:9001} {Suffrage:Voter ID:argo-19:8002 Address:argo-19:9002} {Suffrage:Voter ID:argo-37:8004 Address:argo-37:9004} {Suffrage:Voter ID:argo-36:8003 Address:argo-36:9003}]"
+2025-05-05T15:53:24.108-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.137:9004 [Follower]" leader-address= leader-id=
+[server] 2025/05/05 15:53:24 Attempting to join cluster at argo-06:8000 as node argo-37:8004 with Raft address argo-37:9004
+[server] 2025/05/05 15:53:24 Successfully joined cluster.
+[server] 2025/05/05 15:53:24 Listening for client RPC connections on argo-37:8004
+2025-05-05T15:53:25.431-0400 [WARN]  raft: heartbeat timeout reached, starting election: last-leader-addr= last-leader-id=
+2025-05-05T15:53:25.431-0400 [INFO]  raft: entering candidate state: node="Node at 172.17.7.137:9004 [Candidate]" term=9
+2025-05-05T15:53:25.442-0400 [DEBUG] raft: asking for vote: term=9 from=argo-06:8000 address=172.17.7.106:9000
+2025-05-05T15:53:25.442-0400 [DEBUG] raft: asking for vote: term=9 from=argo-08:8001 address=argo-08:9001
+2025-05-05T15:53:25.442-0400 [DEBUG] raft: asking for vote: term=9 from=argo-19:8002 address=argo-19:9002
+2025-05-05T15:53:25.442-0400 [DEBUG] raft: voting for self: term=9 id=argo-37:8004
+2025-05-05T15:53:25.447-0400 [DEBUG] raft: asking for vote: term=9 from=argo-36:8003 address=argo-36:9003
+2025-05-05T15:53:25.447-0400 [DEBUG] raft: calculated votes needed: needed=3 term=9
+2025-05-05T15:53:25.447-0400 [DEBUG] raft: vote granted: from=argo-37:8004 term=9 tally=1
+2025-05-05T15:53:25.452-0400 [DEBUG] raft: vote granted: from=argo-06:8000 term=9 tally=2
+2025-05-05T15:53:25.453-0400 [DEBUG] raft: vote granted: from=argo-08:8001 term=9 tally=3
+2025-05-05T15:53:25.453-0400 [INFO]  raft: election won: term=9 tally=3
+2025-05-05T15:53:25.453-0400 [INFO]  raft: entering leader state: leader="Node at 172.17.7.137:9004 [Leader]"
+2025-05-05T15:53:25.453-0400 [INFO]  raft: added peer, starting replication: peer=argo-06:8000
+2025-05-05T15:53:25.453-0400 [INFO]  raft: added peer, starting replication: peer=argo-08:8001
+2025-05-05T15:53:25.453-0400 [INFO]  raft: added peer, starting replication: peer=argo-19:8002
+2025-05-05T15:53:25.453-0400 [INFO]  raft: added peer, starting replication: peer=argo-36:8003
+2025-05-05T15:53:25.454-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-06:8000 172.17.7.106:9000}"
+2025-05-05T15:53:25.454-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-08:8001 argo-08:9001}"
+2025-05-05T15:53:25.454-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-19:8002 argo-19:9002}"
+2025-05-05T15:53:25.454-0400 [INFO]  raft: pipelining replication: peer="{Voter argo-36:8003 argo-36:9003}"
+[server] 2025/05/05 15:53:25 Creating session with client client1-1746474795273403999
+[server] 2025/05/05 15:53:25 Monitoring session for client client1-1746474795273403999
+[server] 2025/05/05 15:53:25 Creating session with client client2-1746474795273406233
+[server] 2025/05/05 15:53:25 Monitoring session for client client2-1746474795273406233
+[server] 2025/05/05 15:53:25 Creating session with client client0-1746474795273399069
+[server] 2025/05/05 15:53:25 Monitoring session for client client0-1746474795273399069
+[server] 2025/05/05 15:53:25 Creating session with client client4-1746474795273408467
+[server] 2025/05/05 15:53:25 Monitoring session for client client4-1746474795273408467
+[server] 2025/05/05 15:53:25 Creating session with client client3-1746474795273407616
+[server] 2025/05/05 15:53:25 Monitoring session for client client3-1746474795273407616
+[server] 2025/05/05 15:54:24 Session extended for client client2-1746474795273406233, new lease: 2m0s
+[server] 2025/05/05 15:54:24 Session extended for client client1-1746474795273403999, new lease: 2m0s
+[server] 2025/05/05 15:54:24 Session extended for client client4-1746474795273408467, new lease: 2m0s
+[server] 2025/05/05 15:54:24 Session extended for client client0-1746474795273399069, new lease: 2m0s
+[server] 2025/05/05 15:54:24 Session extended for client client3-1746474795273407616, new lease: 2m0s
+[server] 2025/05/05 15:55:25 Lease expired for client client2-1746474795273406233: terminating
+[server] 2025/05/05 15:55:25 Error releasing lock /file25 for client client2-1746474795273406233 on termination: Session client2-1746474795273406233 does not hold lock /file25
+[server] 2025/05/05 15:55:25 Terminated session for client client2-1746474795273406233
+[server] 2025/05/05 15:55:25 Lease expired for client client1-1746474795273403999: terminating
+[server] 2025/05/05 15:55:25 Error releasing lock /file18 for client client1-1746474795273403999 on termination: Session client1-1746474795273403999 does not hold lock /file18
+[server] 2025/05/05 15:55:25 Terminated session for client client1-1746474795273403999
+[server] 2025/05/05 15:55:25 Lease expired for client client4-1746474795273408467: terminating
+[server] 2025/05/05 15:55:25 Error releasing lock /file56 for client client4-1746474795273408467 on termination: Session client4-1746474795273408467 does not hold lock /file56
+[server] 2025/05/05 15:55:25 Terminated session for client client4-1746474795273408467
+[server] 2025/05/05 15:55:25 Lease expired for client client0-1746474795273399069: terminating
+[server] 2025/05/05 15:55:25 Error releasing lock /file81 for client client0-1746474795273399069 on termination: Session client0-1746474795273399069 does not hold lock /file81
+[server] 2025/05/05 15:55:25 Terminated session for client client0-1746474795273399069
+[server] 2025/05/05 15:55:25 Lease expired for client client3-1746474795273407616: terminating
+[server] 2025/05/05 15:55:25 Error releasing lock /file40 for client client3-1746474795273407616 on termination: Session client3-1746474795273407616 does not hold lock /file40
+[server] 2025/05/05 15:55:25 Terminated session for client client3-1746474795273407616
+[server] 2025/05/05 16:00:42 Creating session with client prewriter
+[server] 2025/05/05 16:00:42 Monitoring session for client prewriter
+[server] 2025/05/05 16:00:43 Creating session with client client3-1746475243140518728
+[server] 2025/05/05 16:00:43 Monitoring session for client client3-1746475243140518728
+[server] 2025/05/05 16:00:43 Creating session with client client4-1746475243140519540
+[server] 2025/05/05 16:00:43 Monitoring session for client client4-1746475243140519540
+[server] 2025/05/05 16:00:43 Creating session with client client0-1746475243140509711
+[server] 2025/05/05 16:00:43 Monitoring session for client client0-1746475243140509711
+[server] 2025/05/05 16:00:43 Creating session with client client2-1746475243140517296
+[server] 2025/05/05 16:00:43 Monitoring session for client client2-1746475243140517296
+[server] 2025/05/05 16:00:43 Creating session with client client1-1746475243140515642
+[server] 2025/05/05 16:00:43 Monitoring session for client client1-1746475243140515642
+/usr/bin/bash: line 5: 1828352 Killed                  ./chubby-raft -listen='argo-37:8004' -raftbind='argo-37:9004' -raftdir='raft_data/8529268-4' -id='argo-37:8004' -join='argo-06:8000' -single='false' -lease_duration='60'
+2025-05-05T16:01:14.788-0400 [INFO]  raft: starting restore from snapshot: id=7-1309020-1746473930191 last-index=1309020 last-term=7 size-in-bytes=2151
+2025-05-05T16:01:14.789-0400 [INFO]  raft: snapshot restore progress: id=7-1309020-1746473930191 last-index=1309020 last-term=7 size-in-bytes=2151 read-bytes=2151 percent-complete="100.00%"
+2025-05-05T16:01:14.789-0400 [INFO]  raft: restored from snapshot: id=7-1309020-1746473930191 last-index=1309020 last-term=7 size-in-bytes=2151
+2025-05-05T16:01:14.801-0400 [INFO]  raft: initial configuration: index=6 servers="[{Suffrage:Voter ID:argo-06:8000 Address:172.17.7.106:9000} {Suffrage:Voter ID:argo-08:8001 Address:argo-08:9001} {Suffrage:Voter ID:argo-19:8002 Address:argo-19:9002} {Suffrage:Voter ID:argo-37:8004 Address:argo-37:9004} {Suffrage:Voter ID:argo-36:8003 Address:argo-36:9003}]"
+2025-05-05T16:01:14.802-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.137:9004 [Follower]" leader-address= leader-id=
+[server] 2025/05/05 16:01:14 Attempting to join cluster at argo-06:8000 as node argo-37:8004 with Raft address argo-37:9004
+[server] 2025/05/05 16:01:14 Successfully joined cluster.
+[server] 2025/05/05 16:01:14 Listening for client RPC connections on argo-37:8004
+2025-05-05T16:01:16.032-0400 [DEBUG] raft: lost leadership because received a requestVote with a newer term
+2025-05-05T16:01:16.288-0400 [INFO]  raft: duplicate requestVote for same term: term=10
+2025-05-05T16:01:17.064-0400 [DEBUG] raft: lost leadership because received a requestVote with a newer term
+2025-05-05T16:03:28.811-0400 [WARN]  raft: rejecting vote request since we have a leader: from=172.17.7.106:9000 leader=172.17.7.108:9001 leader-id=argo-08:8001
+2025-05-05T16:03:29.284-0400 [WARN]  raft: rejecting vote request since we have a leader: from=172.17.7.136:9003 leader=172.17.7.108:9001 leader-id=argo-08:8001
+2025-05-05T16:03:29.286-0400 [DEBUG] raft: lost leadership because received a requestVote with a newer term
+2025-05-05T16:05:37.194-0400 [WARN]  raft: rejecting vote request since we have a leader: from=172.17.7.136:9003 leader=172.17.7.108:9001 leader-id=argo-08:8001
+2025-05-05T16:05:38.085-0400 [WARN]  raft: heartbeat timeout reached, starting election: last-leader-addr=172.17.7.108:9001 last-leader-id=argo-08:8001
+2025-05-05T16:05:38.085-0400 [INFO]  raft: entering candidate state: node="Node at 172.17.7.137:9004 [Candidate]" term=13
+2025-05-05T16:05:38.088-0400 [DEBUG] raft: asking for vote: term=13 from=argo-06:8000 address=172.17.7.106:9000
+2025-05-05T16:05:38.088-0400 [DEBUG] raft: asking for vote: term=13 from=argo-08:8001 address=argo-08:9001
+2025-05-05T16:05:38.088-0400 [DEBUG] raft: asking for vote: term=13 from=argo-19:8002 address=argo-19:9002
+2025-05-05T16:05:38.088-0400 [DEBUG] raft: voting for self: term=13 id=argo-37:8004
+2025-05-05T16:05:38.092-0400 [DEBUG] raft: asking for vote: term=13 from=argo-36:8003 address=argo-36:9003
+2025-05-05T16:05:38.092-0400 [DEBUG] raft: calculated votes needed: needed=3 term=13
+2025-05-05T16:05:38.092-0400 [DEBUG] raft: vote granted: from=argo-37:8004 term=13 tally=1
+2025-05-05T16:05:38.290-0400 [DEBUG] raft: lost leadership because received a requestVote with a newer term
+2025-05-05T16:05:38.298-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.137:9004 [Follower]" leader-address= leader-id=
+2025-05-05T16:12:05.032-0400 [ERROR] raft-net: failed to flush response: error="write tcp 172.17.7.137:9004->172.17.7.136:55082: write: connection reset by peer"
+2025-05-05T16:12:06.360-0400 [WARN]  raft: rejecting vote request since we have a leader: from=172.17.7.119:9002 leader=172.17.7.136:9003 leader-id=argo-36:8003
+2025-05-05T16:12:06.406-0400 [WARN]  raft: heartbeat timeout reached, starting election: last-leader-addr=172.17.7.136:9003 last-leader-id=argo-36:8003
+2025-05-05T16:12:06.406-0400 [INFO]  raft: entering candidate state: node="Node at 172.17.7.137:9004 [Candidate]" term=15
+2025-05-05T16:12:06.409-0400 [DEBUG] raft: asking for vote: term=15 from=argo-06:8000 address=172.17.7.106:9000
+2025-05-05T16:12:06.409-0400 [DEBUG] raft: asking for vote: term=15 from=argo-08:8001 address=argo-08:9001
+2025-05-05T16:12:06.409-0400 [DEBUG] raft: asking for vote: term=15 from=argo-19:8002 address=argo-19:9002
+2025-05-05T16:12:06.409-0400 [DEBUG] raft: voting for self: term=15 id=argo-37:8004
+2025-05-05T16:12:06.420-0400 [DEBUG] raft: asking for vote: term=15 from=argo-36:8003 address=argo-36:9003
+2025-05-05T16:12:06.420-0400 [DEBUG] raft: calculated votes needed: needed=3 term=15
+2025-05-05T16:12:06.420-0400 [DEBUG] raft: vote granted: from=argo-37:8004 term=15 tally=1
+2025-05-05T16:12:06.420-0400 [ERROR] raft: failed to make requestVote RPC: target="{Voter argo-36:8003 argo-36:9003}" error=EOF term=15
+2025-05-05T16:12:06.547-0400 [INFO]  raft: duplicate requestVote for same term: term=15
+2025-05-05T16:12:06.994-0400 [INFO]  raft: duplicate requestVote for same term: term=15
+2025-05-05T16:12:07.427-0400 [DEBUG] raft: lost leadership because received a requestVote with a newer term
+2025-05-05T16:12:07.434-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.137:9004 [Follower]" leader-address= leader-id=
+2025-05-05T16:12:08.389-0400 [DEBUG] raft: lost leadership because received a requestVote with a newer term
+2025-05-05T16:12:08.396-0400 [WARN]  raft: failed to get previous log: previous-index=1312943 last-index=1312926 error="log not found"
+2025-05-05T16:14:29.460-0400 [INFO]  raft: starting snapshot up to: index=1329514
+2025-05-05T16:14:29.461-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1329514-1746476069461.tmp
+2025-05-05T16:14:29.496-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/5-1294604-1746473711353
+2025-05-05T16:14:29.512-0400 [INFO]  raft: compacting logs: from=1298781 to=1319274
+2025-05-05T16:14:30.728-0400 [INFO]  raft: snapshot complete up to: index=1329514
+2025-05-05T17:06:10.909-0400 [INFO]  raft: starting snapshot up to: index=1340531
+2025-05-05T17:06:10.909-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1340531-1746479170909.tmp
+2025-05-05T17:06:10.990-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/7-1309020-1746473930191
+2025-05-05T17:06:11.003-0400 [INFO]  raft: compacting logs: from=1319275 to=1330291
+2025-05-05T17:06:11.011-0400 [INFO]  raft: snapshot complete up to: index=1340531
+2025-05-05T17:11:04.048-0400 [INFO]  raft: starting snapshot up to: index=1371189
+2025-05-05T17:11:04.048-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1371189-1746479464048.tmp
+2025-05-05T17:11:04.078-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1329514-1746476069461
+2025-05-05T17:11:04.086-0400 [INFO]  raft: compacting logs: from=1330292 to=1360949
+2025-05-05T17:11:04.111-0400 [INFO]  raft: snapshot complete up to: index=1371189
+2025-05-05T17:14:41.602-0400 [INFO]  raft: starting snapshot up to: index=1398732
+2025-05-05T17:14:41.603-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1398732-1746479681603.tmp
+2025-05-05T17:14:41.629-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1340531-1746479170909
+2025-05-05T17:14:41.637-0400 [INFO]  raft: compacting logs: from=1360950 to=1388492
+2025-05-05T17:14:41.655-0400 [INFO]  raft: snapshot complete up to: index=1398732
+2025-05-05T17:16:48.695-0400 [INFO]  raft: starting snapshot up to: index=1412577
+2025-05-05T17:16:48.695-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1412577-1746479808695.tmp
+2025-05-05T17:16:48.717-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1371189-1746479464048
+2025-05-05T17:16:48.728-0400 [INFO]  raft: compacting logs: from=1388493 to=1402337
+2025-05-05T17:16:48.736-0400 [INFO]  raft: snapshot complete up to: index=1412577
+2025-05-05T17:19:09.192-0400 [INFO]  raft: starting snapshot up to: index=1426568
+2025-05-05T17:19:09.192-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1426568-1746479949192.tmp
+2025-05-05T17:19:09.215-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1398732-1746479681603
+2025-05-05T17:19:09.226-0400 [INFO]  raft: compacting logs: from=1402338 to=1416339
+2025-05-05T17:19:09.233-0400 [INFO]  raft: snapshot complete up to: index=1426568
+2025-05-05T17:22:44.627-0400 [INFO]  raft: starting snapshot up to: index=1453674
+2025-05-05T17:22:44.627-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1453674-1746480164627.tmp
+2025-05-05T17:22:44.652-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1412577-1746479808695
+2025-05-05T17:22:44.659-0400 [INFO]  raft: compacting logs: from=1416340 to=1443434
+2025-05-05T17:22:44.680-0400 [INFO]  raft: snapshot complete up to: index=1453674
+2025-05-05T17:25:51.917-0400 [INFO]  raft: starting snapshot up to: index=1488809
+2025-05-05T17:25:51.917-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1488809-1746480351917.tmp
+2025-05-05T17:25:51.964-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1426568-1746479949192
+2025-05-05T17:25:51.976-0400 [INFO]  raft: compacting logs: from=1443435 to=1478586
+2025-05-05T17:25:51.992-0400 [INFO]  raft: snapshot complete up to: index=1488809
+2025-05-05T17:28:40.957-0400 [INFO]  raft: starting snapshot up to: index=1501294
+2025-05-05T17:28:40.957-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1501294-1746480520957.tmp
+2025-05-05T17:28:40.996-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1453674-1746480164627
+2025-05-05T17:28:41.005-0400 [INFO]  raft: compacting logs: from=1478587 to=1491071
+2025-05-05T17:28:41.018-0400 [INFO]  raft: snapshot complete up to: index=1501294
+2025-05-05T17:31:50.779-0400 [INFO]  raft: starting snapshot up to: index=1534320
+2025-05-05T17:31:50.779-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1534320-1746480710779.tmp
+2025-05-05T17:31:50.815-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1488809-1746480351917
+2025-05-05T17:31:50.825-0400 [INFO]  raft: compacting logs: from=1491072 to=1524090
+2025-05-05T17:31:50.853-0400 [INFO]  raft: snapshot complete up to: index=1534320
+2025-05-05T17:35:29.480-0400 [INFO]  raft: starting snapshot up to: index=1544061
+2025-05-05T17:35:29.480-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1544061-1746480929480.tmp
+2025-05-05T17:35:29.510-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1501294-1746480520957
+2025-05-05T17:35:29.518-0400 [INFO]  raft: compacting logs: from=1524091 to=1533821
+2025-05-05T17:35:29.529-0400 [INFO]  raft: snapshot complete up to: index=1544061
+2025-05-05T18:17:29.737-0400 [INFO]  raft: starting snapshot up to: index=1570290
+2025-05-05T18:17:29.737-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1570290-1746483449737.tmp
+2025-05-05T18:17:29.799-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1534320-1746480710779
+2025-05-05T18:17:29.810-0400 [INFO]  raft: compacting logs: from=1533822 to=1560050
+2025-05-05T18:17:29.824-0400 [INFO]  raft: snapshot complete up to: index=1570290
+/usr/bin/bash: line 5: 1830515 Killed                  ./chubby-raft -listen='argo-37:8004' -raftbind='argo-37:9004' -raftdir='raft_data/8529268-4' -id='argo-37:8004' -join='argo-06:8000' -single='false' -lease_duration='60'
+2025-05-05T18:27:40.229-0400 [INFO]  raft: starting restore from snapshot: id=17-1570290-1746483449737 last-index=1570290 last-term=17 size-in-bytes=2148
+2025-05-05T18:27:40.231-0400 [INFO]  raft: snapshot restore progress: id=17-1570290-1746483449737 last-index=1570290 last-term=17 size-in-bytes=2148 read-bytes=2148 percent-complete="100.00%"
+2025-05-05T18:27:40.231-0400 [INFO]  raft: restored from snapshot: id=17-1570290-1746483449737 last-index=1570290 last-term=17 size-in-bytes=2148
+2025-05-05T18:27:40.556-0400 [INFO]  raft: initial configuration: index=6 servers="[{Suffrage:Voter ID:argo-06:8000 Address:172.17.7.106:9000} {Suffrage:Voter ID:argo-08:8001 Address:argo-08:9001} {Suffrage:Voter ID:argo-19:8002 Address:argo-19:9002} {Suffrage:Voter ID:argo-37:8004 Address:argo-37:9004} {Suffrage:Voter ID:argo-36:8003 Address:argo-36:9003}]"
+2025-05-05T18:27:40.556-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.137:9004 [Follower]" leader-address= leader-id=
+[server] 2025/05/05 18:27:40 Attempting to join cluster at argo-06:8000 as node argo-37:8004 with Raft address argo-37:9004
+[server] 2025/05/05 18:27:40 Successfully joined cluster.
+[server] 2025/05/05 18:27:40 Listening for client RPC connections on argo-37:8004
+2025-05-05T18:30:19.282-0400 [INFO]  raft: starting snapshot up to: index=1615345
+2025-05-05T18:30:19.282-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1615345-1746484219282.tmp
+2025-05-05T18:30:19.303-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1544061-1746480929480
+2025-05-05T18:30:19.313-0400 [INFO]  raft: compacting logs: from=1560051 to=1605105
+2025-05-05T18:30:20.013-0400 [INFO]  raft: snapshot complete up to: index=1615345
+2025-05-05T18:32:35.444-0400 [INFO]  raft: starting snapshot up to: index=1625999
+2025-05-05T18:32:35.444-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1625999-1746484355444.tmp
+2025-05-05T18:32:35.469-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1570290-1746483449737
+2025-05-05T18:32:35.480-0400 [INFO]  raft: compacting logs: from=1605106 to=1615770
+2025-05-05T18:32:35.490-0400 [INFO]  raft: snapshot complete up to: index=1625999
+2025-05-05T22:02:45.270-0400 [INFO]  raft: starting snapshot up to: index=1643833
+2025-05-05T22:02:45.270-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1643833-1746496965270.tmp
+2025-05-05T22:02:45.335-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1615345-1746484219282
+2025-05-05T22:02:45.352-0400 [INFO]  raft: compacting logs: from=1615771 to=1633593
+2025-05-05T22:02:45.366-0400 [INFO]  raft: snapshot complete up to: index=1643833
+2025-05-06T10:10:42.839-0400 [INFO]  raft: starting snapshot up to: index=1657701
+2025-05-06T10:10:42.839-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1657701-1746540642839.tmp
+2025-05-06T10:10:42.903-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1625999-1746484355444
+2025-05-06T10:10:42.913-0400 [INFO]  raft: compacting logs: from=1633594 to=1647461
+2025-05-06T10:10:42.923-0400 [INFO]  raft: snapshot complete up to: index=1657701
+2025-05-06T11:08:29.942-0400 [INFO]  raft: starting snapshot up to: index=1716797
+2025-05-06T11:08:29.942-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1716797-1746544109942.tmp
+2025-05-06T11:08:29.960-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1643833-1746496965270
+2025-05-06T11:08:29.971-0400 [INFO]  raft: compacting logs: from=1647462 to=1706574
+2025-05-06T11:08:30.008-0400 [INFO]  raft: snapshot complete up to: index=1716797
+2025-05-06T11:17:32.734-0400 [INFO]  raft: starting snapshot up to: index=1740927
+2025-05-06T11:17:32.734-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1740927-1746544652734.tmp
+2025-05-06T11:17:32.750-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1657701-1746540642839
+2025-05-06T11:17:32.757-0400 [INFO]  raft: compacting logs: from=1706575 to=1730701
+2025-05-06T11:17:32.770-0400 [INFO]  raft: snapshot complete up to: index=1740927
+2025-05-06T11:20:41.783-0400 [INFO]  raft: starting snapshot up to: index=1795066
+2025-05-06T11:20:41.783-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8529268-4/snapshots/17-1795066-1746544841783.tmp
+2025-05-06T11:20:41.797-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8529268-4/snapshots/17-1716797-1746544109942
+2025-05-06T11:20:41.803-0400 [INFO]  raft: compacting logs: from=1730702 to=1784826
+2025-05-06T11:20:41.835-0400 [INFO]  raft: snapshot complete up to: index=1795066
+slurmstepd: error: *** STEP 8529268.4 ON argo-37 CANCELLED AT 2025-05-06T11:47:04 ***

@@ -1,0 +1,10 @@
+package api
+
+type ClientID string
+
+type LockMode int
+
+const (
+	EXCLUSIVE LockMode = iota
+	SHARED
+)

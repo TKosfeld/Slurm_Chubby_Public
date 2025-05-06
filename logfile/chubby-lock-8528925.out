@@ -1,0 +1,6 @@
+[INFO] Launching node 0 on argo-44: Listen=argo-44:8000, RaftBind=argo-44:9000, ID=argo-44:8000, RaftDir=raft_data/8528925-0, Join=, Single=true, LeaseDuration=60s
+[INFO] Launching node 1 on argo-45: Listen=argo-45:8001, RaftBind=argo-45:9001, ID=argo-45:8001, RaftDir=raft_data/8528925-1, Join=argo-44:8000, Single=false, LeaseDuration=60s
+[INFO] Launching node 2 on argo-46: Listen=argo-46:8002, RaftBind=argo-46:9002, ID=argo-46:8002, RaftDir=raft_data/8528925-2, Join=argo-44:8000, Single=false, LeaseDuration=60s
+[INFO] Launching node 3 on argo-59: Listen=argo-59:8003, RaftBind=argo-59:9003, ID=argo-59:8003, RaftDir=raft_data/8528925-3, Join=argo-44:8000, Single=false, LeaseDuration=60s
+[INFO] Launching node 4 on argo-65: Listen=argo-65:8004, RaftBind=argo-65:9004, ID=argo-65:8004, RaftDir=raft_data/8528925-4, Join=argo-44:8000, Single=false, LeaseDuration=60s
+[INFO] Replica list written to replica_list.txt

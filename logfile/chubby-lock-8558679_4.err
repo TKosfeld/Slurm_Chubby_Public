@@ -1,0 +1,55 @@
+2025-05-06T13:52:17.571-0400 [INFO]  raft: initial configuration: index=0 servers=[]
+2025-05-06T13:52:17.572-0400 [INFO]  raft: entering follower state: follower="Node at 172.17.7.124:9004 [Follower]" leader-address= leader-id=
+[server] 2025/05/06 13:52:17 Attempting to join cluster at argo-01:8000 as node argo-24:8004 with Raft address argo-24:9004
+[server] 2025/05/06 13:52:17 Successfully joined cluster.
+[server] 2025/05/06 13:52:17 Listening for client RPC connections on argo-24:8004
+2025-05-06T13:52:17.575-0400 [WARN]  raft: failed to get previous log: previous-index=5 last-index=0 error="log not found"
+2025-05-06T14:00:52.218-0400 [INFO]  raft: starting snapshot up to: index=10814
+2025-05-06T14:00:52.218-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-4/snapshots/2-10814-1746554452218.tmp
+2025-05-06T14:00:52.233-0400 [INFO]  raft: compacting logs: from=1 to=577
+2025-05-06T14:00:52.246-0400 [INFO]  raft: snapshot complete up to: index=10814
+2025-05-06T14:07:49.363-0400 [INFO]  raft: starting snapshot up to: index=22547
+2025-05-06T14:07:49.363-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-4/snapshots/2-22547-1746554869363.tmp
+2025-05-06T14:07:49.377-0400 [INFO]  raft: compacting logs: from=578 to=12307
+2025-05-06T14:07:49.390-0400 [INFO]  raft: snapshot complete up to: index=22547
+2025-05-06T14:20:05.280-0400 [INFO]  raft: starting snapshot up to: index=43537
+2025-05-06T14:20:05.280-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-4/snapshots/2-43537-1746555605280.tmp
+2025-05-06T14:20:05.298-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-4/snapshots/2-10814-1746554452218
+2025-05-06T14:20:05.304-0400 [INFO]  raft: compacting logs: from=12308 to=33297
+2025-05-06T14:20:05.317-0400 [INFO]  raft: snapshot complete up to: index=43537
+2025-05-06T14:26:54.940-0400 [INFO]  raft: starting snapshot up to: index=58395
+2025-05-06T14:26:54.940-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-4/snapshots/2-58395-1746556014940.tmp
+2025-05-06T14:26:54.955-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-4/snapshots/2-22547-1746554869363
+2025-05-06T14:26:54.960-0400 [INFO]  raft: compacting logs: from=33298 to=48155
+2025-05-06T14:26:54.972-0400 [INFO]  raft: snapshot complete up to: index=58395
+2025-05-06T14:33:18.286-0400 [INFO]  raft: starting snapshot up to: index=77536
+2025-05-06T14:33:18.286-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-4/snapshots/2-77536-1746556398286.tmp
+2025-05-06T14:33:18.301-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-4/snapshots/2-43537-1746555605280
+2025-05-06T14:33:18.308-0400 [INFO]  raft: compacting logs: from=48156 to=67296
+2025-05-06T14:33:18.321-0400 [INFO]  raft: snapshot complete up to: index=77536
+2025-05-06T14:39:22.176-0400 [INFO]  raft: starting snapshot up to: index=104394
+2025-05-06T14:39:22.176-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-4/snapshots/2-104394-1746556762176.tmp
+2025-05-06T14:39:22.189-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-4/snapshots/2-58395-1746556014940
+2025-05-06T14:39:22.194-0400 [INFO]  raft: compacting logs: from=67297 to=94154
+2025-05-06T14:39:22.209-0400 [INFO]  raft: snapshot complete up to: index=104394
+2025-05-06T14:41:51.332-0400 [INFO]  raft: starting snapshot up to: index=132596
+2025-05-06T14:41:51.332-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-4/snapshots/2-132596-1746556911332.tmp
+2025-05-06T14:41:51.348-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-4/snapshots/2-77536-1746556398286
+2025-05-06T14:41:51.353-0400 [INFO]  raft: compacting logs: from=94155 to=122356
+2025-05-06T14:41:51.369-0400 [INFO]  raft: snapshot complete up to: index=132596
+2025-05-06T14:45:25.231-0400 [INFO]  raft: starting snapshot up to: index=195688
+2025-05-06T14:45:25.231-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-4/snapshots/2-195688-1746557125231.tmp
+2025-05-06T14:45:25.247-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-4/snapshots/2-104394-1746556762176
+2025-05-06T14:45:25.257-0400 [INFO]  raft: compacting logs: from=122357 to=185448
+2025-05-06T14:45:25.296-0400 [INFO]  raft: snapshot complete up to: index=195688
+2025-05-06T14:49:22.644-0400 [INFO]  raft: starting snapshot up to: index=256120
+2025-05-06T14:49:22.644-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-4/snapshots/2-256120-1746557362644.tmp
+2025-05-06T14:49:22.659-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-4/snapshots/2-132596-1746556911332
+2025-05-06T14:49:22.664-0400 [INFO]  raft: compacting logs: from=185449 to=245880
+2025-05-06T14:49:22.706-0400 [INFO]  raft: snapshot complete up to: index=256120
+2025-05-06T14:55:46.286-0400 [INFO]  raft: starting snapshot up to: index=271251
+2025-05-06T14:55:46.286-0400 [INFO]  snapshot: creating new snapshot: path=raft_data/8558679-4/snapshots/2-271251-1746557746286.tmp
+2025-05-06T14:55:46.301-0400 [INFO]  snapshot: reaping snapshot: path=raft_data/8558679-4/snapshots/2-195688-1746557125231
+2025-05-06T14:55:46.305-0400 [INFO]  raft: compacting logs: from=245881 to=261011
+2025-05-06T14:55:46.315-0400 [INFO]  raft: snapshot complete up to: index=271251
+slurmstepd: error: *** STEP 8558679.4 ON argo-24 CANCELLED AT 2025-05-06T15:04:49 ***
