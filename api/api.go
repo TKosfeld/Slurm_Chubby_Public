@@ -38,7 +38,7 @@ type KeepAliveRequest struct {
 
 // KeepAliveResponse ...
 type KeepAliveResponse struct {
-	LeaseLength time.Duration
+	LeaseDur time.Duration
 }
 
 // OpenLockRequest ...
@@ -117,4 +117,3 @@ type RegisterSessionRequest struct {
 }
 
 type RegisterSessionResponse struct{}
-
