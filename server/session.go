@@ -5,24 +5,20 @@ import (
 	"chubbylock/api"
 	"errors"
 	"fmt"
-	//"log"
-	"sync"
 	"time"
 )
 
-const DefaultLeaseExt = 15 * time.Second
-
 // Session contains metadata for one Chubby session.
 type Session struct {
-	clientID      api.ClientID
-	startTime     time.Time
-	leaseLength   time.Duration
-	ttlLock       sync.Mutex
-	ttlChannel    chan struct{}
-	locks         map[api.FilePath]*Lock
-	terminated    bool
-	terminatedChan chan struct{}
+	clientID   api.ClientID         // Client ID
+	startTime  time.Time            // Time of session start
+	leaseDur   time.Duration        // Current lease duration for the session
+	ttlChannel chan struct{}        // Time to Live Channel
+	locks      map[api.FilePath]*Lock // Locks currently held by this session
+	terminated bool                 // Indicates whether the session has been terminated
+	endChannel chan struct{}        // Channel used to signal ending
 }
+
 
 // Lock describes information about a particular Chubby lock.
 type Lock struct {
@@ -32,52 +28,66 @@ type Lock struct {
 	content string
 }
 
-/* Create Session struct. */
+
+// CreateSession initializes a new session for the given client ID.
+// Returns an error if a session already exists for the client.
 func CreateSession(clientID api.ClientID) (*Session, error) {
-	sess, ok := app.sessions[clientID]
-	if ok {
-		return nil, errors.New(fmt.Sprintf("Client %s already has a session", clientID))
+	// Check if a session already exists for the client
+	if _, exists := app.sessions[clientID]; exists {
+		return nil, fmt.Errorf("Client %s already has a session", clientID)
 	}
 
-	app.logger.Printf("Creating session with client %s", clientID)
+	app.logger.Printf("Starting new session for client %s", clientID)
 
-	sess = &Session{
-		clientID:       clientID,
-		startTime:      time.Now(),
-		leaseLength:    app.leaseDuration, 
-		ttlChannel:     make(chan struct{}, 2),
-		locks:          make(map[api.FilePath]*Lock),
-		terminated:     false,
-		terminatedChan: make(chan struct{}, 2),
+	// Initialize a new session struct
+	newSession := &Session{
+		clientID:    clientID,
+		startTime:   time.Now(),
+		leaseDur:    app.leaseDuration,
+		ttlChannel:  make(chan struct{}, 2),               // Buffered to avoid blocking
+		locks:       make(map[api.FilePath]*Lock),        // Initialize lock map
+		terminated:  false,
+		endChannel:  make(chan struct{}, 2),               // Channel to signal session termination
 	}
 
-	app.sessions[clientID] = sess
-	go sess.MonitorSession()
+	// Register session in the global session map
+	app.sessions[clientID] = newSession
 
-	return sess, nil
+	// Start monitoring this session for lease expiration
+	go newSession.MonitorSession()
+
+	return newSession, nil
 }
+
+// MonitorSession continuously checks if the session’s lease has expired.
+// Sends a signal via ttlChannel when close to expiry, and terminates the session when expired.
 func (sess *Session) MonitorSession() {
 	app.logger.Printf("Monitoring session for client %s", sess.clientID)
-	ticker := time.Tick(time.Second)
-	for range ticker {
-		timeLeaseOver := sess.startTime.Add(sess.leaseLength)
-		durationLeaseOver := time.Until(timeLeaseOver)
 
-		if durationLeaseOver <= 0 {
-			app.logger.Printf("Lease expired for client %s: terminating", sess.clientID)
+	timeTicker := time.Tick(time.Second)
+
+	for range timeTicker {
+		expirationTime := sess.startTime.Add(sess.leaseDur)
+		timeLeft := time.Until(expirationTime)
+
+		// If the lease has expired, terminate the session
+		if timeLeft <= 0 {
+			app.logger.Printf("Lease expired for client %s: terminating session", sess.clientID)
 			sess.TerminateSession()
 			return
 		}
 
-		if durationLeaseOver <= (1 * time.Second) {
+		// If lease is about to expire within 1 second, notify via ttlChannel
+		if timeLeft <= time.Second {
 			select {
 			case sess.ttlChannel <- struct{}{}:
 			default:
-				// Don't block if channel is full
+				// Non-blocking: skip if the channel is full
 			}
 		}
 	}
 }
+
 
 // Terminate the session.
 func (sess *Session) TerminateSession() {
@@ -85,7 +95,7 @@ func (sess *Session) TerminateSession() {
 		return
 	}
 	sess.terminated = true
-	close(sess.terminatedChan)
+	close(sess.endChannel)
 
 	for filePath := range sess.locks {
 		err := sess.ReleaseLock(filePath)
@@ -100,13 +110,13 @@ func (sess *Session) TerminateSession() {
 // Extend Lease after receiving keepalive messages
 func (sess *Session) KeepAlive(clientID api.ClientID) time.Duration {
 	select {
-	case <-sess.terminatedChan:
+	case <-sess.endChannel:
 		return 0 // Session already terminated
 
 	case <-sess.ttlChannel:
-		sess.leaseLength += app.leaseDuration // Use the global leaseDuration from app
-		app.logger.Printf("Session extended for client %s, new lease: %s", sess.clientID, sess.leaseLength)
-		return sess.leaseLength
+		sess.leaseDur += app.leaseDuration // Use the global leaseDuration from app
+		app.logger.Printf("Session extended for client %s, new lease: %s", sess.clientID, sess.leaseDur)
+		return sess.leaseDur
 	}
 }
 
@@ -122,18 +132,6 @@ func (sess *Session) OpenLock(path api.FilePath) error {
 	}
 	sess.locks[path] = app.locks[path] // Ensure session knows about it
 	return nil
-}
-
-// Delete the lock. Lock must be held in exclusive mode by this session.
-func (sess *Session) DeleteLock(path api.FilePath) error {
-	_, exists := app.locks[path]
-	if !exists || !sess.holdsExclusive(path) {
-		return errors.New(fmt.Sprintf("Cannot delete lock %s: not held exclusively by session %s", path, sess.clientID))
-	}
-	delete(app.locks, path)
-	delete(sess.locks, path)
-	err := app.store.Delete(string(path))
-	return err
 }
 
 // Try to acquire the lock.
@@ -181,6 +179,19 @@ func (sess *Session) ReleaseLock(path api.FilePath) error {
 	return nil
 }
 
+// Delete the lock. Lock must be held in exclusive mode by this session.
+func (sess *Session) DeleteLock(path api.FilePath) error {
+	_, exists := app.locks[path]
+	if !exists || !sess.holdsExclusive(path) {
+		return errors.New(fmt.Sprintf("Cannot delete lock %s: not held exclusively by session %s", path, sess.clientID))
+	}
+	delete(app.locks, path)
+	delete(sess.locks, path)
+	err := app.store.Delete(string(path))
+	return err
+}
+
+
 // Read the Content of a lockfile.
 func (sess *Session) ReadContent(path api.FilePath) (string, error) {
 	lock, exists := app.locks[path]
@@ -217,10 +228,6 @@ func (sess *Session) holdsExclusive(path api.FilePath) bool {
 // RPC handler type
 type Handler int
 
-/*
- * Called by servers:
- */
-
 // Join the caller server to our server.
 func (h *Handler) Join(req JoinRequest, res *JoinResponse) error {
 	err := app.store.Join(req.NodeID, req.RaftAddr)
@@ -243,113 +250,101 @@ func (h *Handler) InitSession(req api.InitSessionRequest, res *api.InitSessionRe
 	return err
 }
 
-// KeepAlive calls allow the client to extend the Chubby session.
+// KeepAlive extends the lease for a client’s session.
+// If the client is unknown, it may represent a jeopardy client attempting to reestablish a session.
 func (h *Handler) KeepAlive(req api.KeepAliveRequest, res *api.KeepAliveResponse) error {
-	// If a non-leader node receives a KeepAlive, return error
+	// Reject KeepAlive if the current node is not the Raft leader
 	if app.store.Raft.State().String() != "Leader" {
-		return errors.New(fmt.Sprintf("Node %s is not the leader", app.address))
+		return fmt.Errorf("Node %s is not the leader", app.address)
 	}
 
 	var err error
-	sess, ok := app.sessions[req.ClientID]
-	if !ok {
-		// Probably a jeopardy KeepAlive: create a new session for the client
-		app.logger.Printf("Client %s sent jeopardy KeepAlive: creating new session", req.ClientID)
+	sess, exists := app.sessions[req.ClientID]
 
-		// Note: this starts the local lease countdown
-		// Should be ok to not call KeepAlive until later because lease TTL is pretty long (12s)
+	// If session doesn't exist, treat this as a jeopardy KeepAlive
+	if !exists {
+		app.logger.Printf("Received jeopardy KeepAlive from client %s: creating new session", req.ClientID)
+
+		// Start a new session locally
 		sess, err = CreateSession(req.ClientID)
 		if err != nil {
-			// This shouldn't happen because session shouldn't be in app.sessions struct yet
+			// Should not happen unless there's an unexpected race condition
 			return err
 		}
+		app.logger.Printf("Created new session for jeopardy client %s", req.ClientID)
 
-		app.logger.Printf("New session for client %s created", req.ClientID)
-
-		// For each lock in the KeepAlive, try to acquire the lock
-		// If any of the acquires fail, terminate the session.
+		// Reacquire all previously held locks for the client
 		for filePath, lockMode := range req.Locks {
-			ok, err := sess.TryAcquireLock(filePath, lockMode)
+			acquired, err := sess.TryAcquireLock(filePath, lockMode)
 			if err != nil {
-				// Don't return an error because the session won't terminate!
-				app.logger.Printf("Error when client %s acquiring lock at %s: %s", req.ClientID, filePath, err.Error())
+				app.logger.Printf("Error reacquiring lock for client %s at %s: %s", req.ClientID, filePath, err.Error())
+				// Continue; don't exit early so all reacquire attempts are made
 			}
-			if !ok {
-				app.logger.Printf("Jeopardy client %s failed to acquire lock at %s", req.ClientID, filePath)
-				// This should cause the KeepAlive response to return that session should end.
+			if !acquired {
+				app.logger.Printf("Jeopardy client %s failed to reacquire lock at %s", req.ClientID, filePath)
 				sess.TerminateSession()
-
-				return nil // Don't return an error because the session won't terminate!
+				return nil // Not an error: client should interpret this as "session ended"
 			}
-			app.logger.Printf("Lock %s reacquired successfully.", filePath)
+			app.logger.Printf("Successfully reacquired lock on %s", filePath)
 		}
 
-		app.logger.Printf("Finished jeopardy KeepAlive process for client %s", req.ClientID)
+		app.logger.Printf("Completed jeopardy KeepAlive for client %s", req.ClientID)
 	}
 
+	// Extend the lease and return the new duration
 	duration := sess.KeepAlive(req.ClientID)
-	res.LeaseLength = duration
+	res.LeaseDur = duration
 	return nil
 }
 
-// Open a lock.
+
+// OpenLock initializes a lock for the specified file path in the current session.
 func (h *Handler) OpenLock(req api.OpenLockRequest, res *api.OpenLockResponse) error {
 	sess, ok := app.sessions[req.ClientID]
 	if !ok {
-		return errors.New(fmt.Sprintf("No session exists for %s", req.ClientID))
+		return fmt.Errorf("Session not found for client %s", req.ClientID)
 	}
-	err := sess.OpenLock(req.Filepath)
-	if err != nil {
-		return err
-	}
-	return nil
+	return sess.OpenLock(req.Filepath)
 }
 
-// Delete a lock.
-func (h *Handler) DeleteLock(req api.DeleteLockRequest, res *api.DeleteLockResponse) error {
-	sess, ok := app.sessions[req.ClientID]
-	if !ok {
-		return errors.New(fmt.Sprintf("No session exists for %s", req.ClientID))
-	}
-	err := sess.DeleteLock(req.Filepath)
-	if err != nil {
-		return err
-	}
-	return nil
-}
-
-// Try to acquire a lock.
+// TryAcquireLock attempts to acquire a lock on a given file path in the requested mode.
+// The result of the acquisition attempt is returned in the response.
 func (h *Handler) TryAcquireLock(req api.TryAcquireLockRequest, res *api.TryAcquireLockResponse) error {
 	sess, ok := app.sessions[req.ClientID]
 	if !ok {
-		return errors.New(fmt.Sprintf("No session exists for %s", req.ClientID))
+		return fmt.Errorf("Session not found for client %s", req.ClientID)
 	}
-	isSuccessful, err := sess.TryAcquireLock(req.Filepath, req.Mode)
+	success, err := sess.TryAcquireLock(req.Filepath, req.Mode)
 	if err != nil {
 		return err
 	}
-	res.IsSuccessful = isSuccessful
+	res.IsSuccessful = success
 	return nil
 }
 
-// Release lock.
+// ReleaseLock frees a previously acquired lock on the specified file path.
 func (h *Handler) ReleaseLock(req api.ReleaseLockRequest, res *api.ReleaseLockResponse) error {
 	sess, ok := app.sessions[req.ClientID]
 	if !ok {
-		return errors.New(fmt.Sprintf("No session exists for %s", req.ClientID))
+		return fmt.Errorf("Session not found for client %s", req.ClientID)
 	}
-	err := sess.ReleaseLock(req.Filepath)
-	if err != nil {
-		return err
-	}
-	return nil
+	return sess.ReleaseLock(req.Filepath)
 }
 
-// Read Content
+// DeleteLock removes the lock associated with the given file path from the session.
+func (h *Handler) DeleteLock(req api.DeleteLockRequest, res *api.DeleteLockResponse) error {
+	sess, ok := app.sessions[req.ClientID]
+	if !ok {
+		return fmt.Errorf("Session not found for client %s", req.ClientID)
+	}
+	return sess.DeleteLock(req.Filepath)
+}
+
+// ReadContent returns the contents of the file specified by the client.
 func (h *Handler) ReadContent(req api.ReadRequest, res *api.ReadResponse) error {
 	sess, ok := app.sessions[req.ClientID]
 	if !ok {
-		return errors.New(fmt.Sprintf("No session exists for %s", req.ClientID))
+		return fmt.Errorf("Session not found for client %s", req.ClientID)
 	}
 	content, err := sess.ReadContent(req.Filepath)
 	if err != nil {
@@ -359,14 +354,14 @@ func (h *Handler) ReadContent(req api.ReadRequest, res *api.ReadResponse) error 
 	return nil
 }
 
-// Write Content
+// WriteContent writes the provided content to the specified file for the client.
+// Returns whether the operation was successful.
 func (h *Handler) WriteContent(req api.WriteRequest, res *api.WriteResponse) error {
 	sess, ok := app.sessions[req.ClientID]
 	if !ok {
-		return errors.New(fmt.Sprintf("No session exists for %s", req.ClientID))
+		return fmt.Errorf("Session not found for client %s", req.ClientID)
 	}
-	err := sess.WriteContent(req.Filepath, req.Content)
-	if err != nil {
+	if err := sess.WriteContent(req.Filepath, req.Content); err != nil {
 		res.IsSuccessful = false
 		return err
 	}
