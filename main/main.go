@@ -17,7 +17,7 @@ var (
 	raftBind      string        // Address (host:port) for Raft communication.
 	nodeId        string        // Unique ID for this Chubby server node.
 	join          string        // Address (host:port) of an existing Chubby server to join (RPC listen address).
-	inmem         bool          // Use in-memory storage for Raft (for testing, not recommended for production).
+	inmem         bool          // Use in-memory storage for Raft (for testing).
 	single        bool          // Bootstrap as a single-node cluster (for the initial leader).
 	leaseDuration int64       //  Changed to int64
 )
@@ -30,14 +30,11 @@ func init() {
 	flag.StringVar(&join, "join", "", "Address (host:port) of an existing Chubby server to join (RPC listen address)")
 	flag.BoolVar(&inmem, "inmem", false, "Use in-memory storage for Raft (testing only)")
 	flag.BoolVar(&single, "single", false, "Bootstrap as a single-node cluster (for the initial leader)")
-	flag.Int64Var(&leaseDuration, "lease_duration", 15, "Initial lease duration for client sessions in seconds") // Changed to Int64Var
+	flag.Int64Var(&leaseDuration, "lease_duration", 15, "Initial lease duration for client sessions in seconds") // Changed to Int64Var and will convert to time later
 }
 
 func main() {
 	flag.Parse()
-
-	var cfg *config.Config
-
 	// Determine Node ID, prioritizing flag, then Slurm env, then default hostname.
 	if nodeId == "" {
 		jobID := os.Getenv("SLURM_JOBID")
@@ -50,14 +47,13 @@ func main() {
 		}
 	}
 
+    var cfg *config.Config
 	cfg = config.NewConfig(listen, raftDir, raftBind, nodeId, join, inmem, single, time.Duration(leaseDuration)*time.Second) // Convert to time.Duration
-
 	quitCh := make(chan os.Signal, 1)
 	signal.Notify(quitCh, os.Kill, os.Interrupt, syscall.SIGHUP, syscall.SIGINT, syscall.SIGTERM, syscall.SIGQUIT)
 
 	// Run the server.
 	go server.Run(cfg)
-
 	fmt.Printf("Chubby server started with ID: %s, Listen: %s, Raft Bind: %s, Raft Dir: %s, Join: %s, In-memory: %v, Single-node: %v, Lease Duration: %s\n",
 		cfg.NodeID, cfg.Listen, cfg.RaftBind, cfg.RaftDir, cfg.Join, cfg.InMem, single, cfg.LeaseDuration) 
 	// Exit on signal.
