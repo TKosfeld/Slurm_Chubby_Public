@@ -11,23 +11,19 @@ import (
     "time"
 )
 
-// App defines the Chubby server application.
-type App struct {
+// ServerApp defines the Chubby server application.
+type ServerApp struct {
 	listener net.Listener
 
-	// Raft-backed store.
-	store *store.Store
+	store *store.Store // Raft-backed store.
 
 	logger *log.Logger
 
-	// Current Node's RPC Listen Address.
-	address string
+	address string // Current Node's RPC Listen Address.
 
-	// In-memory struct of locks.
-	locks map[api.FilePath]*Lock
+	locks map[api.FilePath]*Lock // In-memory struct of locks.
 
-	// In-memory struct of sessions.
-	sessions map[api.ClientID]*Session
+	sessions map[api.ClientID]*Session // In-memory struct of sessions.
 
 	handler *Handler
     
@@ -35,14 +31,14 @@ type App struct {
 }
 
 // app is the global instance of the Chubby server application.
-var app *App
+var app *ServerApp
 
 // Run initializes and starts the Chubby server.
 func Run(conf *config.Config) {
 	var err error
 
 	// Initialize app struct.
-	app = &App{
+	app = &ServerApp{
 		logger:   log.New(os.Stderr, "[server] ", log.LstdFlags),
 		store:    store.New(conf.RaftDir, conf.RaftBind, conf.InMem),
 		address:  conf.Listen,
